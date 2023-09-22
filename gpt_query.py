@@ -64,6 +64,8 @@ def get_gpt_response(
             response = openrouter_request(model, messages, temperature)
         elif model.startswith("huggingface"):
             response = hugging_face_request(model, messages, temperature)
+        else:
+            raise Exception("Invalid model name")
 
         # response_cost = get_response_cost(model, count_tokens(model, response))
         # print("response cost in $:", response_cost)
