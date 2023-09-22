@@ -74,7 +74,13 @@ def get_move_from_gpt_response(response: Optional[str]) -> Optional[str]:
 
 
 def record_results(
-    board: chess.Board, player_one: Player, player_two: Player, game_state: str
+    board: chess.Board,
+    player_one: Player,
+    player_two: Player,
+    game_state: str,
+    player_one_illegal_moves: int,
+    player_two_illegal_moves: int,
+    total_time: float,
 ):
     unique_game_id = generate_unique_game_id()
 
@@ -86,7 +92,13 @@ def record_results(
         "result": board.result(),
         "player_one": player_one_title,
         "player_two": player_two_title,
+        "player_one_score": board.result().split("-")[0],
+        "player_two_score": board.result().split("-")[1],
+        "player_one_illegal_moves": player_one_illegal_moves,
+        "player_two_illegal_moves": player_two_illegal_moves,
         "game_title": f"{player_one_title} vs. {player_two_title}",
+        "number_of_moves": board.fullmove_number,
+        "time_taken": total_time,
     }
 
     csv_file_path = "logs/games.csv"
@@ -167,6 +179,9 @@ def play_game(player_one: Player, player_two: Player):
         with open("gpt_inputs/prompt.txt", "r") as f:
             game_state = f.read()
         board = chess.Board()
+        player_one_illegal_moves = 0
+        player_two_illegal_moves = 0
+        start_time = time.time()
         while not board.is_game_over():
             with open("game.txt", "w") as f:
                 f.write(game_state)
@@ -179,6 +194,8 @@ def play_game(player_one: Player, player_two: Player):
                 player_one_move_uci,
                 player_one_attempts,
             ) = get_legal_move(player_one, board, game_state)
+
+            player_one_illegal_moves += player_one_attempts
 
             if player_one_move_san is None or player_one_move_uci is None:
                 print("Game over: 5 consecutive Illegal moves from player one")
@@ -201,6 +218,8 @@ def play_game(player_one: Player, player_two: Player):
                 player_two_attempts,
             ) = get_legal_move(player_two, board, game_state)
 
+            player_two_illegal_moves += player_two_attempts
+
             if player_two_move_san is None or player_two_move_uci is None:
                 print("Game over: 5 consecutive Illegal moves from player one")
                 print(board)
@@ -215,7 +234,17 @@ def play_game(player_one: Player, player_two: Player):
                 print(board)
                 break
 
-        record_results(board, player_one, player_two, game_state)
+        end_time = time.time()
+        total_time = end_time - start_time
+        record_results(
+            board,
+            player_one,
+            player_two,
+            game_state,
+            player_one_illegal_moves,
+            player_two_illegal_moves,
+            total_time,
+        )
     if isinstance(player_one, StockfishPlayer):
         player_one.close()
     if isinstance(player_two, StockfishPlayer):
@@ -228,8 +257,8 @@ if __name__ == "__main__":
     with open("gpt_inputs/api_key.txt", "r") as f:
         openai.api_key = f.read().strip()
 
-    # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
-    player_one = GPTPlayer(model="gpt-4")
-    # player_two = StockfishPlayer(skill_level=5, play_time=0.1)
-    player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
+    player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
+    # player_one = GPTPlayer(model="gpt-4")
+    player_two = StockfishPlayer(skill_level=5, play_time=0.1)
+    # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
     play_game(player_one, player_two)
