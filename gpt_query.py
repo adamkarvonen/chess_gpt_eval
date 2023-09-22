@@ -17,7 +17,8 @@ from tenacity import (
 with open("gpt_inputs/api_key.txt", "r") as f:
     openai.api_key = f.read().strip()
 
-system_message = """Your responses are being used in an automated system and should strictly adhere to the example provided formatting."""
+# system message is used in openai_request()
+system_message = """Provide the next move in the chess game. Only provide the move, no move numbers."""
 
 # dollars per 1k tokens, per openai.com/pricing
 pricing_dict = {
@@ -42,7 +43,7 @@ def get_gpt_response(
 ) -> Optional[str]:
     try:
         messages = []
-        # not using system message currently
+        # system message is used in openai_request()
         # system_message_dict = {
         #     "role": "system",
         #     "content": system_message,
@@ -80,6 +81,11 @@ def get_gpt_response(
 
 
 def openai_request(model: str, messages: list[dict], temperature: float) -> str:
+    system_message_dict = {
+        "role": "system",
+        "content": system_message,
+    }
+    messages.append(system_message_dict)
     completion = openai.ChatCompletion.create(
         model=model,
         temperature=temperature,

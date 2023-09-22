@@ -68,6 +68,9 @@ class StockfishPlayer(Player):
 
 
 def get_gpt_response(game_state: str, model: str, temperature: float) -> Optional[str]:
+    # trying to prevent what I believe to be rate limit issues
+    if model == "gpt-4":
+        time.sleep(0.4)
     response = gpt_query.get_gpt_response(game_state, model, temperature)
     return response
 
@@ -315,10 +318,11 @@ if __name__ == "__main__":
     with open("gpt_inputs/api_key.txt", "r") as f:
         openai.api_key = f.read().strip()
 
-    for i in range(10):
+    for i in range(1):
         player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
         # player_one = GPTPlayer(model="gpt-4")
         # player_one = StockfishPlayer(skill_level=i, play_time=0.1)
-        player_two = StockfishPlayer(skill_level=i, play_time=0.1)
+        # player_two = StockfishPlayer(skill_level=i, play_time=0.1)
+        player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
         play_game(player_one, player_two, 15)
