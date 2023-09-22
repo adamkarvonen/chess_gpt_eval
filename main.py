@@ -1,11 +1,14 @@
 import openai
 import chess
 import chess.engine
-import json
 import os
 import csv
+import random
+import time
 
 import gpt_query
+
+from typing import Optional, Tuple
 
 
 # Define base Player class
@@ -21,7 +24,9 @@ class GPTPlayer(Player):
     def __init__(self, model: str):
         self.model = model
 
-    def get_move(self, board: chess.Board, game_state: str, temperature: float) -> str:
+    def get_move(
+        self, board: chess.Board, game_state: str, temperature: float
+    ) -> Optional[str]:
         response = get_gpt_response(game_state, self.model, temperature)
         return get_move_from_gpt_response(response)
 
@@ -36,9 +41,13 @@ class StockfishPlayer(Player):
         # If getting started, you need to run brew install stockfish
         self._engine = chess.engine.SimpleEngine.popen_uci("stockfish")
 
-    def get_move(self, board: chess.Board, game_state: str, temperature: float) -> str:
+    def get_move(
+        self, board: chess.Board, game_state: str, temperature: float
+    ) -> Optional[str]:
         self._engine.configure({"Skill Level": self._skill_level})
         result = self._engine.play(board, chess.engine.Limit(time=self._play_time))
+        if result.move is None:
+            return None
         return board.san(result.move)
 
     def get_config(self) -> dict:
@@ -48,12 +57,12 @@ class StockfishPlayer(Player):
         self._engine.quit()
 
 
-def get_gpt_response(game_state: str, model: str, temperature: float) -> str:
+def get_gpt_response(game_state: str, model: str, temperature: float) -> Optional[str]:
     response = gpt_query.get_gpt_response(game_state, model, temperature)
     return response
 
 
-def get_move_from_gpt_response(response: str) -> str:
+def get_move_from_gpt_response(response: Optional[str]) -> Optional[str]:
     if response is None:
         return None
 
@@ -64,35 +73,66 @@ def get_move_from_gpt_response(response: str) -> str:
     return first_move
 
 
-def record_results(info_dict: dict, game_state: str):
-    # find an unused filename
-    idx = 1
-    while os.path.exists(f"logs/game{idx}.json"):
-        idx += 1
+def record_results(
+    board: chess.Board, player_one: Player, player_two: Player, game_state: str
+):
+    unique_game_id = generate_unique_game_id()
 
-    # write the results to a file
-    with open(f"logs/game{idx}.json", "w") as f:
-        json.dump(info_dict, f, indent=4)
+    player_one_title, player_two_title = get_player_titles(player_one, player_two)
+
+    info_dict = {
+        "game_id": unique_game_id,  # Storing the unique game ID
+        "transcript": game_state,
+        "result": board.result(),
+        "player_one": player_one_title,
+        "player_two": player_two_title,
+        "game_title": f"{player_one_title} vs. {player_two_title}",
+    }
+
+    csv_file_path = "logs/games.csv"
+
+    # Determine if we need to write headers (in case the file doesn't exist yet)
+    write_headers = not os.path.exists(csv_file_path)
+
+    # Append the results to the CSV file
+    with open(csv_file_path, "a", newline="") as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=info_dict.keys())
+        if write_headers:
+            writer.writeheader()
+        writer.writerow(info_dict)
 
     with open("game.txt", "w") as f:
         f.write(game_state)
 
 
-def generate_game_id(info_dict: dict) -> str:
-    # Generate the game title
-    player_one = (
-        info_dict["model_one"] or f"stockfish {info_dict['stockfish_level_one']}"
-    )
-    player_two = (
-        info_dict["model_two"] or f"stockfish {info_dict['stockfish_level_two']}"
-    )
+def generate_unique_game_id() -> str:
+    timestamp = int(time.time())
+    random_num = random.randint(1000, 9999)  # 4-digit random number
+    return f"{timestamp}-{random_num}"
 
-    return f"{player_one} / {player_two}"
+
+def get_player_titles(player_one: Player, player_two: Player) -> Tuple[str, str]:
+    player_one_config = player_one.get_config()
+    player_two_config = player_two.get_config()
+
+    # For player one
+    if "model" in player_one_config:
+        player_one_title = player_one_config["model"]
+    else:
+        player_one_title = f"Stockfish {player_one_config['skill_level']}"
+
+    # For player two
+    if "model" in player_two_config:
+        player_two_title = player_two_config["model"]
+    else:
+        player_two_title = f"Stockfish {player_two_config['skill_level']}"
+
+    return (player_one_title, player_two_title)
 
 
 def get_legal_move(
     player: Player, board: chess.Board, game_state: str, max_attempts: int = 5
-) -> (str, chess.Move, int):
+) -> Tuple[Optional[str], Optional[chess.Move], int]:
     """Request a move from the player and ensure it's legal."""
     move_san = None
     move_uci = None
@@ -140,7 +180,7 @@ def play_game(player_one: Player, player_two: Player):
                 player_one_attempts,
             ) = get_legal_move(player_one, board, game_state)
 
-            if player_one_move_san is None:
+            if player_one_move_san is None or player_one_move_uci is None:
                 print("Game over: 5 consecutive Illegal moves from player one")
                 print(board)
                 break
@@ -161,7 +201,7 @@ def play_game(player_one: Player, player_two: Player):
                 player_two_attempts,
             ) = get_legal_move(player_two, board, game_state)
 
-            if player_two_move_san is None:
+            if player_two_move_san is None or player_two_move_uci is None:
                 print("Game over: 5 consecutive Illegal moves from player one")
                 print(board)
                 break
@@ -175,20 +215,7 @@ def play_game(player_one: Player, player_two: Player):
                 print(board)
                 break
 
-        player_one_config = player_one.get_config()
-        player_two_config = player_two.get_config()
-
-        game_data = {
-            "transcript": game_state,
-            "result": board.result(),
-            "model_one": player_one_config.get("model"),
-            "model_two": player_two_config.get("model"),
-            "stockfish_level_one": player_one_config.get("skill_level"),
-            "stockfish_level_two": player_two_config.get("skill_level"),
-            "stockfish_time_one": player_one_config.get("play_time"),
-            "stockfish_time_two": player_two_config.get("play_time"),
-        }
-        record_results(game_data, game_state)
+        record_results(board, player_one, player_two, game_state)
     if isinstance(player_one, StockfishPlayer):
         player_one.close()
     if isinstance(player_two, StockfishPlayer):
