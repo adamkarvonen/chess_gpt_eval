@@ -9,6 +9,16 @@ import time
 import gpt_query
 
 from typing import Optional, Tuple
+from dataclasses import dataclass
+
+
+@dataclass
+class LegalMoveResponse:
+    move_san: Optional[str] = None
+    move_uci: Optional[chess.Move] = None
+    attempts: int = 0
+    is_resignation: bool = False
+    is_illegal_move: bool = False
 
 
 # Define base Player class
@@ -81,21 +91,49 @@ def record_results(
     player_one_illegal_moves: int,
     player_two_illegal_moves: int,
     total_time: float,
+    player_one_resignation: bool,
+    player_two_resignation: bool,
+    player_one_failed_to_find_legal_move: bool,
+    player_two_failed_to_find_legal_move: bool,
 ):
     unique_game_id = generate_unique_game_id()
 
     player_one_title, player_two_title = get_player_titles(player_one, player_two)
 
+    if player_one_resignation or player_one_failed_to_find_legal_move:
+        result = "0-1"
+        player_one_score = 0
+        player_two_score = 1
+    elif player_two_resignation or player_two_failed_to_find_legal_move:
+        result = "1-0"
+        player_one_score = 1
+        player_two_score = 0
+    else:
+        result = board.result()
+        # Hmmm.... debating this one. Annoying if I leave it running and it fails here for some reason, probably involving some
+        # resignation / failed move situation I didn't think of
+        # -1 at least ensures it doesn't fail silently
+        if "-" in result:
+            player_one_score = result.split("-")[0]
+            player_two_score = result.split("-")[1]
+        else:
+            player_one_score = -1
+            player_two_score = -1
+
     info_dict = {
-        "game_id": unique_game_id,  # Storing the unique game ID
+        "game_id": unique_game_id,
         "transcript": game_state,
-        "result": board.result(),
+        "result": result,
         "player_one": player_one_title,
         "player_two": player_two_title,
-        "player_one_score": board.result().split("-")[0],
-        "player_two_score": board.result().split("-")[1],
+        "player_one_score": player_one_score,
+        "player_two_score": player_two_score,
         "player_one_illegal_moves": player_one_illegal_moves,
         "player_two_illegal_moves": player_two_illegal_moves,
+        "player_one_resignation": player_one_resignation,
+        "player_two_resignation": player_two_resignation,
+        "player_one_failed_to_find_legal_move": player_one_failed_to_find_legal_move,
+        "player_two_failed_to_find_legal_move": player_two_failed_to_find_legal_move,
         "game_title": f"{player_one_title} vs. {player_two_title}",
         "number_of_moves": board.fullmove_number,
         "time_taken": total_time,
@@ -142,9 +180,10 @@ def get_player_titles(player_one: Player, player_two: Player) -> Tuple[str, str]
     return (player_one_title, player_two_title)
 
 
+# Return is (move_san, move_uci, attempts, is_resignation, is_illegal_move)
 def get_legal_move(
     player: Player, board: chess.Board, game_state: str, max_attempts: int = 5
-) -> Tuple[Optional[str], Optional[chess.Move], int]:
+) -> LegalMoveResponse:
     """Request a move from the player and ensure it's legal."""
     move_san = None
     move_uci = None
@@ -162,25 +201,59 @@ def get_legal_move(
         if move_uci in board.legal_moves:
             if not move_san.startswith(" "):
                 move_san = " " + move_san
-            return move_san, move_uci, attempt
+            return LegalMoveResponse(move_san, move_uci, attempt)
         print(f"Illegal move: {move_san}")
 
+    # Sometimes when GPT thinks it's the end of the game, it will just output the result
+    # Like "1-0". If so, this really isn't an illegal move, so we'll add a check for that.
+    if move_san is not None:
+        if "-" in move_san:
+            print(f"{move_san}, player has resigned")
+            return LegalMoveResponse(
+                move_san=None, move_uci=None, attempts=max_attempts, is_resignation=True
+            )
     # If we reach here, the player has made illegal moves for all attempts.
     print(f"{player} provided illegal moves for {max_attempts} attempts.")
-    return (
-        None,
-        None,
-        max_attempts,
-    )  # Optionally, handle the situation differently, e.g., end the game, etc.
+    return LegalMoveResponse(
+        move_san=None, move_uci=None, attempts=max_attempts, is_illegal_move=True
+    )
 
 
-def play_game(player_one: Player, player_two: Player):
-    for _ in range(5):  # Play 10 games
+def play_turn(
+    player: Player, board: chess.Board, game_state: str
+) -> Tuple[str, bool, bool, int]:
+    result = get_legal_move(player, board, game_state)
+    illegal_moves = result.attempts
+    move_san = result.move_san
+    move_uci = result.move_uci
+    resignation = result.is_resignation
+    failed_to_find_legal_move = result.is_illegal_move
+
+    if resignation:
+        print(f"{player} resigned with result: {board.result()}")
+    elif failed_to_find_legal_move:
+        print(f"Game over: 5 consecutive illegal moves from {player}")
+    elif move_san is None or move_uci is None:
+        print(f"Game over: {player} failed to find a legal move")
+    else:
+        board.push(move_uci)
+        game_state += move_san
+        print(move_san, end=" ")
+
+    return game_state, resignation, failed_to_find_legal_move, illegal_moves
+
+
+def play_game(player_one: Player, player_two: Player, max_games: int = 10):
+    for _ in range(max_games):  # Play 10 games
         with open("gpt_inputs/prompt.txt", "r") as f:
             game_state = f.read()
         board = chess.Board()
         player_one_illegal_moves = 0
         player_two_illegal_moves = 0
+        player_one_resignation = False
+        player_two_resignation = False
+        player_one_failed_to_find_legal_move = False
+        player_two_failed_to_find_legal_move = False
         start_time = time.time()
         while not board.is_game_over():
             with open("game.txt", "w") as f:
@@ -190,52 +263,33 @@ def play_game(player_one: Player, player_two: Player):
             print(f"{current_move_num}", end=" ")
 
             (
-                player_one_move_san,
-                player_one_move_uci,
-                player_one_attempts,
-            ) = get_legal_move(player_one, board, game_state)
-
-            player_one_illegal_moves += player_one_attempts
-
-            if player_one_move_san is None or player_one_move_uci is None:
-                print("Game over: 5 consecutive Illegal moves from player one")
-                print(board)
-                break
-
-            board.push(player_one_move_uci)  # Apply UCI move to the board
-
-            game_state += player_one_move_san
-            print(f"{player_one_move_san}", end=" ")
-
-            if board.is_game_over():
-                print(f"Game over with result: {board.result()}")
-                print(board)
+                game_state,
+                player_one_resignation,
+                player_one_failed_to_find_legal_move,
+                illegal_moves_one,
+            ) = play_turn(player_one, board, game_state)
+            player_one_illegal_moves += illegal_moves_one
+            if board.is_game_over() or player_one_resignation:
                 break
 
             (
-                player_two_move_san,
-                player_two_move_uci,
-                player_two_attempts,
-            ) = get_legal_move(player_two, board, game_state)
-
-            player_two_illegal_moves += player_two_attempts
-
-            if player_two_move_san is None or player_two_move_uci is None:
-                print("Game over: 5 consecutive Illegal moves from player one")
-                print(board)
+                game_state,
+                player_two_resignation,
+                player_two_failed_to_find_legal_move,
+                illegal_moves_two,
+            ) = play_turn(player_two, board, game_state)
+            player_two_illegal_moves += illegal_moves_two
+            if board.is_game_over() or player_two_resignation:
                 break
 
-            board.push(player_two_move_uci)
-            game_state += player_two_move_san
-            print(f"{player_two_move_san}")
-
-            if board.is_game_over():
-                print(f"Game over with result: {board.result()}")
-                print(board)
-                break
+            print("\n", end="")
 
         end_time = time.time()
         total_time = end_time - start_time
+        print(f"\nGame over. Total time: {total_time} seconds")
+        print(f"Result: {board.result()}")
+        print(board)
+        print()
         record_results(
             board,
             player_one,
@@ -244,6 +298,10 @@ def play_game(player_one: Player, player_two: Player):
             player_one_illegal_moves,
             player_two_illegal_moves,
             total_time,
+            player_one_resignation,
+            player_two_resignation,
+            player_one_failed_to_find_legal_move,
+            player_two_failed_to_find_legal_move,
         )
     if isinstance(player_one, StockfishPlayer):
         player_one.close()
@@ -257,8 +315,10 @@ if __name__ == "__main__":
     with open("gpt_inputs/api_key.txt", "r") as f:
         openai.api_key = f.read().strip()
 
-    player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
-    # player_one = GPTPlayer(model="gpt-4")
-    player_two = StockfishPlayer(skill_level=5, play_time=0.1)
-    # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
-    play_game(player_one, player_two)
+    for i in range(10):
+        player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
+        # player_one = GPTPlayer(model="gpt-4")
+        # player_one = StockfishPlayer(skill_level=i, play_time=0.1)
+        player_two = StockfishPlayer(skill_level=i, play_time=0.1)
+        # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
+        play_game(player_one, player_two, 15)
