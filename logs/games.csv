@@ -10942,3 +10942,862 @@ game_id,transcript,result,player_one,player_two,player_one_score,player_two_scor
 29. Rb1 Bb7
 30. Kh2 Ba6
 31. Be3",1-0,gpt-3.5-turbo-instruct,gpt-4,1,0,0,6,False,False,False,True,gpt-3.5-turbo-instruct vs. gpt-4,31,57.33197212219238
+1695416930-3778,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Bd7
+17. Rc1 Qb7
+18. a3 Rfc8
+19. d5 Na5
+20. Bd3 Rxc1
+21. Qxc1 Rc8
+22. Qb1 Bd8
+23. Rc1 Bb6
+24. Bxb6 Qxb6
+25. Rxc8+ Bxc8
+26. Qc2 Bd7
+27. Qc3 Nb7
+28. Qb4 Qc5
+29. Qxc5 Nxc5
+30. Bc2 Kf8
+31. Ne1 Ke7
+32. f3 Nh5
+33. Nd3 Nxd3
+34. Bxd3 Nf4
+35. Bf1 f5
+36. g3 Ng6
+37. Kf2 f4
+38. g4 Kd8
+39. Nb1 Kc7
+40. Nc3 Kb6
+41. Ke1 Kc5
+42. Kd2 Nh4
+43. Be2 g5
+44. Na2 Ng2
+45. Nc1 Ne3
+46. Nd3+ Kb6
+47. Kc3 Nc4
+48. Nb4 Na5
+49. Kd3 Nb3
+50. Bd1 Nc5+
+51. Kc3 Be8
+52. Be2 h5
+53. Nd3 hxg4
+54. hxg4 Nb3
+55. Nb4 Nd4
+56. Bd1 Bd7
+57. Kd3 Kc5
+58. Na2#",1-0,gpt-4,gpt-3.5-turbo-instruct,1,0,1,5,False,True,False,False,gpt-4 vs. gpt-3.5-turbo-instruct,58,102.16970300674438
+1695417020-2011,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 O-O
+8. h3 d6
+9. c3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Nb4
+17. Bb1 Bd7
+18. a3 Nc6
+19. Ba2 Rac8
+20. Rc1 Qb8
+21. d5 Na5
+22. Qe2 Rxc1
+23. Rxc1 Rc8
+24. Rxc8+ Qxc8
+25. Qd1 Bd8
+26. Ne1 Qb7
+27. Nd3 Bb6
+28. Bxb6 Qxb6
+29. Qc2 g6
+30. Kf1 Kg7
+31. Qc3 Nb7
+32. f3 Nh5
+33. Nf2 Nf4
+34. g3 Nxh3
+35. Nxh3 Bxh3+
+36. Ke2 Qg1
+37. Qe3 Qxg3
+38. Qf2 Qxf2+
+39. Kxf2 Bd7
+40. Nb1 Nc5
+41. Nc3 f5
+42. Ke3 f4+
+43. Kf2 g5
+44. Bc4 bxc4
+45. Nb1 h5
+46. Nd2 Bb5
+47. Nb1 g4
+48. Nc3 Bd7
+49. Nb1 g3+
+50. Kg2 h4
+51. Nd2 h3+
+52. Kg1 Bb5
+53. Nb1 Nd3
+54. Nd2 Nxb2
+55. Nf1 c3
+56.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,5,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,56,89.9409852027893
+1695417093-7868,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 cxd4
+4. Nxd4 Nf6
+5. Nc3 a6
+6. Be3 e5
+7. Nb3 Be6
+8. f3 Be7
+9. Qd2 O-O
+10. O-O-O Nbd7
+11. g4 b5
+12. g5 Nh5
+13. Nd5 Bxd5
+14. exd5 f5
+15. Na5 f4
+16. Bf2 Bxg5
+17. Nc6 Qf6
+18. Bh3 Nb8
+19. Nxb8 Raxb8
+20. Be6+ Kh8
+21. Qa5 e4
+22. Bd4 Qh6
+23. fxe4 f3+
+24. Kb1 Be3
+25. Bxe3 Qxe3
+26. Qxa6 Qxe4
+27. Qxd6 f2
+28. Qb4 Qxb4
+29. a3 Qe4
+30. Rhf1 Qe2
+31. Ka2 Nf4
+32. Bh3 Nxh3
+33. d6 Qxc2
+34. d7 Qc4+
+35. Ka1 Rbd8
+36. Rc1 Qxf1
+37. Rxf1 Rxd7
+38. Ka2 Re8
+39. Rxf2 Nxf2
+40. a4 bxa4
+41. Ka3 Rb7
+42. Ka2 Reb8
+43. Ka3 Rxb2
+44.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,5,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,44,73.03564500808716
+1695417136-4536,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Bd7
+17. Rc1 Qb7
+18. a3 Rfc8
+19. d5 Na5
+20. Bd3 Rxc1
+21. Qxc1 Rc8
+22. Qxc8+ Qxc8
+23. Rc1 Qxc1+
+24.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,8,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,24,43.53617525100708
+1695417208-5154,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Nb4
+17. Bb1 Bd7
+18. a3 Nc6
+19. Ba2 Rac8
+20. Rc1 Qb8
+21. d5 Na5
+22. Qe2 Rxc1
+23. Rxc1 Rc8
+24. Rxc8+ Qxc8
+25. Qd1 Bd8
+26. Ne1 Qb7
+27. Nd3 Bb6
+28. Bxb6 Qxb6
+29. Qc2 g6
+30. Kf1 Kg7
+31. Qc3 Nb7
+32. f4 exf4
+33. Nxf4 Nc5
+34. Qd4 Qd8
+35. e5 dxe5
+36. Qxe5 Qe8
+37. Qxe8 Nxe8
+38. Nf3 Nd6
+39. Ne5 Be8
+40. Ned3 Nxd3
+41. Nxd3 Kf6
+42. Kf2 Bd7
+43. Ke3 Bf5
+44. Nc5 Ke5
+45. g4 Bc8
+46. Nd3#",1-0,gpt-4,gpt-3.5-turbo-instruct,1,0,0,5,False,True,False,False,gpt-4 vs. gpt-3.5-turbo-instruct,46,71.43696689605713
+1695417316-6293,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 O-O
+8. h3 d6
+9. c3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Bd7
+17. Rc1 Qb7
+18. a3 Rfc8
+19. Nf1 exd4
+20. Nxd4 Ne5
+21. Ng3 Nc4
+22. Ngf5 Bf8
+23. Bf4 Nxb2
+24. Qe2 Nc4
+25. Qf3 Ne5
+26. Qg3 Nh5
+27. Qh4 Nxf4
+28. Qxf4 Rc3
+29. Re3 Rac8
+30. Rxc3 Rxc3
+31. Qg5 Ng6
+32. h4 h6
+33. Qg4 Qc8
+34. h5 Ne5
+35. Qg3 Rxg3
+36. fxg3 Bxf5
+37. Nxf5 Qc5+
+38. Kh2 Qxa3
+39. Rd1 Qb2
+40. Bd3 a3
+41. Bb1 a2
+42. Bxa2 Qxa2
+43. Rxd6 Bxd6
+44. Nxd6 b4
+45. Nf5 b3
+46. Ne7+ Kf8
+47. Nd5 b2
+48. Nc3 Qb3
+49. Nb1 Qd1
+50. Na3 b1=Q
+51. Nxb1 Qxb1
+52. g4 Qxe4
+53. Kg3 Qxg4+
+54. Kf2 Qxh5
+55. Ke3 Qg4
+56. Kf2 h5
+57. Ke3 h4
+58. Kf2 Qg3+
+59. Kf1 h3
+60. gxh3 Qxh3+
+61. Ke2 Qf3+
+62. Kd2 g5
+63. Ke1 g4
+64. Kd2 g3
+65.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,5,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,65,108.14147996902466
+1695417383-4693,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Bd7
+17. Rc1 Qb7
+18. a3 Rfc8
+19. Nf1 Bd8
+20. Ng3 Bb6
+21. d5 Na5
+22. Bxb6 Qxb6
+23. Nf5 Bxf5
+24. exf5 Nc4
+25. Nd2 Nxb2
+26. Qe2 Nxd5
+27. Ne4 Nc4
+28. Qg4 f6
+29. Red1 Nce3
+30. fxe3 Nxe3
+31. Qh5 Nxc2+
+32. Kh1 Nd4
+33. Nxf6+ gxf6
+34. Qg4+ Kh8
+35. Rxc8+ Rxc8
+36. Qh4 d5
+37. Qxf6+ Qxf6
+38. Rxd4 exd4
+39.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,6,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,39,66.7460548877716
+1695417425-6517,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Bd7
+17. Rc1 Qb7
+18. a3 Rfc8
+19. d5 Na5
+20. Bd3 Rxc1
+21. Qxc1 Rc8
+22. Qxc8+ Qxc8
+23. Rc1 Qxc1+
+24.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,6,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,24,42.37007403373718
+1695417522-2197,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Nb4
+17. Bb1 Bd7
+18. a3 Nc6
+19. Ba2 Rac8
+20. Rc1 Qb8
+21. d5 Na5
+22. Qe2 Rxc1
+23. Rxc1 Rc8
+24. Rxc8+ Qxc8
+25. Qd3 Qc1+
+26. Kh2 Qxb2
+27. Bb1 Nb3
+28. Nxb3 Qxb3
+29. Qxb3 axb3
+30. Nd2 b2
+31. Bc2 Bd8
+32. Nb1 Ba5
+33. f3 Nh5
+34. g4 Nf4
+35. Bxf4 exf4
+36. Kg2 g5
+37. Kf1 Kg7
+38. Ke2 Kf6
+39. Kd3 Ke5
+40. Bd1 b4
+41. a4 Bc8
+42. Kc4 Ba6+
+43. Kb3 Kd4
+44. Kc2 Ke3
+45. Kb3 Be2
+46. Bxe2 Kxe2
+47. Kxb2 Kxf3
+48. Kb3 Kxe4
+49. Kc4 f3
+50. Nd2+ Ke3
+51. Nf1+ Kf2
+52. Nh2 Kg2
+53. Nf1 Kxf1
+54. Kb3 Ke2
+55. Kc4 f2
+56.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,10,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,56,96.44449210166931
+1695417566-3428,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Bd7
+17. Rc1 Qb7
+18. a3 Rfc8
+19. d5 Na5
+20. Bd3 Rxc1
+21. Qxc1 Rc8
+22. Qxc8+ Qxc8
+23. Rc1 Qxc1+
+24.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,6,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,24,44.79992198944092
+1695417638-1068,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 cxd4
+4. Nxd4 Nf6
+5. Nc3 e5
+6. Ndb5 d6
+7. Bg5 a6
+8. Na3 b5
+9. Nd5 Be7
+10. Bxf6 Bxf6
+11. c4 b4
+12. Nc2 a5
+13. g3 O-O
+14. Bg2 Bg5
+15. O-O Be6
+16. Qd3 Rc8
+17. Rad1 Ne7
+18. Nxe7+ Bxe7
+19. b3 Qd7
+20. Ne3 a4
+21. Nf5 Bxf5
+22. exf5 axb3
+23. axb3 Rc5
+24. Be4 Qc7
+25. Ra1 Ra5
+26. Rxa5 Qxa5
+27. Qd5 Qxd5
+28. Bxd5 Rc8
+29. Ra1 Rc7
+30. Ra8+ Bf8
+31. g4 h6
+32. h4 Re7
+33. Kg2 Rc7
+34. g5 hxg5
+35. hxg5 g6
+36. fxg6 Kg7
+37. gxf7 Re7
+38. Kg3 Rc7
+39. Kg4 Re7
+40. Kf5 Rc7
+41. g6 Re7
+42. Ra6 Rd7
+43. Ra8 Re7
+44. Rxf8 Kxf8
+45. Kf6",1-0,gpt-4,gpt-3.5-turbo-instruct,1,0,0,5,False,True,False,False,gpt-4 vs. gpt-3.5-turbo-instruct,45,71.86853289604187
+1695417680-5271,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 cxd4
+4. Nxd4 Nf6
+5. Nc3 e5
+6. Ndb5 d6
+7. Bg5 a6
+8. Na3 b5
+9. Nd5 Be7
+10. Bxf6 Bxf6
+11. c4 b4
+12. Nc2 a5
+13. Be2 O-O
+14. O-O Bg5
+15. Qd3 Be6
+16. Rad1 Ra7
+17. b3 Rd7
+18. g3 f5
+19. exf5 Bxf5
+20. Qxf5 Rxf5
+21. Bxg4 Rdf7
+22. Bxf5 Rxf5
+23.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,5,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,23,42.156264781951904
+1695417757-4542,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Nb4
+17. Bb1 Bd7
+18. a3 Nc6
+19. Ba2 Rac8
+20. Rc1 Qb8
+21. d5 Na5
+22. Qe2 Rxc1
+23. Rxc1 Rc8
+24. Rxc8+ Qxc8
+25. Qd3 Qc1+
+26. Kh2 Qxb2
+27. Bb1 Nb3
+28. Nxb3 Qxb3
+29. Qxb3 axb3
+30. Nd2 b2
+31. Bc2 Bd8
+32. Nb1 Ba5
+33. f3 Nh5
+34. g4 Nf4
+35. Bxf4 exf4
+36. Kg2 Kf8
+37. Kf2 Ke7
+38. Ke2 Kf6
+39. Kd3 Ke5
+40. Bd1 g6
+41. h4 f5
+42. gxf5 gxf5
+43. exf5 Bxf5+
+44.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,9,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,44,76.1087338924408
+1695417800-2389,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Bd7
+17. Rc1 Qb7
+18. a3 Rfc8
+19. d5 Na5
+20. Bd3 Rxc1
+21. Qxc1 Rc8
+22. Qxc8+ Qxc8
+23. Rc1 Qxc1+
+24.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,6,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,24,43.02087998390198
+1695417867-2573,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Na5
+10. Bc2 c5
+11. d4 Qc7
+12. Nbd2 cxd4
+13. cxd4 Nc6
+14. Nb3 a5
+15. Be3 a4
+16. Nbd2 Bd7
+17. Rc1 Qb7
+18. a3 Rfc8
+19. Nf1 Bd8
+20. Ng3 Bb6
+21. d5 Na5
+22. Bxb6 Qxb6
+23. Bd3 Nb3
+24. Rxc8+ Rxc8
+25. Nf5 Bxf5
+26. exf5 Rc1
+27. Qxc1 Nxc1
+28. Rxc1 h6
+29. Rc6 Qb8
+30. Nd2 Nxd5
+31. Ne4 Nf4
+32.",0-1,gpt-4,gpt-3.5-turbo-instruct,0,1,5,0,False,False,True,False,gpt-4 vs. gpt-3.5-turbo-instruct,32,67.30268907546997
