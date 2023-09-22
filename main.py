@@ -272,7 +272,11 @@ def play_game(player_one: Player, player_two: Player, max_games: int = 10):
                 illegal_moves_one,
             ) = play_turn(player_one, board, game_state)
             player_one_illegal_moves += illegal_moves_one
-            if board.is_game_over() or player_one_resignation:
+            if (
+                board.is_game_over()
+                or player_one_resignation
+                or player_one_failed_to_find_legal_move
+            ):
                 break
 
             (
@@ -282,7 +286,11 @@ def play_game(player_one: Player, player_two: Player, max_games: int = 10):
                 illegal_moves_two,
             ) = play_turn(player_two, board, game_state)
             player_two_illegal_moves += illegal_moves_two
-            if board.is_game_over() or player_two_resignation:
+            if (
+                board.is_game_over()
+                or player_two_resignation
+                or player_two_failed_to_find_legal_move
+            ):
                 break
 
             print("\n", end="")
@@ -319,10 +327,11 @@ if __name__ == "__main__":
         openai.api_key = f.read().strip()
 
     for i in range(1):
+        num_games = 15
         player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
         # player_one = GPTPlayer(model="gpt-4")
         # player_one = StockfishPlayer(skill_level=i, play_time=0.1)
         # player_two = StockfishPlayer(skill_level=i, play_time=0.1)
         player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
-        play_game(player_one, player_two, 15)
+        play_game(player_one, player_two, num_games)
