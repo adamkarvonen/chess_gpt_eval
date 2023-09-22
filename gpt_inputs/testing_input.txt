@@ -1,0 +1,45 @@
+Given the sequence of moves, indicate the board state in FEN notation.
+
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 Qe7
+4. d4 c6
+5. Nc3 d6
+6. Nf3 Nxe4
+7. Nxe4 d5
+8. Be2 dxe4
+9. Nd2 f5
+10. O-O g6
+11. c4 Na6
+12. Nb3 Be6
+13. d5 Rd8
+14. Qd4 Bg7
+15. Qxa7 cxd5
+16. cxd5 Bxd5
+17. Bxa6 bxa6
+18. Qxa6 Be5
+19. Qb5+ Kf7
+20. Rd1 Qe8
+21. Qxe8+ Rhxe8
+22. Bg5 Bf6
+23. Bxf6 Kxf6
+24. Nc5 Bxa2
+25. Rxd8 Rxd8
+26. h3 Bg8
+27. Ra6+ Ke5
+28. Ra5 Rd4
+29. Nb3+ Rd5
+30. Rxd5+ Bxd5
+31. Nd2 g5
+32. Kf1 h6
+33. Ke2 Kd4
+34. g3 h5
+35. h4 gxh4
+36. gxh4 Ba2
+37. Nf1 f4
+38. Nd2 Bf7
+39. Nf1 Bc4+
+40. Ke1 Bxf1
+41. Kxf1 Kc4
+42. Ke2 Kb3
+Current Board State(FEN notation):

@@ -1,0 +1,4 @@
+openai==0.28.0
+tiktoken==0.4.0
+tenacity==8.2.3
+python-chess==1.999
