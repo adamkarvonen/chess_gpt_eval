@@ -1,0 +1,10179 @@
+game_id,transcript,result,player_one,player_two,player_one_score,player_two_score,player_one_illegal_moves,player_two_illegal_moves,player_one_resignation,player_two_resignation,player_one_failed_to_find_legal_move,player_two_failed_to_find_legal_move,game_title,number_of_moves,time_taken
+1695410287-2414,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 Nd7
+4. Nc3 Be7
+5. Bc4 c6
+6. O-O Ngf6
+7. a4 O-O
+8. Re1 Re8
+9. h3 Qc7
+10. Ba2 Nf8
+11. Ng5 d5
+12. exd5 exd4
+13. d6 Qxd6
+14. Bxf7+ Kh8
+15. Bxe8 Qc5
+16. Nce4 Qd5
+17. Bf7 Qf5
+18. g4 Qd7
+19. Bb3 Bb4
+20. Nf7+ Qxf7
+21. Bxf7 Bxe1
+22. Nxf6 Bxf2+
+23. Kxf2 Bf5
+24. gxf5 Ng6
+25. fxg6 Rc8
+26. Nxh7 Rd8
+27. Bg5 Ra8
+28. Qh5
+28. b6
+29. Nf6",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,10,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,29,17.15897798538208
+1695410310-3441,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 Bb4
+4. e5 c5
+5. a3 Bxc3+
+6. bxc3 Qc7
+7. Qg4 Kf8
+8. Bd3 Qa5
+9. Bd2 c4
+10. Be2 h5
+11. Qg3 Ne7
+12. Nf3 Bd7
+13. O-O Qd8
+14. Bg5 Ba4
+15. Bd1 Ke8
+16. Nh4 Qd7
+17. Bxe7 Qxe7
+18. Qxg7 Qf8
+19. Qxf8+ Rxf8
+20. f4 Bb5
+21. f5 b6
+22. Bxh5 Bd7
+23. fxe6 Bxe6
+24. Rf6 Kd7
+25. Raf1 Nc6
+26. Bxf7 Nd8
+27. Bxe6+ Nxe6
+28. Rxf8 Rxf8
+29. Rxf8 Nxf8
+30. g4 b5
+31. Kf2 Ne6
+32. Kg3 Nxd4
+33. cxd4 Kc6
+34. g5 c3
+35. g6 a6
+36. g7 b4
+37. g8=Q bxa3
+38. Qe6+ Kb7
+39. Qxd5+ Kb8
+40. Qb3+ Kc8
+41. Qxc3+ Kb8
+42. Qxa3 Kb7
+43. e6 Kc7
+44. e7 Kd7
+45. Qc5 Ke8
+46. d5 Kd7
+47. d6 Ke8
+48. Qc8+ Kf7
+49. e8=Q+ Kf6
+50. Qce6+ Kg5
+51. Q8g6#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,51,23.03339695930481
+1695410328-7852,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 Bg4
+4. dxc5 Nc6
+5. cxd6 Bxf3
+6. Qxf3 Nf6
+7. dxe7 Bxe7
+8. Bb5 O-O
+9. Bxc6 bxc6
+10. O-O Bd6
+11. Bg5 Qc7
+12. Bxf6 gxf6
+13. g3 Rfe8
+14. Nc3 Qb6
+15. b3 Qa5
+16. Rad1 Be5
+17. Rd3 Rad8
+18. Rfd1 h6
+19. Qg4+ Kh7
+20. Qf5+ Kg8
+21. Na4 Rxd3
+22. Rxd3 h5
+23. Qxh5 Qe1+
+24. Kg2 Qxe4+
+25. Qf3 Qxf3+
+26. Kxf3 f5
+27. Re3 c5
+28. Nxc5 Rc8
+29. Rxe5 a6
+30. Rxf5 Kh7
+31. Rxf7+ Kg8
+32. Rf5 Kh8
+33. h4 Kg7
+34. g4 Kg8
+35. h5 a5
+36. g5 Rf8
+37. Rxf8+ Kxf8
+38. h6 Ke7
+39. h7 Kf7
+40. h8=Q Kg6
+41. Qf6+ Kh5
+42. Qh6#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,42,18.117398023605347
+1695410346-1884,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 Nf6
+4. Nc3 Nc6
+5. d5 Ne5
+6. Nxe5 dxe5
+7. Bg5 Bd7
+8. Qf3 a6
+9. Qg3 b5
+10. Qxe5 b4
+11. Ne2 h6
+12. Bxf6 gxf6
+13. Qf4 e6
+14. O-O-O h5
+15. Kb1 e5
+16. Qe3 c4
+17. f4 Rc8
+18. fxe5 fxe5
+19. Ng3 Bg4
+20. Be2 Bd7
+21. Nxh5 Bc5
+22. Qg3 Bd4
+23. Qg7 Rxh5
+24. Bxh5 Ke7
+25. Qxf7+ Kd6
+26. Rhf1 b3
+27. Rf6+ Qxf6
+28. Qxf6+ Kc7
+29. cxb3 Bc5
+30. Qxe5+ Bd6
+31. Qd4 Rb8
+32. Qxc4+ Kb6
+33. Rc1 a5
+34. Qd4+ Ka6
+35. Be2+ Rb5
+36. a4 Bb4
+37. axb5+ Kb7
+38. Qg7 Bd2
+39. Qxd7+ Ka8
+40. Rc8#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,40,17.532923936843872
+1695410371-6453,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d5
+2. exd5 e6
+3. dxe6 Bxe6
+4. Nf3 Nc6
+5. Nc3 Qd7
+6. d4 O-O-O
+7. Be3 a6
+8. Bd3 Nge7
+9. O-O h6
+10. Ne4 Nf5
+11. c3 f6
+12. b4 Nxe3
+13. fxe3 f5
+14. Nc5 Bxc5
+15. bxc5 Rhf8
+16. Qe2 Bd5
+17. Rab1 Be4
+18. Bxa6 Bxb1
+19. Rxb1 Na5
+20. Ne5 Qd5
+21. Qb5 Qe4
+22. Qxa5 Qxb1+
+23. Kf2 Rf6
+24. Bd3 Qb2+
+25. Kf3 Kb8
+26. c6 Rfd6
+27. cxb7 Kxb7
+28. Nc4 Ra6
+29. Qxa6+ Kxa6
+30. Nxb2+ Kb6
+31. Nc4+ Ka6
+32. Nd6+ Kb6
+33. Nxf5 Rf8
+34. Ke4 Rh8
+35. Nxg7 Rg8
+36. Nf5 Rxg2
+37. Nxh6 Rg6
+38. Nf5 Rg4+
+39. Kf3 Rg5
+40. h4 Rg8
+41. h5 Ka7
+42. h6 Re8
+43. h7 Rh8
+44. Ne7 Re8
+45. Ng6 Rd8
+46. h8=Q Rb8
+47. Qxb8+ Kxb8
+48. e4 Kc8
+49. e5 c6
+50. e6 Kc7
+51. e7 Kd6
+52. e8=Q Kc7
+53. Qe7+ Kb8
+54. Ba6 Ka8
+55. Qb7#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,55,24.974326848983765
+1695410382-8335,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d5
+2. exd5 Qxd5
+3. Nc3 Qa5
+4. d4 Nf6
+5. Nf3 Ne4
+6. Bd3 Nxc3
+7. bxc3 a6
+8. O-O Bg4
+9. Rb1 g6
+10. Rxb7 e6
+11. Bf4 Nc6
+12. Rxc7 Qb6
+13. Be4 Bxf3
+14. Qxf3 Nxd4
+15. cxd4 g5
+16. Bc6+ Kd8
+17. Rd7+ Kc8
+18. Bc7 Bc5
+19. Bxb6 Bd6
+20. Qxf7 Bxh2+
+21. Kxh2 h6
+22. Qxe6 Ra7
+23. Rxa7+ Kb8
+24. Qd6+ Kc8
+25. Bd7#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,25,10.793117046356201
+1695410395-6950,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 e6
+3. d4 cxd4
+4. Nxd4 d6
+5. Nc3 Be7
+6. Be3 Bd7
+7. Qd2 a6
+8. O-O-O h5
+9. f4 Nf6
+10. h3 b5
+11. Bd3 Qa5
+12. Kb1 Nc6
+13. Nb3 Qc7
+14. g4 hxg4
+15. hxg4 Rxh1
+16. Rxh1 Bf8
+17. g5 Ng4
+18. Bg1 Qb7
+19. Qg2 f5
+20. exf5 exf5
+21. Nd5 O-O-O
+22. Nb6+ Kc7
+23. Nxd7 Qb8
+24. Nxb8 Kxb8
+25. Qxc6 Nf2
+26. Bxf2 Rc8
+27. Qb6+ Ka8
+28. Qa7#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,28,13.88236117362976
+1695410412-7083,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 e6
+3. d4 cxd4
+4. Nxd4 a6
+5. Bd3 Qa5+
+6. Nc3 Bb4
+7. Bd2 Qc7
+8. O-O d6
+9. Ncb5 Qa5
+10. Nxd6+ Kd7
+11. Nc4 Qc7
+12. Bxb4 Nc6
+13. Nxc6 Kxc6
+14. Bd6 Bd7
+15. Bxc7 Kxc7
+16. Ne5 Ne7
+17. Nxf7 Rhc8
+18. Ne5 Ba4
+19. b3 Nc6
+20. Nxc6 Bxc6
+21. Qg4 b5
+22. Qxg7+ Kb8
+23. Qxh7 Ra7
+24. Qh5 Rg8
+25. Qe5+ Ka8
+26. Qxe6 Rb8
+27. Qxc6+ Rbb7
+28. e5 Kb8
+29. Be4 Rd7
+30. Rad1 Ra8
+31. Rxd7 Ra7
+32. Qb6+ Kc8
+33. Qd8#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,33,16.362834930419922
+1695410434-2778,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d5
+2. exd5 e6
+3. dxe6 Bxe6
+4. Nf3 Bc5
+5. d4 Bd6
+6. c4 Bb4+
+7. Nc3 c6
+8. Be2 Ne7
+9. O-O Bxc3
+10. bxc3 O-O
+11. Ba3 Bg4
+12. Re1 Re8
+13. Ne5 Bf5
+14. Bh5 g6
+15. Bg4 h5
+16. Bxf5 Nxf5
+17. Qf3 f6
+18. Nxg6 Nxd4
+19. Rxe8+ Qxe8
+20. cxd4 Qxg6
+21. Re1 c5
+22. Bxc5 Na6
+23. Qxb7 Rb8
+24. Qxa6 Re8
+25. Rxe8+ Qxe8
+26. h3 f5
+27. Qxa7 Qe1+
+28. Kh2 Qxf2
+29. Qb8+ Kh7
+30. Qc7+ Kg8
+31. Qd8+ Kh7
+32. Qe7+ Kh8
+33. Qf8+ Kh7
+34. Qf7+ Kh8
+35. Bd6 Qxd4
+36. Qxh5+ Kg7
+37. Qg5+ Kh7
+38. Qxf5+ Kg8
+39. Qg6+ Kh8
+40. Qh5+ Kg7
+41. Be5+ Qxe5+
+42. Qxe5+ Kf7
+43. c5 Kg6
+44. c6 Kh6
+45. c7 Kg6
+46. c8=Q Kh6
+47. Qce6+ Kh7
+48. Qc7+ Kh8
+49. Qec8#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,49,21.862546920776367
+1695410449-4128,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d6
+2. d4 e5
+3. Nf3 exd4
+4. Nxd4 a6
+5. Nc3 Nf6
+6. Bg5 Be7
+7. Qd2 c5
+8. Nf3 O-O
+9. O-O-O b5
+10. Bxf6 Bxf6
+11. Qxd6 Nd7
+12. Nd5 c4
+13. Nxf6+ gxf6
+14. Nd4 Ne5
+15. Qxd8 Nd3+
+16. cxd3 Rxd8
+17. dxc4 Bg4
+18. f3 Be6
+19. Nxe6 Rdb8
+20. Nc7 Ra7
+21. Nd5 Rba8
+22. cxb5 f5
+23. b6 Rc8+
+24. Kb1 Kg7
+25. bxa7 fxe4
+26. Nb6 Rc6
+27. a8=Q Rxb6
+28. Qxe4 Rb5
+29. Bxb5 h6
+30. Rd7 Kg8
+31. Qe8+ Kh7
+32. Qxf7+ Kh8
+33. Qg7#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,33,15.852885007858276
+1695410466-8328,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 exd4
+4. Nxd4 c5
+5. Nb3 Nf6
+6. Nc3 Be6
+7. Bg5 a6
+8. Qd2 Nc6
+9. O-O-O b5
+10. f3 Be7
+11. Kb1 Rc8
+12. g4 b4
+13. Nd5 Nxd5
+14. exd5 Ne5
+15. Bxe7 Qxe7
+16. dxe6 fxe6
+17. Qxd6 Kf7
+18. Qxe5 Rhd8
+19. Bc4 Ke8
+20. Qxe6 Rxd1+
+21. Rxd1 Qxe6
+22. Bxe6 Rb8
+23. Nxc5 Rd8
+24. Rxd8+ Kxd8
+25. Nxa6 g5
+26. Nxb4 h6
+27. a4 Ke8
+28. a5 Ke7
+29. Bf5 Kd8
+30. a6 Ke7
+31. a7 Kd6
+32. a8=Q Kc7
+33. Qc6+ Kd8
+34. Qd7#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,34,16.612080097198486
+1695410484-6807,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 Nf6
+3. Nc3 c5
+4. d5 Be7
+5. d6 Bf8
+6. e5 Nc6
+7. exf6 Nd4
+8. fxg7 Bxg7
+9. Nf3 b6
+10. Nxd4 cxd4
+11. Nb5 Qf6
+12. Nc7+ Kd8
+13. Nxa8 Bf8
+14. Qf3 Qg7
+15. Bf4 Qg6
+16. Bd3 Qf6
+17. Bg3 Bg7
+18. Qxf6+ Bxf6
+19. Nc7 Bb7
+20. O-O-O h6
+21. Rhe1 Kc8
+22. Be5 Bxe5
+23. Rxe5 Rg8
+24. g3 Rh8
+25. Rh5 Kb8
+26. Re1 f6
+27. f4 f5
+28. h3 Bf3
+29. Rh4 Kb7
+30. g4 Rb8
+31. gxf5 a5
+32. fxe6 b5
+33. exd7 Rg8
+34. Rxh6 Ka7
+35. Ne6 Bc6
+36. d8=Q Kb7
+37. Qc7+ Ka8
+38. Qxc6+ Kb8
+39. Qc7+ Ka8
+40. Be4#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,40,17.61609411239624
+1695410513-3977,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 e6
+3. d4 d5
+4. exd5 exd5
+5. Bb5+ Nc6
+6. O-O Nf6
+7. Re1+ Be6
+8. Ng5 Qd7
+9. Nxe6 fxe6
+10. Bg5 Be7
+11. Bxf6 gxf6
+12. Qh5+ Kd8
+13. Qf7 Kc7
+14. Bxc6 bxc6
+15. Qxe6 Bd6
+16. Qxd7+ Kxd7
+17. dxc5 Rhe8
+18. Rxe8 Rxe8
+19. Nd2 Bxc5
+20. Kf1 a5
+21. Re1 Be7
+22. Nb3 Rb8
+23. Rb1 a4
+24. Nd4 Bc5
+25. Ne2 Kc7
+26. b3 axb3
+27. axb3 h5
+28. Ng3 h4
+29. Nf5 Rh8
+30. Re1 h3
+31. g3 Kd7
+32. f4 Ra8
+33. Ke2 Ke6
+34. Nh4 Bb4
+35. Rd1 Bd6
+36. Kf3 Bc7
+37. Kg4 Ba5
+38. Kxh3 Rh8
+39. Kg2 Re8
+40. Kf3 Rh8
+41. Ra1 Bb6
+42. Ra6 Rb8
+43. Ng2 f5
+44. Ne3 Bxe3
+45. Kxe3 Kd7
+46. Ra7+ Kc8
+47. Rf7 Ra8
+48. Rf8+ Kb7
+49. Rxa8 Kxa8
+50. h4 Ka7
+51. h5 Ka6
+52. h6 Ka5
+53. h7 c5
+54. h8=Q Kb6
+55. Qf6+ Ka5
+56. Qxf5 Kb4
+57. Qxd5 Kc3
+58. Qxc5+ Kb2
+59. b4 Kb1
+60. b5 Kc1
+61. b6 Kd1
+62. b7 Ke1
+63. b8=Q Kd1
+64. Qb1+",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,64,29.730405807495117
+1695410538-7660,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 b6
+3. Nc3 a6
+4. Nf3 d6
+5. Bd3 c5
+6. O-O Be7
+7. Re1 Nd7
+8. Bf4 Ngf6
+9. e5 Nh5
+10. exd6 Nxf4
+11. dxe7 Qxe7
+12. Be4 Ra7
+13. Qd2 Ng6
+14. d5 Nf6
+15. dxe6 Bxe6
+16. Bc6+ Kf8
+17. Rad1 Kg8
+18. Ng5 Nf8
+19. Qd8 Qxd8
+20. Rxd8 Bc4
+21. b3 Rc7
+22. Bf3 Rd7
+23. Rb8 Bb5
+24. Nxb5 axb5
+25. Bc6 Rd2
+26. h3 Nd7
+27. Rd8 g6
+28. Bxd7 Rxd7
+29. Rb8 b4
+30. Ree8 Kg7
+31. Rxb6 h6
+32. Ne4 Ne6
+33. Rxh8 Rd1+
+34. Kh2 Kxh8
+35. Rc6 Kg7
+36. Nxc5 Nf4
+37. Na6 Rf1
+38. Nxb4 g5
+39. a4 Rxf2
+40. a5 Rxg2+
+41. Kh1 Rd2
+42. a6 h5
+43. a7 Kh7
+44. a8=Q Ne6
+45. Rxe6 Rh2+
+46. Kxh2 fxe6
+47. Qe4+ Kg8
+48. Qxe6+ Kg7
+49. Nd5 Kh7
+50. Qf6 Kg8
+51. Ne7+ Kh7
+52. Qg6+ Kh8
+53. Qg8#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,53,24.541083812713623
+1695410557-9833,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d5
+2. exd5 Qxd5
+3. Nc3 Qd7
+4. d4 Nc6
+5. Nf3 a6
+6. d5 Nb4
+7. a3 Nxd5
+8. Nxd5 Qe6+
+9. Be2 Qc6
+10. Ne5 Qd6
+11. Bf4 e6
+12. Ng6 hxg6
+13. Bxd6 Bxd6
+14. Nb6 Kf8
+15. Nxa8 f5
+16. Nxc7 Bxc7
+17. Qd4 Ne7
+18. Qc5 Rxh2
+19. Rxh2 Bxh2
+20. g3 e5
+21. Qxe5 Bg1
+22. Qc5 Bd7
+23. O-O-O Be6
+24. Rd8+ Kf7
+25. Qc7 a5
+26. Qxb7 Ba2
+27. Rd7 Kf6
+28. Rxe7 Bd5
+29. Qxd5 Kxe7
+30. Qxa5 Kf6
+31. Qb6+ Ke5
+32. Qc5+ Ke6
+33. Qc6+ Ke5
+34. Qxg6 Kd5
+35. Qxf5+ Kc6
+36. Qg6+ Kb7
+37. Qxg7+ Kc8
+38. Qf8+ Kc7
+39. Qe7+ Kc8
+40. Ba6+ Kb8
+41. Qb7#",1-0,gpt-3.5-turbo-instruct,Stockfish 0,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 0,41,18.809296131134033
+1695410578-6185,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Qe7
+3. Nc3 c6
+4. d4 d6
+5. Bc4 Nd7
+6. O-O a6
+7. a4 exd4
+8. Nxd4 g6
+9. f4 Nh6
+10. f5 a5
+11. Bf4 Nf6
+12. Qd2 gxf5
+13. Bxh6 Bxh6
+14. Qxh6 Ng4
+15. Qg7 Kd7
+16. Nxf5 Qe5
+17. Qxg4 Kc7
+18. Qg7 Qe8
+19. Bxf7 Qe5
+20. Qxe5 dxe5
+21. Rad1 Bxf5
+22. Rxf5 Rhf8
+23. Be6 Rad8
+24. Rxf8 Rxd1+
+25. Nxd1 Kd6
+26. Bf5 h6
+27. Rf6+ Kc7
+28. Rxh6 Kb6
+29. Re6 Kc5
+30. Rxe5+ Kd4
+31. Re7 b5
+32. axb5 Kc5
+33. bxc6 Kxc6
+34. Ra7 Kb5
+35. Rxa5+ Kxa5
+36. h4 Kb6
+37. h5 Kc5
+38. h6 Kb5
+39. h7 Ka5
+40. h8=Q Kb4
+41. Qc3+ Kb5
+42. Bd7+ Kb6
+43. Qc6+ Ka7
+44. Qb5 Ka8
+45. Bc6+ Ka7
+46. Qb7#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,46,20.483553647994995
+1695410595-9805,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 Nf6
+2. e5 Nd5
+3. d4 Nb6
+4. c4 e6
+5. Nc3 d5
+6. c5 Nc4
+7. b3 Na5
+8. Bd3 Nac6
+9. Nf3 b6
+10. cxb6 axb6
+11. O-O Be7
+12. Be3 Ba6
+13. Bxa6 Nxa6
+14. Rc1 Nab4
+15. a4 Qd7
+16. Nb5 Rc8
+17. Qd2 Ra8
+18. Rc3 h6
+19. Rfc1 Ra5
+20. Ne1 Ra8
+21. Nd3 Nxd3
+22. Qxd3 Nb4
+23. Qd2 c6
+24. Nd6+ Bxd6
+25. exd6 g5
+26. f4 f6
+27. fxg5 hxg5
+28. Rf1 Qg7
+29. Rcc1 c5
+30. dxc5 Rxh2
+31. Kxh2 Qh8+
+32. Kg1 Qh4
+33. Bf2 Qf4
+34. Qxf4 bxc5
+35. Qxf6 Nc6
+36. Qxe6+ Kf8
+37. Bxc5+ Kg7
+38. Rf7+ Kg8
+39. Qg6+ Kh8
+40. Qg7#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,40,17.067601919174194
+1695410608-1579,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d5
+2. exd5 e6
+3. dxe6 f5
+4. d4 Qe7
+5. d5 a5
+6. Nf3 c6
+7. c4 Na6
+8. Nc3 Nc5
+9. Be3 Bxe6
+10. dxe6 Nf6
+11. Be2 Rd8
+12. Qc2 Ng4
+13. Bxc5 Qxc5
+14. O-O Be7
+15. h3 O-O
+16. hxg4 fxg4
+17. Nh2 Bd6
+18. Nxg4 h5
+19. Ne3 Rde8
+20. Ne4 Bh2+
+21. Kxh2 Qd4
+22. Rad1 Qe5+
+23. Kg1 Rxe6
+24. Ng3 g6
+25. c5 Qxe3
+26. fxe3 h4
+27. Bc4 Re8
+28. Qxg6+ Kh8
+29. Bxe6 b5
+30. Qh6#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,30,13.123847961425781
+1695410620-3829,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 Nd7
+4. Nc3 a6
+5. Bc4 Be7
+6. O-O c6
+7. a4 Qc7
+8. Re1 Ngf6
+9. h3 h6
+10. Be3 Nb6
+11. Bb3 Nbd7
+12. Qd2 O-O
+13. Rad1 Re8
+14. Nh4 Nh5
+15. Nf5 Ndf6
+16. g4 Bxf5
+17. exf5 Nf4
+18. Bxf4 exf4
+19. Qxf4 Rac8
+20. h4 Qd7
+21. g5 Nh5
+22. Qg4 hxg5
+23. Qxh5 Bf6
+24. hxg5 c5
+25. g6 Rxe1+
+26. Rxe1 Rc7
+27. Qh7+ Kf8
+28. Qh8#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,28,11.53843903541565
+1695410629-3246,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 a6
+4. Nf3 Be7
+5. Bd3 c5
+6. dxc5 Nc6
+7. O-O d4
+8. Na4 Nf6
+9. e5 Nd7
+10. Bf4 Bxc5
+11. Nxc5 Nxc5
+12. Re1 Nxd3
+13. Qxd3 b5
+14. Rad1 h6
+15. Nxd4 Qxd4
+16. Qxd4 Nxd4
+17. Rxd4 Ra7
+18. Red1 Bb7
+19. Rd8+ Ke7
+20. R1d7#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,20,9.294628143310547
+1695410645-6425,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 c5
+3. Nf3 cxd4
+4. Nxd4 a6
+5. c4 Bc5
+6. Nb3 Bf8
+7. Nc3 Nc6
+8. Be2 b6
+9. O-O Be7
+10. Be3 Nf6
+11. f4 d6
+12. Bf3 Bb7
+13. Qe2 Qc7
+14. Rac1 O-O
+15. Nd5 Qb8
+16. Nxb6 Ra7
+17. g4 Bd8
+18. g5 Ne8
+19. Nd7 Qc8
+20. Nxf8 Kxf8
+21. Bxa7 Kg8
+22. Be3 a5
+23. Nd4 g6
+24. Nxc6 Qxc6
+25. e5 Qc8
+26. Bxb7 Qxb7
+27. Qg2 d5
+28. cxd5 exd5
+29. Rfd1 Bc7
+30. Qxd5 Bb6
+31. Qxb7 Bxe3+
+32. Kg2 Kh8
+33. Qxf7 h5
+34. Qxe8+ Kh7
+35. Rc7#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,35,15.777162075042725
+1695410660-8799,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 d6
+4. Nf3 Bg4
+5. Nc3 Be7
+6. d4 c5
+7. d5 a6
+8. a4 Nbd7
+9. Be2 O-O
+10. O-O Re8
+11. Nd2 Ne5
+12. f4 Ng6
+13. Bxg4 b5
+14. axb5 Nxf4
+15. Rxf4 Nxg4
+16. Qxg4 Bf6
+17. bxa6 Re5
+18. Nf3 c4
+19. Nxe5 Bxe5
+20. Rf5 Qb8
+21. Bh6 Qc7
+22. Rxe5 f6
+23. Re6 Kh8
+24. Bf4 Qb6+
+25. Kh1 Qxb2
+26. Rb1 Qxb1+
+27. Nxb1 f5
+28. Qxf5 h5
+29. Qxh5+ Kg8
+30. Re8+ Rxe8
+31. Qxe8+ Kh7
+32. a7 c3
+33. a8=Q g5
+34. Qh5+ Kg7
+35. Qah8#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,35,15.52510380744934
+1695410676-5137,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 c5
+3. d5 d6
+4. Nc3 Nf6
+5. Nf3 Be7
+6. Bb5+ Nbd7
+7. dxe6 fxe6
+8. Ng5 e5
+9. Ne6 Qb6
+10. Nxg7+ Kf7
+11. Nf5 Nf8
+12. Bc4+ Be6
+13. Nd5 Bxd5
+14. Bxd5+ Ke8
+15. O-O Ng6
+16. Ng7+ Kd8
+17. Ne6+ Kc8
+18. c4 Rg8
+19. g3 Nxd5
+20. cxd5 Nf8
+21. Nxf8 Rxf8
+22. Qg4+ Kc7
+23. Qg7 Rfe8
+24. Bg5 Qb4
+25. Bxe7 Qxe4
+26. Bf6+ Kb6
+27. Qd7 Ka6
+28. Qxd6+ b6
+29. Rfe1 Qc4
+30. Bxe5 Rad8
+31. Qc6 Re7
+32. Re3 Qb4
+33. Ra3+ Qxa3
+34. bxa3 c4
+35. Rb1 Rf7
+36. Rb4 h6
+37. Ra4#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,37,15.891647100448608
+1695410688-8375,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Bc5
+4. c3 f5
+5. d4 exd4
+6. cxd4 Bb4+
+7. Bd2 a6
+8. Bxc6 Bxd2+
+9. Nbxd2 Qe7
+10. Ba4 b5
+11. Bc2 Nf6
+12. O-O Bb7
+13. exf5 O-O
+14. Re1 Qxe1+
+15. Qxe1 Nd5
+16. Bb3 Rxf5
+17. Qe4 Raf8
+18. g4 Rf4
+19. Bxd5+ Bxd5
+20. Qxd5+ R4f7
+21. Ng5 a5
+22. Nxf7 Rc8
+23. Nh6+ Kf8
+24. Qf7#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,24,11.62777328491211
+1695410703-2164,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 Be7
+3. Nc3 a6
+4. Nf3 b5
+5. Bd3 c5
+6. dxc5 Qa5
+7. O-O Nc6
+8. Be3 Bb7
+9. a3 Nf6
+10. b4 Qc7
+11. h3 O-O
+12. Qd2 Nh5
+13. g4 Nf6
+14. Bf4 Qc8
+15. e5 Ne8
+16. Ne4 a5
+17. c3 f6
+18. exf6 Nxf6
+19. Nd6 Qc7
+20. Nxb5 Qc8
+21. Nd6 Qb8
+22. b5 Nd8
+23. Ne5 Bd5
+24. c4 Bb7
+25. Bc2 Nh5
+26. gxh5 Qc7
+27. Qd3 Rf5
+28. Nxf5 exf5
+29. Qxf5 g6
+30. hxg6 Ba6
+31. gxh7+ Kh8
+32. Ng6+ Kxh7
+33. Nxe7+ Kh8
+34. Qh7#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,34,15.10672402381897
+1695410736-4912,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 h6
+3. Nf3 d6
+4. Nc3 Bd7
+5. Bc4 Ne7
+6. O-O g5
+7. Be3 Bg7
+8. Qd2 Ng6
+9. Rad1 a6
+10. a4 Qe7
+11. Rfe1 Nc6
+12. d5 Na5
+13. Ba2 g4
+14. Nd4 c5
+15. dxc6 Nxc6
+16. Nxc6 Bxc6
+17. Qxd6 Qxd6
+18. Rxd6 Rc8
+19. Bb3 Ne5
+20. Red1 Bf6
+21. Bd4 Kf8
+22. Ne2 Rg8
+23. Ng3 Rg5
+24. Be3 Ke8
+25. Bxg5 hxg5
+26. c3 Rb8
+27. Bc2 Ke7
+28. b4 Rh8
+29. Bb3 Rc8
+30. c4 Be8
+31. c5 Nc6
+32. b5 Nb4
+33. bxa6 Nxa6
+34. Rb6 Bc6
+35. Bc4 Nxc5
+36. Bb5 Kf8
+37. Bxc6 Rxc6
+38. Rxc6 bxc6
+39. a5 Ke7
+40. Rc1 Nd3
+41. Rxc6 Kd7
+42. Rc3 Bxc3
+43. a6 Kc8
+44. Ne2 Be5
+45. g3 Bg7
+46. Kg2 Be5
+47. f4 gxf4
+48. gxf4 Nxf4+
+49. Nxf4 Bxf4
+50. h3 gxh3+
+51. Kxh3 Kb8
+52. Kg4 Be5
+53. Kg5 Bd4
+54. Kh6 Be5
+55. Kh7 Ka7
+56. Kg8 f5
+57. exf5 exf5
+58. Kf7 f4
+59. Ke6 Ba1
+60. Kf5 f3
+61. Ke4 f2
+62. Kd5 Kxa6
+63. Kc4 f1=Q+
+64. Kb3 Bd4
+65. Kb4 Bg1
+66. Kc3 Ba7
+67. Kb4 Qd3
+68. Ka4 Qc4+
+69. Ka3 Qc2
+70. Kb4 Bd4
+71. Ka3 Qc3+
+72. Ka4 Qc2+
+73. Kb4 Bb6
+74. Ka3 Bc5#",0-1,gpt-3.5-turbo-instruct,Stockfish 1,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,75,33.09530687332153
+1695410749-1792,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Bc5
+5. O-O d6
+6. c3 Nf6
+7. d4 b5
+8. Bc2 Ba7
+9. h3 Rb8
+10. Be3 Bb6
+11. Nbd2 h6
+12. Re1 Nh7
+13. Nf1 Ng5
+14. N1h2 exd4
+15. cxd4 Ba5
+16. Re2 Nxf3+
+17. Nxf3 Ne7
+18. d5 Bb6
+19. Nd4 a5
+20. Rc1 Ng6
+21. Nc6 Qh4
+22. Nxb8 Bxh3
+23. gxh3 Qxh3
+24. Qf1 Qg4+
+25. Kh2 Nf4
+26. Bxf4 Qxf4+
+27. Kh3 Qf3+
+28. Kh4 g5#",0-1,gpt-3.5-turbo-instruct,Stockfish 1,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,29,12.96284818649292
+1695410776-6799,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d6
+2. d4 Nf6
+3. Nc3 e5
+4. Nf3 Nc6
+5. Bb5 exd4
+6. Nxd4 Bd7
+7. O-O a6
+8. Bxc6 bxc6
+9. Re1 Be7
+10. e5 dxe5
+11. Rxe5 O-O
+12. Bg5 Bd6
+13. Re1 c5
+14. Nf3 Re8
+15. Rxe8+ Qxe8
+16. Bxf6 gxf6
+17. Nd5 Qd8
+18. Qd2 Be6
+19. Rd1 Bf8
+20. c4 Bg7
+21. Qf4 Kh8
+22. Qxc7 Qb8
+23. Qxb8+ Rxb8
+24. b3 a5
+25. Nc7 Bf8
+26. Nxe6 fxe6
+27. Rd7 a4
+28. Nd2 axb3
+29. axb3 f5
+30. f4 h6
+31. Kf2 Ra8
+32. Ke3 Kg8
+33. Nf3 Ra2
+34. Rd2 Ra7
+35. Ne5 Be7
+36. Rd7 Rxd7
+37. Nxd7 Kf7
+38. Ne5+ Kf6
+39. Kd3 Bd6
+40. Nd7+ Ke7
+41. Ne5 Bc7
+42. Kc3 h5
+43. b4 Kd6
+44. b5 h4
+45. Kd3 Bd8
+46. Ke3 Bf6
+47. Nf3 Kc7
+48. g3 Bd4+
+49. Nxd4 Kd6
+50. Nf3 hxg3
+51. hxg3 Ke7
+52. Ne5 Kf6
+53. Kf3 Kg7
+54. g4 fxg4+
+55. Kxg4 Kg8
+56. Kg5 Kf8
+57. Kf6 Kg8
+58. Kxe6 Kh8
+59. f5 Kg8
+60. f6 Kh7
+61. f7 Kh6
+62. f8=Q+ Kh7
+63. Qf7+ Kh6
+64. Qg6#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,64,27.674938917160034
+1695410795-3028,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 Be7
+3. Nf3 c5
+4. d5 Qc7
+5. Nc3 d6
+6. Nb5 Qd8
+7. Bf4 a6
+8. Nc3 Qc7
+9. Qd2 Nf6
+10. O-O-O e5
+11. Bg5 h6
+12. Bh4 g5
+13. Bg3 Nbd7
+14. h4 Nb6
+15. hxg5 Ng4
+16. gxh6 Nd7
+17. h7 Nf8
+18. Ng5 f6
+19. Ne6 Nxe6
+20. dxe6 Bxe6
+21. Nd5 Bxd5
+22. Qxd5 Qd7
+23. Qg8+ Bf8
+24. Qxh8 Ke7
+25. Qg8 Bh6+
+26. Rxh6 Rxg8
+27. hxg8=Q Nxh6
+28. Qg7+ Kd8
+29. Qxh6 Kc8
+30. Qxf6 Kc7
+31. Bxe5 dxe5
+32. Rxd7+ Kxd7
+33. Qxe5 Kc6
+34. Qd5+ Kb6
+35. e5 a5
+36. e6 c4
+37. e7 Ka6
+38. e8=Q b5
+39. Qexb5+ Ka7
+40. Qdb7#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,40,18.427934885025024
+1695410812-3245,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Bc5
+4. c3 Bb6
+5. d4 Nf6
+6. O-O Qe7
+7. Re1 h6
+8. h3 g5
+9. Bxc6 bxc6
+10. Nxe5 O-O
+11. Nd2 d6
+12. Nxc6 Qe6
+13. d5 Qe8
+14. Nd4 Bd7
+15. Nf1 g4
+16. Bxh6 gxh3
+17. Qf3 Qe5
+18. Bf4 h2+
+19. Nxh2 Qh5
+20. Qxh5 Nxh5
+21. Be3 Rae8
+22. f3 Bxd4
+23. Bxd4 Nf4
+24. Rad1 c5
+25. dxc6 Re7
+26. cxd7 d5
+27. exd5 Ne2+
+28. Kf2 Nxd4
+29. Rxe7 Nxf3
+30. Nxf3 Kh7
+31. Re8 Rg8
+32. Rxg8 a5
+33. d8=Q Kh6
+34. Qg5+ Kh7
+35. Qg7#",1-0,gpt-3.5-turbo-instruct,Stockfish 1,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 1,35,17.442039966583252
+1695410830-5057,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 Qa5+
+3. Nc3 d5
+4. exd5 cxd5
+5. Bd3 Nf6
+6. h3 Nc6
+7. Nf3 e6
+8. O-O a6
+9. Bd2 Qb6
+10. Na4 Qa7
+11. Be3 Bd6
+12. c4 O-O
+13. c5 Bc7
+14. a3 b6
+15. b4 b5
+16. Nc3 Kh8
+17. Qd2 Bd7
+18. Bg5 Ng8
+19. Bf4 Be8
+20. Bxc7 Qxc7
+21. Rfe1 Rb8
+22. Ne2 f6
+23. Nf4 Bd7
+24. Nxe6 Bxe6
+25. Rxe6 g5
+26. Rae1 Rbd8
+27. Bf5 Nce7
+28. Bc2 Ra8
+29. Qd3 Ng6
+30. g3 Kg7
+31. h4 g4
+32. h5 gxf3
+33. hxg6 Rab8
+34. gxh7 Rf7
+35. hxg8=Q+ Kxg8
+36. Qg6+ Kf8
+37. Qh6+ Kg8
+38. Re8+ Rf8
+39. R1e7 Qxg3+
+40. fxg3 a5
+41. Qg7#",1-0,gpt-3.5-turbo-instruct,Stockfish 2,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,41,17.35396099090576
+1695410848-1704,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Nd4
+4. Nxd4 a6
+5. Bc4 exd4
+6. O-O h5
+7. c3 Bc5
+8. cxd4 Bb6
+9. Nc3 Nh6
+10. d3 Bxd4
+11. Qxh5 d6
+12. Bg5 Bg4
+13. Qh4 f6
+14. Bxh6 Qd7
+15. h3 Be6
+16. Bxe6 Qxe6
+17. Nd5 O-O-O
+18. Rac1 c6
+19. Rc4 g5
+20. Qg3 Bxb2
+21. Rb1 Kb8
+22. Rxb2 cxd5
+23. Rcb4 Rd7
+24. exd5 Qe8
+25. Bxg5 a5
+26. Rb6 Qe1+
+27. Kh2 Rc7
+28. Bxf6 Rf8
+29. Qxd6 Qb4
+30. Rxb7+ Qxb7
+31. Rxb7+ Kxb7
+32. Qxf8 Rc8
+33. Qe7+ Ka8
+34. d6 a4
+35. d7 Rb8
+36. d8=Q Rxd8
+37. Qxd8+ Kb7
+38. Qd7+ Ka6
+39. Qc6+ Ka5
+40. Bc3#",1-0,gpt-3.5-turbo-instruct,Stockfish 2,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,40,17.846105813980103
+1695410865-3980,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 exd4
+4. Nxd4 Nd7
+5. Nc3 h6
+6. Bc4 Ne5
+7. Bb3 c6
+8. O-O Be7
+9. f4 Nd7
+10. Qh5 d5
+11. exd5 Nc5
+12. dxc6 Qxd4+
+13. Kh1 Nxb3
+14. axb3 bxc6
+15. Ra4 Qc5
+16. Qe2 Qf5
+17. Re1 Be6
+18. Qa6 Kf8
+19. Qxc6 Rc8
+20. Qb7 a5
+21. Re5 Qxc2
+22. Be3 Rd8
+23. h3 g6
+24. Bc5 Bxc5
+25. Rxc5 Kg7
+26. Rc7 Qc1+
+27. Kh2 Nf6
+28. Rxa5 Qxf4+
+29. Kh1 h5
+30. Ra4 Qc1+
+31. Kh2 Ng4+
+32. hxg4 hxg4+
+33. Kg3 Qe1+
+34. Kf4 Qd2+
+35. Kg3 Qe1+
+36. Kf4 g5+
+37. Kxg5 Qe3+
+38. Rf4 Qe5+
+39. Rf5 Qxf5#",0-1,gpt-3.5-turbo-instruct,Stockfish 2,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,40,17.573260068893433
+1695410882-6745,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 c5
+3. d5 a6
+4. c4 exd5
+5. exd5 Qe7+
+6. Be2 h6
+7. Nf3 d6
+8. O-O Qc7
+9. Re1 Nf6
+10. Bd3+ Be7
+11. Qe2 Ra7
+12. Nc3 Qd8
+13. Bf4 b6
+14. h3 O-O
+15. Ne4 g5
+16. Bh2 Nxe4
+17. Qxe4 f5
+18. Qe2 Bf6
+19. Rab1 Re7
+20. Qc2 f4
+21. Rxe7 Bxe7
+22. Re1 Nd7
+23. Bh7+ Kh8
+24. Qg6 Rf6
+25. Qe4 Bf8
+26. Bf5 Kg8
+27. Be6+ Kh8
+28. h4 g4
+29. Bxg4 Ne5
+30. Nxe5 Bg7
+31. Ng6+ Kg8
+32. Ne7+ Qxe7
+33. Qxe7 Bxg4
+34. Qe8+ Rf8
+35. Qg6 Bf5
+36. Qxd6 h5
+37. Bxf4 Bd3
+38. Bh6 Bf1
+39. Qg6 b5
+40. Qxg7#",1-0,gpt-3.5-turbo-instruct,Stockfish 2,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,40,17.04787015914917
+1695410897-9770,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d5
+2. exd5 Nf6
+3. d4 Qxd5
+4. Nc3 Qa5
+5. Nf3 Ne4
+6. Bd3 Nxc3
+7. bxc3 g6
+8. O-O Nc6
+9. Rb1 a6
+10. c4 Bg7
+11. d5 Qxa2
+12. Bf4 Na5
+13. Bxc7 O-O
+14. Qe2 Bf5
+15. Bxf5 gxf5
+16. Qxe7 Rac8
+17. Bxa5 Rfe8
+18. Qxb7 Qxa5
+19. d6 Rf8
+20. d7 Rxc4
+21. Rfd1 Rxc2
+22. Qb8 Rd8
+23. Qd6 Qc7
+24. Qe7 f4
+25. Ng5 Rf8
+26. d8=Q Rxd8
+27. Rxd8+ Qxd8
+28. Qxd8+ Bf8
+29. Qd3 f5
+30. Qxc2 Kg7
+31. Qxf5 Bc5
+32. Rb7+ Kh8
+33. Qxh7#",1-0,gpt-3.5-turbo-instruct,Stockfish 2,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,33,14.703850030899048
+1695410908-6337,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d6
+2. d4 e5
+3. Nf3 Nd7
+4. Bc4 exd4
+5. Nxd4 Ngf6
+6. Nc3 Nb6
+7. Bb3 c5
+8. Nf3 a6
+9. e5 Ng4
+10. Bxf7+ Kxf7
+11. Ng5+ Kg8
+12. e6 Ne5
+13. f4 h6
+14. Nf7 Nxf7
+15. exf7+ Kh7
+16. O-O Qf6
+17. Ne4 Qxf7
+18. Ng5+ hxg5
+19. fxg5 Qg6
+20. h4 Qe8
+21. h5 Qe4
+22. g6+ Kg8
+23. Rxf8+ Kxf8
+24. Qxd6+ Qe7
+25. Qxb6 Qe1+
+26. Kh2 Rxh5#",0-1,gpt-3.5-turbo-instruct,Stockfish 2,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,27,10.756162881851196
+1695410930-8441,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Be7
+4. O-O Nd4
+5. Nxd4 exd4
+6. d3 a6
+7. Bc4 d6
+8. f4 b5
+9. Bb3 Nf6
+10. e5 Nd7
+11. e6 fxe6
+12. Bxe6 h5
+13. Qf3 Nf6
+14. Qxa8 Bxe6
+15. Qxd8+ Bxd8
+16. Re1 Kd7
+17. Nd2 Bf5
+18. Nf3 Re8
+19. Bd2 c5
+20. Rxe8 Nxe8
+21. Re1 b4
+22. a3 b3
+23. cxb3 Nc7
+24. b4 cxb4
+25. Bxb4 Nd5
+26. Nxd4 a5
+27. Nxf5 Nxf4
+28. Bxd6 Nxd3
+29. Rd1 Bb6+
+30. Kf1 Nf2
+31. Rd2 Ne4
+32. Rd3 Nf2
+33. Rd5 Ke6
+34. Rb5 Nd3
+35. Rxb6 Kxf5
+36. Rb5+ Kf6
+37. Rxa5 h4
+38. b4 g5
+39. b5 Kg6
+40. b6 g4
+41. b7 Kf7
+42. b8=Q Nc5
+43. Rxc5 h3
+44. Qf8+ Kg6
+45. Qf5+ Kh6
+46. Rc6 hxg2+
+47. Kxg2 g3
+48. Bxg3+ Kg7
+49. Qd7+ Kf8
+50. Rc8#",1-0,gpt-3.5-turbo-instruct,Stockfish 2,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,50,22.14734196662903
+1695410965-4714,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 c6
+3. Nf3 Be7
+4. Nc3 d6
+5. Bd3 Nd7
+6. O-O e5
+7. dxe5 h6
+8. exd6 Bxd6
+9. Be3 Qc7
+10. Re1 Ne7
+11. Bd4 f6
+12. Bc4 b5
+13. Be6 Ne5
+14. Bxc8 Rxc8
+15. Nxe5 Bxe5
+16. Bxe5 Qxe5
+17. Qg4 O-O
+18. Rad1 Rfd8
+19. Rd7 f5
+20. Rxd8+ Rxd8
+21. Qh4 a5
+22. f4 Qc5+
+23. Kh1 Rd4
+24. exf5 Nd5
+25. Re8+ Kh7
+26. Qg4 Ne7
+27. Ne4 Rxe4
+28. Qg6+ Nxg6
+29. fxg6+ Kxg6
+30. Rxe4 Kf7
+31. Re2 Qd5
+32. Kg1 Qd4+
+33. Kf1 a4
+34. c3 Qd5
+35. a3 Qf5
+36. g3 Qh5
+37. Ke1 Qd5
+38. Kf2 g5
+39. fxg5 Qxg5
+40. Re3 Qh5
+41. Rf3+ Kg8
+42. h4 Qg6
+43. Re3 Qf5+
+44. Kg2 Kg7
+45. Re7+ Kg8
+46. Re8+ Kf7
+47. Re2 Qh5
+48. Rf2+ Kg7
+49. Kh3 Qd5
+50. g4 c5
+51. Kg3 Qd7
+52. Rf5 Qe6
+53. Rxc5 Qd6+
+54. Kf3 Qd3+
+55. Kf4 Qd6+
+56. Re5 Qd2+
+57. Kf5 Qd7+
+58. Kf4 Kg8
+59. Rf5 Qd2+
+60. Ke5 Qxb2
+61. Kf6 Qxa3
+62. Kg6 Qb3
+63. Kxh6 Qxc3
+64. Rg5+ Kh8
+65. Rxb5 Qf6+
+66. Kh5 Qf7+
+67. Kh6 Qg7+
+68. Kh5 Qe7
+69. Rb8+ Kh7
+70. Rb5 Qe8+
+71. Kg5 Qxb5+
+72. Kf4 a3
+73. g5 a2
+74. h5 a1=Q
+75. g6+ Kh6
+76. g7 Qbe5+
+77. Kf3 Qd1+
+78. Kg2 Qg5+
+79. Kf2 Qdd2+
+80. Kf3 Qgf4#",0-1,gpt-3.5-turbo-instruct,Stockfish 2,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,81,35.14606475830078
+1695410982-9847,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 Bb4
+4. e5 c5
+5. a3 cxd4
+6. axb4 dxc3
+7. Qg4 g6
+8. Nf3 Ne7
+9. Bd3 Qc7
+10. O-O Nd7
+11. Re1 h6
+12. bxc3 a6
+13. Bd2 Nf5
+14. Qf4 g5
+15. Qg4 Nf8
+16. Nd4 Nh4
+17. Nb5 Qd8
+18. Nd6+ Qxd6
+19. exd6 b5
+20. Bxb5+ Nd7
+21. Rxe6+ fxe6
+22. Qxe6+ Kf8
+23. Bxd7 Bxd7
+24. Qf6+ Kg8
+25. Re1 Rh7
+26. Re7 Nf5
+27. Qg6+ Rg7
+28. Rxg7+ Nxg7
+29. Qxh6 Bh3
+30. Qxh3 Ne8
+31. Qe6+ Kh7
+32. d7 Nd6
+33. Qxd6 g4
+34. d8=Q Rxd8
+35. Qxd8 a5
+36. Qg5 axb4
+37. Be3 bxc3
+38. Bd4 g3
+39. Qg7#",1-0,gpt-3.5-turbo-instruct,Stockfish 2,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,39,17.24272108078003
+1695410997-4430,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 d5
+4. exd5 Nxd4
+5. Nxd4 cxd4
+6. Qxd4 a6
+7. Nc3 Nf6
+8. Bg5 e6
+9. O-O-O h6
+10. Bxf6 gxf6
+11. dxe6 Qxd4
+12. exf7+ Ke7
+13. Rxd4 Kxf7
+14. Bc4+ Kg6
+15. Re1 h5
+16. Nd5 Bc5
+17. Nf4+ Kg7
+18. Rd5 b6
+19. Nxh5+ Rxh5
+20. Rxh5 Bd6
+21. Bd3 Bg4
+22. Rh7+ Kg8
+23. h3 Bf4+
+24. Kb1 Be6
+25. Rxe6 f5
+26. Bxf5 Rb8
+27. Ree7 Kf8
+28. Ref7+ Ke8
+29. Bg6 Bh6
+30. Rh8+ Bf8
+31. Rhxf8#",1-0,gpt-3.5-turbo-instruct,Stockfish 2,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,31,14.700185775756836
+1695411010-6942,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Nd4
+4. Nxd4 a6
+5. Bc4 exd4
+6. O-O Qh4
+7. d3 Nh6
+8. Nd2 Bc5
+9. Nf3 Qh5
+10. Bf4 O-O
+11. Bxc7 d6
+12. Ba5 Bg4
+13. Bd2 Rae8
+14. h3 Bd7
+15. Ng5 Qh4
+16. g3 Bxh3
+17. gxh4 Bg4
+18. f3 Bh5
+19. Nh3 Ba7
+20. Nf4 b5
+21. Bd5 g6
+22. Nxh5 gxh5
+23. Bxh6 Rxe4
+24. fxe4 Bb6
+25. Qxh5 Kh8
+26. Bxf8 h6
+27. Qxh6+ Kg8
+28. Qg7#",1-0,gpt-3.5-turbo-instruct,Stockfish 2,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,28,13.05294418334961
+1695411025-4940,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 Nc6
+4. Bb5 Nf6
+5. Nc3 exd4
+6. Nxd4 Bd7
+7. O-O h6
+8. Re1 Ne5
+9. Bxd7+ Nexd7
+10. f4 Be7
+11. e5 dxe5
+12. fxe5 Nh7
+13. e6 Ndf6
+14. exf7+ Kxf7
+15. Be3 Qd7
+16. Qf3 Bb4
+17. Rad1 Ng5
+18. Bxg5 Bxc3
+19. Qxc3 hxg5
+20. Ne6 Qxd1
+21. Nxg5+ Kg6
+22. Rxd1 Ne4
+23. Nxe4 Rad8
+24. Qg3+ Kf7
+25. Qxc7+ Kg6
+26. Rxd8 Rxd8
+27. Qxd8 Kh7
+28. Qe7 a6
+29. Qf7 Kh6
+30. h4 b5
+31. g4 Kh7
+32. Nf6+ Kh6
+33. g5#",1-0,gpt-3.5-turbo-instruct,Stockfish 2,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,33,14.710932970046997
+1695411049-2265,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d6
+2. d4 g6
+3. Nc3 Nd7
+4. f4 c6
+5. Nf3 b5
+6. Bd3 Bg7
+7. O-O Nh6
+8. Qe1 f5
+9. e5 Qb6
+10. Kh1 Qc7
+11. Ng5 Nb6
+12. exd6 Qxd6
+13. Be3 Ng4
+14. Bg1 a6
+15. Rd1 O-O
+16. h3 Nf6
+17. Qh4 Bd7
+18. Rfe1 Nbd5
+19. Nxd5 cxd5
+20. Re5 b4
+21. Rde1 e6
+22. Nxe6 Bxe6
+23. Rxe6 Qd8
+24. Re7 Qc8
+25. R1e6 a5
+26. g4 fxg4
+27. hxg4 Rf7
+28. Rxf7 Kxf7
+29. f5 Qc7
+30. Bh2 Qd7
+31. Be5 Ra6
+32. Bxf6 Rxe6
+33. fxe6+ Kxe6
+34. Bxg7 Qxg7
+35. g5 Qf7
+36. Qg4+ Kd6
+37. Kg2 Ke7
+38. Qf3 Qe6
+39. Qe2 Kd6
+40. Qxe6+ Kxe6
+41. Kf3 Kd7
+42. Kf4 Kd6
+43. Bb5 h6
+44. gxh6 Ke6
+45. h7 Kd6
+46. h8=Q g5+
+47. Kxg5 Kc7
+48. Qf6 Kb8
+49. Qe7 Ka8
+50. Bc6+ Kb8
+51. Qb7#",1-0,gpt-3.5-turbo-instruct,Stockfish 2,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,51,23.771880865097046
+1695411061-1765,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 dxe4
+4. Nxe4 Be7
+5. Nf3 Nc6
+6. c3 h6
+7. Bd3 a5
+8. O-O Nf6
+9. Qe2 Bd6
+10. Re1 Nxe4
+11. Qxe4 Qf6
+12. Bd2 Kf8
+13. Rad1 Bd7
+14. Ne5 Qd8
+15. Qf3 Nxe5
+16. dxe5 Be7
+17. Bg6 f6
+18. exf6 gxf6
+19. Qh5 Kg7
+20. Bf7 Bc5
+21. Qg6+ Kf8
+22. Bxh6+ Rxh6
+23. Qg8+ Ke7
+24. Rxe6+ Bxe6
+25. Rxd8 Rxd8
+26. Qg7 Rd1#",0-1,gpt-3.5-turbo-instruct,Stockfish 2,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,27,12.383737087249756
+1695411073-7114,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 Nc6
+2. d4 e6
+3. Nf3 a6
+4. Bd3 Nb4
+5. O-O Nxd3
+6. Qxd3 b6
+7. Nc3 d6
+8. Bg5 Be7
+9. Bxe7 Nxe7
+10. Rfe1 Ng6
+11. Rad1 O-O
+12. Qe3 a5
+13. e5 Re8
+14. exd6 Bb7
+15. dxc7 Qxc7
+16. Ne5 Nh4
+17. f3 Rac8
+18. Qf4 Nf5
+19. g4 f6
+20. gxf5 fxe5
+21. dxe5 Rf8
+22. f6 Rxf6
+23. Qd4 Rh6
+24. Qd6 Rg6+
+25. Kf2 Rf8
+26. Qxc7 Rxf3+
+27. Ke2 Rg2#",0-1,gpt-3.5-turbo-instruct,Stockfish 2,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 2,28,11.966037034988403
+1695411096-4477,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d5
+2. exd5 Qxd5
+3. Nc3 Qe6+
+4. Be2 c6
+5. d4 g6
+6. Nf3 Nf6
+7. O-O Qd6
+8. Ne5 Bg7
+9. Bf4 Nd5
+10. Nxd5 cxd5
+11. Bb5+ Nd7
+12. Nxd7 Qxf4
+13. Nb6+ Kd8
+14. Nxa8 h5
+15. c3 h4
+16. Qf3 Qxf3
+17. gxf3 Bf5
+18. Rfe1 Bh6
+19. Re5 h3
+20. Rxd5+ Kc8
+21. Re1 Kb8
+22. Rxe7 a6
+23. Bc4 Bf4
+24. Nb6 Rh7
+25. Rd8+ Ka7
+26. Nd5 Bg5
+27. Ree8 Bxd8
+28. Rxd8 Rh5
+29. Ne3 Bb1
+30. Bxf7 Rb5
+31. b4 Rf5
+32. Nxf5 gxf5
+33. Rh8 Bd3
+34. Rxh3 a5
+35. bxa5 Be2
+36. Rh5 Bxf3
+37. Rxf5 Bh1
+38. Kxh1 Ka8
+39. h4 b6
+40. axb6 Kb7
+41. h5 Kxb6
+42. h6 Ka6
+43. h7 Kb7
+44. h8=Q Kc7
+45. Qe5+ Kd8
+46. Qd6+ Kc8
+47. Rc5+ Kb7
+48. Bd5+ Ka7
+49. Ra5#",1-0,gpt-3.5-turbo-instruct,Stockfish 3,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,49,21.594112873077393
+1695411114-1265,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 c5
+3. d5 g6
+4. Nc3 Nf6
+5. Nf3 a6
+6. a4 Bg7
+7. Be2 d6
+8. O-O h6
+9. Nd2 exd5
+10. exd5 Nbd7
+11. Nc4 O-O
+12. Nxd6 Kh7
+13. Bf4 Nb8
+14. Nxc8 Qxc8
+15. Bf3 Re8
+16. Re1 Qd7
+17. Rxe8 Qxe8
+18. Qd2 Qh8
+19. Re1 Qf8
+20. d6 Nc6
+21. Bxc6 bxc6
+22. Re7 Re8
+23. Qe2 Rxe7
+24. dxe7 Qc8
+25. Ne4 Nh5
+26. Nd6 Qh3
+27. gxh3 Nxf4
+28. e8=Q Nxe2+
+29. Qxe2 Bxb2
+30. Qe7 Bg7
+31. Qxf7 a5
+32. Ne8 Kh8
+33. Qxg7#",1-0,gpt-3.5-turbo-instruct,Stockfish 3,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,33,18.71654176712036
+1695411144-9439,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d5
+3. Nd2 dxe4
+4. Nxe4 Nf6
+5. Nxf6+ gxf6
+6. c3 Bf5
+7. Bd3 Qa5
+8. b4 Qd5
+9. Nf3 Bxd3
+10. Qxd3 Nd7
+11. O-O Ne5
+12. Nxe5 fxe5
+13. Be3 exd4
+14. Qxd4 Qxd4
+15. Bxd4 Rg8
+16. Rfe1 a5
+17. a3 Rg6
+18. g3 Bg7
+19. Bxg7 Rxg7
+20. Kg2 axb4
+21. axb4 Rxa1
+22. Rxa1 Kd7
+23. Ra7 Rg5
+24. Rxb7+ Kd8
+25. c4 Rf5
+26. f4 Rf6
+27. Kf3 Rd6
+28. Ke3 h6
+29. c5 Rd1
+30. Rb6 Kc7
+31. Ra6 Rb1
+32. Ra7+ Kb8
+33. Rxe7 Re1+
+34. Kd4 Rxe7
+35. h3 Re1
+36. g4 h5
+37. gxh5 Ka8
+38. h6 Rh1
+39. Ke5 Rxh3
+40. Kd6 Rxh6+
+41. Kc7 f5
+42. Kb6 Kb8
+43. Ka6 Rh4
+44. Kb6 Rh6
+45. Ka6 Rh4
+46. Kb6 Rxf4
+47. Kxc6 Rxb4
+48. Kd7 f4
+49. c6 Rd4+
+50. Ke6 Kc7
+51. Ke5 Ra4
+52. Kd5 f3
+53. Kc5 Kc8
+54. Kb5 Re4
+55. Kc5 Ra4
+56. Kb5 Rg4
+57. Kc5 Kc7
+58. Kd5 f2
+59. Ke5 Rh4
+60. Kd5 f1=Q
+61. Ke5 Rb4
+62. Kd5 Rh4
+63. Ke5 Ra4
+64. Kd5 Qf5#",0-1,gpt-3.5-turbo-instruct,Stockfish 3,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,65,29.704535961151123
+1695411175-1598,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 g6
+3. d4 cxd4
+4. Nxd4 Bg7
+5. Nc3 Qa5
+6. Nb3 Bxc3+
+7. bxc3 Qc7
+8. Bd3 d6
+9. O-O Nf6
+10. f4 Qxc3
+11. Rb1 Nbd7
+12. Bb2 Qb4
+13. e5 Ne4
+14. exd6 O-O
+15. dxe7 Re8
+16. f5 Qxe7
+17. fxg6 hxg6
+18. Bxe4 Qxe4
+19. Qd2 Qe3+
+20. Qxe3 Rxe3
+21. Rbe1 Rxe1
+22. Rxe1 b6
+23. Re8+ Nf8
+24. Ba3 Bb7
+25. Rxa8 Bxa8
+26. Bxf8 Kxf8
+27. Kf2 Be4
+28. Nd4 f6
+29. g3 Bh1
+30. Ke3 g5
+31. h4 gxh4
+32. gxh4 Bd5
+33. a3 a6
+34. Kf4 Kf7
+35. Nf5 Kf8
+36. Ne3 Bb7
+37. Kf5 Kf7
+38. Ng4 Bg2
+39. Nxf6 Kg7
+40. Nd7 Bh3+
+41. Ke5 Bxd7
+42. Kd6 Bc8
+43. Kc7 Bh3
+44. Kxb6 Bc8
+45. c4 Kf6
+46. c5 Kg6
+47. c6 Kh5
+48. c7 Kxh4
+49. Ka7 Kg5
+50. Kb8 Be6
+51. c8=Q Bxc8
+52. Kxc8 a5
+53. Kb7 Kf5
+54. Kb6 a4
+55. Kb5 Kf6
+56. Kxa4 Ke7
+57. Kb5 Kd7
+58. Kb6 Kc8
+59. Ka7 Kc7
+60. a4 Kc6
+61. a5 Kc7
+62. a6 Kc8
+63. Kb6 Kb8
+64. a7+ Ka8
+65. Ka6",1/2-1/2,gpt-3.5-turbo-instruct,Stockfish 3,1/2,1/2,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,65,31.237434148788452
+1695411198-8945,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d6
+3. Nc3 g6
+4. f4 b5
+5. Nf3 b4
+6. Ne2 d5
+7. e5 Bg4
+8. Ng3 e6
+9. h3 Bf5
+10. Nxf5 exf5
+11. Bd3 Ne7
+12. O-O Nd7
+13. Bd2 Nc8
+14. Qe1 Ndb6
+15. Bxb4 Bxb4
+16. Qxb4 Nd7
+17. Rae1 Rb8
+18. Qa3 Nf8
+19. Ng5 h6
+20. Nf3 Ne6
+21. g3 a5
+22. c3 Qe7
+23. Qxe7+ Kxe7
+24. b3 h5
+25. h4 Nb6
+26. Rb1 c5
+27. Rfc1 Rhd8
+28. Kf2 a4
+29. Ke3 Rdc8
+30. Ba6 axb3
+31. Bxc8 cxd4+
+32. Nxd4 Nc4+
+33. Kd3 Nc5+
+34. Ke2 Kf8
+35. axb3 Rxc8
+36. bxc4 Ne4
+37. cxd5 Ra8
+38. Ra1 Nxg3+
+39. Kd3 Rc8
+40. c4 Ne4
+41. Ra5 g5
+42. fxg5 Rd8
+43. Nxf5 Nxg5
+44. hxg5 Ke8
+45. Ra7 h4
+46. Rh1 Kf8
+47. Rxh4 Rxd5+
+48. cxd5 Ke8
+49. Rh8#",1-0,gpt-3.5-turbo-instruct,Stockfish 3,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,49,22.72600293159485
+1695411238-7973,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 e6
+3. Nc3 d5
+4. Nf3 Nf6
+5. e5 Nfd7
+6. Bd3 Be7
+7. O-O h6
+8. Ne2 c5
+9. c3 Nc6
+10. Be3 g5
+11. Ng3 g4
+12. Nd2 h5
+13. f4 h4
+14. Ne2 h3
+15. g3 c4
+16. Bc2 Nf8
+17. f5 Bg5
+18. Nf4 exf5
+19. Qe2 Ne6
+20. Bxf5 Nxf4
+21. Bxf4 Bxf5
+22. Bxg5 Qxg5
+23. Rf4 Rg8
+24. Raf1 Ne7
+25. b3 Bd3
+26. Qf2 Bxf1
+27. Nxf1 cxb3
+28. axb3 Qh5
+29. Ne3 Rd8
+30. c4 Rc8
+31. Qe2 Qg6
+32. Nxg4 Kd7
+33. Nf6+ Kc7
+34. Nxg8 Qxg8
+35. Qh5 dxc4
+36. bxc4 Qd8
+37. Qxf7 Kb8
+38. d5 Ng8
+39. Qe6 a5
+40. Qxh3 Qb6+
+41. Kg2 Qb2+
+42. Rf2 Qxe5
+43. Qg4 Nf6
+44. Qf4 Qxf4
+45. Rxf4 Nd7
+46. h4 a4
+47. c5 Nxc5
+48. h5 Ka7
+49. h6 Rh8
+50. Rc4 Kb6
+51. Rh4 Kb5
+52. g4 a3
+53. g5 a2
+54. Rh1 Ne4
+55. Ra1 Kc4
+56. Rxa2 Nxg5
+57. Ra7 b5
+58. d6 Rxh6
+59. d7 Rd6
+60. Kg3 Ne6
+61. Kf3 b4
+62. Ke4 Nc5+
+63. Ke5 Rd3
+64. Rc7 Rxd7
+65. Rc8 b3
+66. Rb8 Rd5+
+67. Kf4 Nd7
+68. Rb7 Rb5
+69. Rc7+ Nc5
+70. Ke3 b2
+71. Rh7 Na6
+72. Rh4+ Kc3
+73. Rh1 Rb3
+74. Ke2 b1=Q
+75. Rxb1 Rxb1
+76. Ke3 Nc5
+77. Kf4 Rb5
+78. Ke5 Kd3
+79. Kd5 Ra5
+80. Kc6 Kd4
+81. Kb6 Ra6+
+82. Kb5 Rf6
+83. Kb4 Nb7
+84. Kb5 Kc3
+85. Ka4 Rb6
+86. Ka3 Ra6#",0-1,gpt-3.5-turbo-instruct,Stockfish 3,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,87,40.42923593521118
+1695411250-5737,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 cxd4
+4. Nxd4 e6
+5. Nc3 Bb4
+6. Be2 Bxc3+
+7. bxc3 Nge7
+8. O-O O-O
+9. Ba3 Nxd4
+10. cxd4 d5
+11. exd5 exd5
+12. Bf3 Be6
+13. Re1 b6
+14. c4 Re8
+15. Bxe7 Rxe7
+16. cxd5 Bc8
+17. d6 Rxe1+
+18. Qxe1 Bd7
+19. Bxa8 Ba4
+20. Qe7 Qxa8
+21. d7 Bxd7
+22. Qxd7 g6
+23. Re1 Kg7
+24. Re7 Qd5
+25. Qxd5 h5
+26. Qxf7+ Kh6
+27. h4 a5
+28. Qh7#",1-0,gpt-3.5-turbo-instruct,Stockfish 3,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,28,12.016588926315308
+1695411291-7146,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 Qe7
+4. d4 d6
+5. Nf3 Nxe4
+6. Be2 h6
+7. O-O Qd7
+8. Re1 d5
+9. c4 Bb4
+10. Bd2 Nxd2
+11. Nbxd2 O-O
+12. a3 Bxd2
+13. Qxd2 Qd8
+14. Rac1 Nd7
+15. cxd5 Nb6
+16. Bc4 Nxc4
+17. Rxc4 a5
+18. Qc3 Qxd5
+19. Rxc7 a4
+20. Ree7 b6
+21. Ne5 Be6
+22. Ng6 Rfd8
+23. Nf4 Qb3
+24. Qxb3 Bxb3
+25. Red7 Rxd7
+26. Rxd7 Rc8
+27. h3 g6
+28. Rb7 g5
+29. Nh5 Rc1+
+30. Kh2 Rc6
+31. Ng3 Rc2
+32. Rxb6 Rxf2
+33. Rxh6 Bd5
+34. Rd6 Rxg2+
+35. Kh1 Bf3
+36. Rf6 Bb7
+37. Rb6 Rxb2+
+38. Rxb7 Rxb7
+39. Kg2 Kf8
+40. Kf3 Rb2
+41. Kg4 Ra2
+42. Kxg5 Ra1
+43. h4 Rxa3
+44. Nf5 Rd3
+45. h5 Rd2
+46. h6 Kg8
+47. Kf6 a3
+48. Ne7+ Kh7
+49. Kxf7 a2
+50. Nf5 Rf2
+51. Ke6 Rxf5
+52. Kxf5 Kxh6
+53. d5 a1=Q
+54. d6 Kh5
+55. d7 Qa5+
+56. Ke6 Qd8
+57. Kd6 Kg5
+58. Kc6 Qa5
+59. Kd6 Kf6
+60. Kc6 Kg5
+61. Kd6 Kf6
+62. Kc6 Ke7
+63. d8=Q+ Qxd8
+64. Kc5 Qd2
+65. Kc4 Kd6
+66. Kb3 Ke6
+67. Kc4 Qg5
+68. Kd4 Qf4+
+69. Kd3 Ke5
+70. Kc3 Kd5
+71. Kd3 Qf2
+72. Kc3 Qd4+
+73. Kc2 Kc4
+74. Kc1 Qd7
+75. Kc2 Qg4
+76. Kd2 Qf5
+77. Ke3 Qg4
+78. Kd2 Qh3
+79. Ke2 Qf5
+80. Ke3 Kc3
+81. Ke2 Qf4
+82. Ke1 Qf7
+83. Ke2 Qf4
+84. Ke1 Kd3
+85. Kd1 Qe5
+86. Kc1 Qb8
+87. Kd1 Qh2
+88. Ke1 Qf4
+89. Kd1 Qd2#",0-1,gpt-3.5-turbo-instruct,Stockfish 3,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,90,40.49400782585144
+1695411312-3632,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Nf6
+4. O-O Bd6
+5. Re1 a6
+6. Ba4 b5
+7. Bb3 O-O
+8. c3 Bb7
+9. d4 Qe7
+10. Bg5 h6
+11. Bh4 Na5
+12. Bc2 c5
+13. d5 Rfe8
+14. Nbd2 Rf8
+15. Nf1 Rfe8
+16. Ne3 Qd8
+17. Nf5 Bf8
+18. h3 Qb6
+19. Nh2 g6
+20. Ne3 Nh7
+21. Nhg4 Bg7
+22. Qd2 d6
+23. Rf1 Rab8
+24. f4 c4
+25. fxe5 h5
+26. Nf6+ Nxf6
+27. exf6 Nb3
+28. axb3 Bh6
+29. Bf2 Qc7
+30. bxc4 Kh7
+31. Qe2 Qd8
+32. cxb5 Bc8
+33. bxa6 Bxh3
+34. gxh3 Rxb2
+35. a7 Qc8
+36. Qd3 Qb7
+37. Rfb1 Bxe3
+38. Bxe3 Rxb1+
+39. Rxb1 Qxb1+
+40. Bxb1 Rf8
+41. Qb5 Rc8
+42. Qb7 Kg8
+43. Qxc8+ Kh7
+44. Qf8 g5
+45. Qg7#",1-0,gpt-3.5-turbo-instruct,Stockfish 3,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,45,21.323214054107666
+1695411347-5637,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 Nxe4
+4. d4 Nc6
+5. Bd3 Nc5
+6. Nxc6 Nxd3+
+7. Qxd3 bxc6
+8. O-O d5
+9. Re1+ Be6
+10. f4 Be7
+11. f5 Bc8
+12. Bg5 f6
+13. Bf4 O-O
+14. Nd2 c5
+15. c3 a5
+16. Qg3 cxd4
+17. Bxc7 Qd7
+18. cxd4 Bb4
+19. Bf4 Qa7
+20. Qd3 Ba6
+21. Qe3 Rae8
+22. Qxe8 Rxe8
+23. Rxe8+ Kf7
+24. Rae1 a4
+25. a3 Bxd2
+26. Bxd2 Bd3
+27. Bb4 Qxd4+
+28. Kh1 Bxf5
+29. R8e7+ Kg8
+30. Re8+ Kf7
+31. R8e7+ Kg6
+32. R7e3 h6
+33. Bc3 Qa7
+34. Rg3+ Kh7
+35. Bb4 Qf2
+36. Rf3 Qc2
+37. Rc3 Qxb2
+38. Rc7 Be4
+39. Rg1 d4
+40. Bf8 Kg8
+41. Bxg7 d3
+42. Bxh6 Qxa3
+43. Rg7+ Kh8
+44. Rc1 Qxc1+
+45. Bxc1 d2
+46. Bxd2 Kxg7
+47. Kg1 Bg6
+48. Kf2 Be8
+49. Ke3 Bb5
+50. Kd4 a3
+51. Bc3 Bc6
+52. g3 Ba8
+53. Kc5 Bf3
+54. Kb4 Be2
+55. Kxa3 Bh5
+56. Kb4 Kh7
+57. Kc5 Bd1
+58. Kd6 Bc2
+59. Ke7 Bf5
+60. Kxf6 Bg4
+61. Kg5 Bh3
+62. Kh4 Bd7
+63. g4 Bb5
+64. Kg5 Bd3
+65. h4 Bc4
+66. Kf6 Bd3
+67. g5 Bc2
+68. h5 Bd1
+69. g6+ Kh6
+70. Bd2+ Kxh5
+71. g7 Bb3
+72. Ke7 Bd5
+73. Kf8 Kg6
+74. g8=Q+ Bxg8
+75. Kxg8",1/2-1/2,gpt-3.5-turbo-instruct,Stockfish 3,1/2,1/2,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,75,34.94975781440735
+1695411379-3652,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 Nd7
+4. Bc4 exd4
+5. Nxd4 Nb6
+6. Bb3 c5
+7. Nf3 c4
+8. Bxc4 Nxc4
+9. Qd4 Ne5
+10. Nxe5 Qa5+
+11. Nc3 dxe5
+12. Qd3 Bb4
+13. Bd2 a6
+14. O-O Ne7
+15. a3 Bxc3
+16. Bxc3 Qb6
+17. Bxe5 Qh6
+18. Rad1 Nc6
+19. Bc3 O-O
+20. f4 Qh4
+21. f5 Re8
+22. Rde1 a5
+23. Re3 Rd8
+24. Qe2 Qe7
+25. Rg3 Ne5
+26. Qh5 Ra6
+27. f6 Qc5+
+28. Kh1 g6
+29. Qxe5 Qxe5
+30. Bxe5 Re6
+31. Bc3 Rxe4
+32. Bxa5 Rde8
+33. Rd3 h5
+34. h3 Kh7
+35. Rfd1 Be6
+36. Rd8 Bf5
+37. Rxe8 Rxe8
+38. Rd8 Re2
+39. Rf8 Be6
+40. Bc3 Rxc2
+41. Rb8 Bd5
+42. Kg1 h4
+43. Kf1 g5
+44. Rd8 Bxg2+
+45. Ke1 Bxh3
+46. Rd5 Kh6
+47. Bd2 Rxd2
+48. Kxd2 Be6
+49. Rd8 h3
+50. Ke3 Kh5
+51. Kf3 g4+
+52. Kg3 Kg5
+53. Rb8 Kxf6
+54. Rxb7 Ke5
+55. Rb5+ Kd6
+56. a4 f5
+57. a5 Bd7
+58. Rb6+ Ke5
+59. a6 f4+
+60. Kh2 g3+
+61. Kg1 f3
+62. a7 h2+
+63. Kh1 f2
+64. Kg2 h1=Q+
+65. Kxh1 f1=Q#",0-1,gpt-3.5-turbo-instruct,Stockfish 3,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,66,31.5171217918396
+1695411398-6904,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 cxd4
+4. Nxd4 e6
+5. Nc3 a6
+6. Be3 h6
+7. Qd2 Bd7
+8. O-O-O b5
+9. f3 Nf6
+10. g4 Qc7
+11. h4 Be7
+12. Be2 b4
+13. Nb1 e5
+14. Nb3 a5
+15. g5 Nh5
+16. gxh6 g6
+17. f4 a4
+18. Na1 exf4
+19. Bxf4 Nxf4
+20. Qxf4 Be6
+21. Bb5+ Nd7
+22. Bxd7+ Bxd7
+23. Rhf1 Be6
+24. Nd2 Bf8
+25. Nf3 Bxh6
+26. Ng5 Bxa2
+27. Rxd6 O-O
+28. Rfd1 f6
+29. Rxf6 Qxf4+
+30. Rxf4 Rxf4
+31. b3 Rxh4
+32. Rg1 axb3
+33. Nxb3 Kh8
+34. Kb2 Bg7+
+35. Kc1 Bh6
+36. Kb2 Bg7+
+37. Kc1 Bxb3
+38. cxb3 Ra1+
+39. Kd2 Rxg1
+40. Nf7+ Kg8
+41. Nd6 Rg3
+42. Ke2 Rh2+
+43. Kf1 Rxb3
+44. Kg1 Be5
+45. Nc4 Rb1#",0-1,gpt-3.5-turbo-instruct,Stockfish 3,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,46,19.573212146759033
+1695411424-9642,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 cxd4
+4. Nxd4 a6
+5. Nc3 Bd7
+6. Be3 Nf6
+7. f3 Nc6
+8. Qd2 e6
+9. O-O-O b5
+10. g4 b4
+11. Nce2 Nxd4
+12. Nxd4 Be7
+13. h4 O-O
+14. h5 h6
+15. g5 b3
+16. axb3 Nxh5
+17. Rxh5 a5
+18. gxh6 g6
+19. h7+ Kh8
+20. Rh1 Bf6
+21. Bh6 Re8
+22. f4 Qc7
+23. Bg5 Bg7
+24. Bh6 Bf8
+25. Bxf8 Rxf8
+26. f5 exf5
+27. exf5 Bc6
+28. Nxc6 a4
+29. Qd4+ f6
+30. fxg6 d5
+31. Qxd5 axb3
+32. Qxb3 Ra1+
+33. Kd2 Qf4+
+34. Qe3 Rxd1+
+35. Ke2 Re1+
+36. Kxe1 Qxe3+
+37. Be2 Qc1+
+38. Bd1 Re8+
+39. Kf2 Qd2+
+40. Kg3 Qg5+
+41. Kf2 Qe3+
+42. Kg2 Qd2+
+43. Kg3 Qd6+
+44. Kg4 f5+
+45. Kxf5 Rf8+
+46. Kg4 Qf4+
+47. Kh3 Qh6+
+48. Kg2 Qxg6+
+49. Kh2 Qh6+
+50. Kg2 Qg5+
+51. Kh2 Rf2+
+52. Kh3 Rf4
+53. Kh2 Qh4+
+54. Kg2 Qf2+
+55. Kh3 Qe3+
+56. Kg2 Rf2+
+57. Kg1 Qg3#",0-1,gpt-3.5-turbo-instruct,Stockfish 3,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,58,25.733330965042114
+1695411448-7111,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Nf6
+4. O-O Bc5
+5. c3 Be7
+6. d4 O-O
+7. dxe5 Nxe4
+8. Re1 f5
+9. exf6 Nxf6
+10. Bg5 a5
+11. Nbd2 d5
+12. Qe2 Bc5
+13. Nb3 Bb6
+14. Rad1 Bg4
+15. h3 Bxf3
+16. Qxf3 a4
+17. Nd2 h6
+18. Bh4 Qd7
+19. Bxf6 Rxf6
+20. Qd3 Bxf2+
+21. Kh1 Bxe1
+22. Rxe1 Qf7
+23. Nf3 a3
+24. b3 Rf8
+25. c4 Ne7
+26. cxd5 Kh8
+27. Bc4 Nc8
+28. Ne5 Qh5
+29. Nd7 Qf7
+30. Nxf8 Qxf8
+31. Qe4 Rf5
+32. Bd3 g6
+33. Qd4+ Rf6
+34. Bxg6 Kg8
+35. Re8 Qxe8
+36. Bxe8 Rf1+
+37. Kh2 Na7
+38. Qg4+ Kf8
+39. Bh5 c6
+40. Qe6 Nb5
+41. Qe8+ Kg7
+42. Qg6+ Kf8
+43. Qxh6+ Kg8
+44. Qg6+ Kf8
+45. Qe8+ Kg7
+46. Qe7+ Kh8
+47. Bg6 Kg8
+48. Qh7+ Kf8
+49. Qh8+ Ke7
+50. Qe5+ Kd7
+51. Bf5+ Kd8
+52. d6 Rh1+
+53. Kxh1 c5
+54. Qe7#",1-0,gpt-3.5-turbo-instruct,Stockfish 3,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,54,24.426145792007446
+1695411470-8040,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 d6
+4. Nf3 Nxe4
+5. d4 d5
+6. Bd3 Nf6
+7. O-O Be7
+8. Re1 Nc6
+9. c3 a5
+10. Bf4 O-O
+11. Nbd2 h6
+12. h3 a4
+13. Ne5 Be6
+14. Ndf3 Ne4
+15. Bxe4 dxe4
+16. Rxe4 Nxe5
+17. Nxe5 c5
+18. Qe2 Bf5
+19. Re3 cxd4
+20. cxd4 Rc8
+21. Rd1 a3
+22. bxa3 Re8
+23. Qh5 g6
+24. Qxh6 g5
+25. Rg3 f6
+26. Bxg5 fxg5
+27. Rxg5+ Bxg5
+28. Qxg5+ Qxg5
+29. Nf3 Qg7
+30. d5 Rc2
+31. d6 Bxh3
+32. Nh4 Ree2
+33. d7 Bxd7
+34. Rf1 Re4
+35. Nf3 Ra4
+36. Ne1 Bc6
+37. g3 Qh7
+38. Ng2 Qh3
+39. f3 Rxg2#",0-1,gpt-3.5-turbo-instruct,Stockfish 3,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 3,40,21.07609987258911
+1695411509-7761,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 Nf6
+2. e5 Nd5
+3. d4 Nb6
+4. Nf3 e6
+5. Bd3 d5
+6. O-O c5
+7. c3 c4
+8. Bc2 Nc6
+9. Ng5 h6
+10. Qh5 g6
+11. Bxg6 fxg6
+12. Qxg6+ Kd7
+13. Qxe6+ Kc7
+14. Qf7+ Qe7
+15. Qh5 Rg8
+16. Nf3 Bg4
+17. Qh4 Bxf3
+18. Qxe7+ Bxe7
+19. g3 a6
+20. Bxh6 a5
+21. Nd2 Rg6
+22. Bf4 Bg4
+23. Kg2 Bf5
+24. h3 Na4
+25. g4 Rgg8
+26. Kh2 Bg6
+27. e6+ Kb6
+28. b3 Raf8
+29. Bg3 cxb3
+30. axb3 Nxc3
+31. f4 Ne2
+32. f5 Bh7
+33. Be5 Nexd4
+34. Bxd4+ Nxd4
+35. Rf4 Bxf5
+36. Rxd4 Bxe6
+37. Re1 Bd6+
+38. Kg2 Rg6
+39. Nc4+ Kc6
+40. Nxa5+ Kc7
+41. Rc1+ Kb8
+42. b4 Rgg8
+43. Nb3 Rg6
+44. Nc5 Rc8
+45. Re1 Bxc5
+46. bxc5 Rc6
+47. Kg3 Rc8
+48. h4 Rh6
+49. g5 Rg6
+50. Re5 Bf7
+51. h5 Rg7
+52. g6 Bxg6
+53. hxg6 Rc6
+54. Rexd5 Re6
+55. Rg4 Kc7
+56. Kf4 Rgxg6
+57. Rxg6 Rxg6
+58. Ke4 Rg2
+59. Kd3 b5
+60. cxb6+ Kc6
+61. Rd4 Rg1
+62. Rb4 Rg8
+63. b7 Rd8+
+64. Kc4 Kc7
+65. Kc5 Rf8
+66. Rb6 Rf5+
+67. Kd4 Rf4+
+68. Ke5 Rf8
+69. Rb1 Rb8
+70. Kd5 Rg8
+71. Kc5 Kb8
+72. Kb6 Re8
+73. Rc1 Rf8
+74. Rc6 Re8
+75. Rc7 Rh8
+76. Rc6 Re8
+77. Rc7 Rf8
+78. Rc6 Rd8
+79. Rc7 Rf8
+80. Rc6 Rg8
+81. Rc7 Rg6+
+82. Rc6 Rh6
+83. Rxh6",1/2-1/2,gpt-3.5-turbo-instruct,Stockfish 4,1/2,1/2,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,83,38.10289716720581
+1695411525-1393,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d5
+3. Nc3 dxe4
+4. Nxe4 Be6
+5. Nf3 Nf6
+6. Nxf6+ gxf6
+7. Bd3 Bg4
+8. c3 Qc7
+9. h3 Bh5
+10. Qe2 Nd7
+11. Bd2 e6
+12. O-O-O Be7
+13. g4 Bg6
+14. Nh4 Bxd3
+15. Qxd3 h6
+16. f4 O-O-O
+17. f5 Nf8
+18. Qf3 Qb6
+19. Rhe1 e5
+20. dxe5 Qa6
+21. Kb1 fxe5
+22. f6 Bc5
+23. Rxe5 Nd7
+24. Ree1 Rde8
+25. Nf5 Rxe1
+26. Rxe1 Rd8
+27. Ne7+ Kb8
+28. Bf4+ Ka8
+29. Rd1 Qb6
+30. Qd3 Qa5
+31. b4 Bxb4
+32. cxb4 Qxb4+
+33. Qb3 Qe4+
+34. Ka1 Qxf4
+35. Qxf7 Nb8
+36. Rxd8 Qc1#",0-1,gpt-3.5-turbo-instruct,Stockfish 4,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,37,16.44027590751648
+1695411542-9489,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 d6
+4. Nf3 Nxe4
+5. d4 Be7
+6. Bd3 Ng5
+7. Nxg5 Bxg5
+8. O-O O-O
+9. Qh5 h6
+10. Bxg5 Qxg5
+11. Qxg5 hxg5
+12. Nc3 c6
+13. Ne4 d5
+14. Nxg5 Bd7
+15. Rfe1 Na6
+16. Re7 Bc8
+17. Bh7+ Kh8
+18. Bd3 Nb4
+19. Nxf7+ Kg8
+20. Bg6 Bf5
+21. Bxf5 c5
+22. Be6 Nxc2
+23. Rc1 Nb4
+24. Rxc5 b5
+25. Rxb5 Rxf7
+26. Bxf7+ Kf8
+27. Rbb7 Rc8
+28. h3 a6
+29. Be6 Rc1+
+30. Kh2 Rc8
+31. Rf7+ Kg8
+32. Rxg7+ Kf8
+33. Rbf7+ Ke8
+34. Rg8#",1-0,gpt-3.5-turbo-instruct,Stockfish 4,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,34,17.16816997528076
+1695411558-7962,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 a6
+3. Nf3 c5
+4. d5 d6
+5. Nc3 Be7
+6. a4 exd5
+7. Nxd5 Be6
+8. Bc4 h6
+9. O-O Nd7
+10. Bf4 Nb6
+11. Nxb6 Qxb6
+12. Bxe6 fxe6
+13. Qd3 g5
+14. Bd2 O-O-O
+15. Bc3 e5
+16. Nd2 Nf6
+17. Nc4 Qc6
+18. f3 Kb8
+19. Ba5 Rdf8
+20. Ne3 Rhg8
+21. Nf5 c4
+22. Qd2 d5
+23. Nxe7 Qc5+
+24. Kh1 Qxe7
+25. Bb4 Qc7
+26. Bxf8 dxe4
+27. Bd6 exf3
+28. Bxc7+ Kxc7
+29. Rxf3 Ne4
+30. Qd5 Nf2+
+31. Rxf2 Kb6
+32. Qxg8 c3
+33. Qe6+ Ka7
+34. bxc3 g4
+35. Rf7 g3
+36. Qd7 h5
+37. Qxb7#",1-0,gpt-3.5-turbo-instruct,Stockfish 4,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,37,16.28911590576172
+1695411587-6901,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d6
+2. d4 g6
+3. Nc3 a6
+4. f4 Bg7
+5. Nf3 Bg4
+6. Be3 e6
+7. h3 Bxf3
+8. Qxf3 Ne7
+9. O-O-O d5
+10. g4 dxe4
+11. Nxe4 Nd7
+12. Bc4 Nb6
+13. Bb3 h5
+14. f5 hxg4
+15. hxg4 gxf5
+16. Rxh8+ Bxh8
+17. gxf5 Nxf5
+18. Bg5 Qc8
+19. Qh5 Bg7
+20. d5 Nxd5
+21. Bxd5 exd5
+22. Rxd5 Qe6
+23. Qh7 Qxd5
+24. Qg8+ Kd7
+25. Qxa8 Qxe4
+26. Qd8+ Kc6
+27. Qd1 Bd4
+28. c3 Bb6
+29. b3 Bf2
+30. Kb2 Ba7
+31. Qf1 b5
+32. Qd1 Kb7
+33. Qf1 Nd6
+34. Bf4 Ne8
+35. Bd2 f6
+36. Qh3 Nd6
+37. Qf1 Qd5
+38. Qe2 Ne4
+39. Bf4 f5
+40. Qh2 Qd7
+41. Qe2 Qc6
+42. Qd3 Bc5
+43. b4 Bb6
+44. a3 Qe6
+45. Qe2 Qd7
+46. Qf3 Ka7
+47. Qe2 Kb7
+48. Qf3 Qd5
+49. Qe2 a5
+50. Qf3 a4
+51. Qe2 Qb3+
+52. Kc1 Qxa3+
+53. Kc2 Qa2+
+54. Kd3 Qc4+
+55. Kc2 Qa2+
+56. Kd3 Qc4+
+57. Kc2 Qxe2+
+58. Kb1 Nxc3+
+59. Kc1 a3
+60. Bd2 Qd1#",0-1,gpt-3.5-turbo-instruct,Stockfish 4,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,61,28.114230155944824
+1695411608-4618,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Nf6
+4. d3 Bc5
+5. O-O d6
+6. c3 a6
+7. Ba4 O-O
+8. h3 Ba7
+9. Re1 b5
+10. Bc2 Ne7
+11. d4 Ng6
+12. Nbd2 Nh5
+13. Nf1 Be6
+14. Ng5 Ngf4
+15. Nxe6 fxe6
+16. Be3 exd4
+17. cxd4 Qg5
+18. Qg4 Qg6
+19. Rad1 c5
+20. dxc5 Bxc5
+21. Bxc5 dxc5
+22. Rd6 Rfd8
+23. Red1 Rf8
+24. Ne3 Rae8
+25. Rxa6 c4
+26. Rb6 Qf6
+27. Rxb5 Nxh3+
+28. Qxh3 Qxf2+
+29. Kh2 Qf4+
+30. Kg1 Ng3
+31. Ng4 Ne2+
+32. Kh1 e5
+33. Rb7 h5
+34. Qxh5 Ng3+
+35. Kg1 Nxh5
+36. Rdd7 Kh8
+37. Bd1 Qg3
+38. Nh6 Rf2
+39. Nf7+ Kg8
+40. Nh6+ gxh6
+41. Rg7+ Nxg7
+42. Rxg7+ Kxg7
+43. Bf3 Rxf3
+44. Kh1 Rd8
+45. gxf3 Rd2
+46. f4 Qg2#",0-1,gpt-3.5-turbo-instruct,Stockfish 4,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,47,21.710681200027466
+1695411655-7706,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 d6
+4. Nf3 Nxe4
+5. d4 Be7
+6. Bd3 Nf6
+7. O-O Na6
+8. c4 Bd7
+9. Nc3 O-O
+10. Re1 Nb4
+11. Bb1 Bg4
+12. h3 Bxf3
+13. Qxf3 Qd7
+14. a3 Nc6
+15. Be3 Rfe8
+16. Bf5 Qd8
+17. Rad1 h6
+18. b4 a6
+19. Bc2 d5
+20. Nxd5 Nxd5
+21. cxd5 Na7
+22. Qf5 g6
+23. Qf3 Bg5
+24. Bxg5 hxg5
+25. d6 Qxd6
+26. Bb3 Rxe1+
+27. Rxe1 Rf8
+28. Qxb7 Nb5
+29. Qe4 Nxa3
+30. d5 Nb5
+31. Qe5 Qxe5
+32. Rxe5 Kg7
+33. Rxg5 Ra8
+34. Rg4 Rb8
+35. Rc4 Rb6
+36. Rc6 Nd6
+37. Rxc7 Nb7
+38. Rc6 Rxb4
+39. Bc4 Na5
+40. Rc7 Nxc4
+41. d6 Nxd6
+42. Rc6 Rd4
+43. Rxa6 Rd1+
+44. Kh2 Rd2
+45. f3 Kh6
+46. Ra4 Kg7
+47. Ra6 Nc4
+48. Ra4 Ne3
+49. Kg3 Kh6
+50. Rh4+ Kg7
+51. Re4 Rxg2+
+52. Kf4 Nf1
+53. Re1 Rf2
+54. Kg4 Nd2
+55. Kg3 Rf1
+56. Re2 Rxf3+
+57. Kg2 Rd3
+58. Kf2 f5
+59. Ke1 Ne4
+60. Kf1 Rxh3
+61. Kg2 Rh4
+62. Kf3 Rg4
+63. Ke3 g5
+64. Kd4 Kh7
+65. Ke5 Kg6
+66. Ra2 Nf6
+67. Ra6 Re4+
+68. Kd6 g4
+69. Kc5 g3
+70. Ra1 Rf4
+71. Rg1 Kf7
+72. Kd6 Rf3
+73. Ke5 Kg6
+74. Ke6 Re3+
+75. Kd6 Rc3
+76. Ke5 Re3+
+77. Kd4 Ng4
+78. Kd5 f4
+79. Kd4 Nf6
+80. Kc5 Kg5
+81. Kd4 Kg6
+82. Kc5 Kf5
+83. Kd4 Re4+
+84. Kd3 Kg4
+85. Kd2 f3
+86. Kd3 f2
+87. Rf1 Re1
+88. Rxf2 gxf2
+89. Kd2 f1=Q
+90. Kc3 Re3+
+91. Kd4 Qd3+
+92. Kc5 Re1
+93. Kc6 Qd7+
+94. Kc5 Qd3
+95. Kc6 Qd5+
+96. Kc7 Rc1+
+97. Kb6 Nd7+
+98. Ka6 Ra1#",0-1,gpt-3.5-turbo-instruct,Stockfish 4,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,99,46.391889810562134
+1695411669-4557,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 a6
+3. d4 d6
+4. dxc5 dxc5
+5. Qxd8+ Kxd8
+6. Nc3 e6
+7. Bf4 Ke8
+8. O-O-O Nf6
+9. e5 Nfd7
+10. Ne4 Nc6
+11. Nd6+ Bxd6
+12. exd6 h6
+13. h4 b5
+14. g4 Nb4
+15. a3 Nd5
+16. Bg3 Bb7
+17. Bg2 b4
+18. axb4 cxb4
+19. Ne5 a5
+20. Rhe1 a4
+21. Nxd7 Kxd7
+22. Bxd5 Bxd5
+23. Rxd5 exd5
+24. Re7+ Kc6
+25. Rc7+ Kb5
+26. Rxf7 b3
+27. cxb3 g5
+28. hxg5 axb3
+29. gxh6 Rac8+
+30. Kd1 Rxh6
+31. d7 Rc2
+32. d8=Q Rh1#",0-1,gpt-3.5-turbo-instruct,Stockfish 4,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,33,14.638191938400269
+1695411688-9464,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 Bb4
+4. e5 c5
+5. a3 cxd4
+6. axb4 dxc3
+7. Qg4 Kf8
+8. bxc3 h6
+9. Nf3 Ne7
+10. Bd3 Nd7
+11. O-O Qc7
+12. Re1 a6
+13. b5 Nc5
+14. Ba3 Nxd3
+15. cxd3 Kg8
+16. Bd6 Qd7
+17. c4 Kh7
+18. bxa6 Rxa6
+19. Rxa6 bxa6
+20. c5 Qb7
+21. Nd4 Qb4
+22. Qe2 Qxd4
+23. Bxe7 Re8
+24. Bd6 Bd7
+25. Qc2 Ba4
+26. Qb1 Bb5
+27. Re3 Ra8
+28. Rf3 Ra7
+29. h3 Rb7
+30. Kh2 Kg8
+31. Qc1 Bc6
+32. Rf4 Qb2
+33. Qe3 Rb4
+34. d4 Rb3
+35. Qe1 Rc3
+36. Rg4 Rc2
+37. Qe3 g5
+38. Rxg5+ hxg5
+39. Qxg5+ Kh7
+40. Bf8 Ba4
+41. Qg7#",1-0,gpt-3.5-turbo-instruct,Stockfish 4,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,41,19.05893611907959
+1695411712-4827,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 b5
+5. Bb3 Nf6
+6. O-O d6
+7. Re1 Na5
+8. c3 Nxb3
+9. axb3 h6
+10. d4 Bg4
+11. h3 Bh5
+12. Nbd2 Be7
+13. Nf1 exd4
+14. cxd4 c5
+15. Ng3 Bg6
+16. e5 Nd5
+17. exd6 Qxd6
+18. dxc5 Qxc5
+19. Ne5 O-O
+20. Nd7 Qc6
+21. Nxf8 Bc2
+22. Qf3 Bb4
+23. Re5 Rd8
+24. Nf5 Kxf8
+25. Nd4 Qd6
+26. Rxd5 Qxd5
+27. Qxd5 Rxd5
+28. Nxc2 Kg8
+29. Nxb4 Rd1+
+30. Kh2 Kf8
+31. Nxa6 Ke8
+32. Nc7+ Kd7
+33. Nxb5 Kc8
+34. Nc3 Rf1
+35. Kg3 h5
+36. h4 Kd7
+37. b4 f6
+38. b5 Kc8
+39. b6 Rh1
+40. Ra8+ Kd7
+41. b7 Rxc1
+42. b8=Q Rxc3+
+43. bxc3 g5
+44. Ra6 gxh4+
+45. Kxh4 Ke7
+46. Qb7+ Kd8
+47. Ra8#",1-0,gpt-3.5-turbo-instruct,Stockfish 4,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,47,23.140684843063354
+1695411747-1220,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d5
+2. exd5 Nf6
+3. d4 c6
+4. dxc6 Nxc6
+5. Nf3 Bg4
+6. Be2 Qc7
+7. c3 e5
+8. Nxe5 Nxe5
+9. dxe5 Qxe5
+10. Be3 Bxe2
+11. Qxe2 a6
+12. Nd2 Be7
+13. O-O Qe6
+14. Rfe1 Nd5
+15. Bd4 Qxe2
+16. Rxe2 Nf4
+17. Re4 Ne6
+18. Rae1 O-O
+19. Nf3 Rad8
+20. g3 b5
+21. Kg2 Rd5
+22. Re5 Rd6
+23. Bc5 Nxc5
+24. Rxc5 Bf6
+25. Re2 Ra8
+26. Rc7 h6
+27. Ne5 Re6
+28. f4 Rae8
+29. Rc5 g5
+30. Kf3 Bh8
+31. Rd2 Bg7
+32. Rdd5 R6e7
+33. Rc6 h5
+34. Rxa6 f6
+35. Nd3 g4+
+36. Kf2 Re2+
+37. Kf1 Rd2
+38. Nb4 Rxb2
+39. Rxh5 Rd2
+40. Rd5 Rxh2
+41. Ra7 Rh1+
+42. Kg2 Rb1
+43. Rd2 Ree1
+44. Nd5 Rg1+
+45. Kf2 Rh1
+46. Ne7+ Kf7
+47. Nf5+ Kg6
+48. Nh4+ Kh7
+49. Rdd7 Rh2+
+50. Ke3 Re1+
+51. Kd4 Rd2+
+52. Kc5 Rxd7
+53. Rxd7 Rc1
+54. Nf5 Kg6
+55. Nxg7 Rxc3+
+56. Kxb5 Rxg3
+57. a4 Rg1
+58. a5 g3
+59. Ne6 Rh1
+60. Rg7+ Kf5
+61. Nd4+ Kxf4
+62. Ne2+ Ke3
+63. Nxg3 Rb1+
+64. Kc6 Kf2
+65. Ne4+ Ke2
+66. Nc3+ Ke3
+67. Nxb1 Ke4
+68. a6 f5
+69. a7 Kd3
+70. a8=Q Ke4
+71. Qa4+ Ke5
+72. Re7+ Kf6
+73. Qh4+ Kg6
+74. Re6+ Kf7
+75. Qf6+ Kg8
+76. Re8+ Kh7
+77. Rh8#",1-0,gpt-3.5-turbo-instruct,Stockfish 4,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,77,35.61460828781128
+1695411756-7529,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d5
+2. exd5 e6
+3. dxe6 Bxe6
+4. d4 Bd6
+5. Nf3 Ne7
+6. c4 Ng6
+7. Nc3 O-O
+8. Be2 c6
+9. O-O Re8
+10. Re1 Qc8
+11. Be3 Na6
+12. a3 Bf5
+13. Qd2 h6
+14. Rad1 Bh3
+15. gxh3 Qxh3
+16. Ne5 Rxe5
+17. dxe5 Nh4
+18. Bf1 Nf3+
+19. Kh1 Qxh2#",0-1,gpt-3.5-turbo-instruct,Stockfish 4,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,20,8.348577976226807
+1695411774-1156,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 c6
+3. c4 Bb4+
+4. Bd2 Be7
+5. Nc3 d6
+6. Nf3 c5
+7. d5 h6
+8. Bd3 Bf6
+9. O-O Bxc3
+10. Bxc3 e5
+11. Nd2 Nd7
+12. f4 Ngf6
+13. fxe5 Nxe5
+14. Bxe5 dxe5
+15. Nf3 Bg4
+16. Qa4+ Qd7
+17. Qxd7+ Nxd7
+18. h3 Bxf3
+19. Rxf3 Rc8
+20. Raf1 O-O
+21. Be2 b6
+22. Ra3 Rc7
+23. Bg4 Nf6
+24. Bf3 a5
+25. Rb3 Rb8
+26. Rd1 Re7
+27. d6 Rd7
+28. Rbd3 Rdd8
+29. Kf2 Rb7
+30. Ke3 Ne8
+31. d7 Nc7
+32. Rd6 g6
+33. Bg4 a4
+34. Rc6 h5
+35. Rxc7 Rxc7
+36. Rd6 hxg4
+37. hxg4 Kg7
+38. Rxb6 Rcxd7
+39. Ra6 Kf8
+40. Rxa4 Ke8
+41. Ra5 Rd2
+42. Rxc5 R8d3#",0-1,gpt-3.5-turbo-instruct,Stockfish 4,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,43,18.255801916122437
+1695411786-8734,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Nf6
+4. d3 Bd6
+5. O-O b6
+6. Nc3 Bb7
+7. Bg5 h6
+8. Bh4 a6
+9. Ba4 g5
+10. Bg3 b5
+11. Bb3 g4
+12. Nh4 Rg8
+13. Nf5 Bc5
+14. Nxh6 Rf8
+15. Nxg4 Nh5
+16. Nxe5 Nxg3
+17. Nxc6 Bxc6
+18. hxg3 Qg5
+19. d4 Ba7
+20. Nd5 Bxd5
+21. Bxd5 c6
+22. Bb3 Rh8
+23. c3 O-O-O
+24. Qf3 Qh6
+25. Qf4 Qh2#",0-1,gpt-3.5-turbo-instruct,Stockfish 4,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,26,12.185304164886475
+1695411799-6331,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 d6
+4. Nf3 Nxe4
+5. d4 Nf6
+6. Bd3 a5
+7. O-O c6
+8. Re1+ Be7
+9. Qe2 h6
+10. c4 Bg4
+11. Nc3 Bxf3
+12. Qxf3 d5
+13. cxd5 cxd5
+14. Bf4 Nc6
+15. Nb5 Kf8
+16. Rac1 Ne8
+17. Be5 h5
+18. Bg6 Bf6
+19. Bxh5 Ra6
+20. Bg4 Rb6
+21. a4 Kg8
+22. Rc5 Nxe5
+23. dxe5 Bxe5
+24. Rxe5 Rc6
+25. Rxc6 bxc6
+26. Nd4 Nf6
+27. Nxc6 Qc7
+28. Ne7+ Kf8
+29. Qa3 Qc1+
+30. Re1 Qxe1#",0-1,gpt-3.5-turbo-instruct,Stockfish 4,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 4,31,12.610327959060669
+1695411821-5563,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 a6
+4. Nf3 Nf6
+5. Bg5 Be7
+6. e5 Ne4
+7. Bxe7 Qxe7
+8. Bd3 Nxc3
+9. bxc3 Qa3
+10. Qd2 Nc6
+11. O-O h6
+12. c4 dxc4
+13. Bxc4 b6
+14. d5 Nd8
+15. d6 Nc6
+16. dxc7 Qc5
+17. Rad1 Qe7
+18. Qd6 Bb7
+19. Rb1 b5
+20. Bd3 Rc8
+21. a4 Rxc7
+22. axb5 axb5
+23. Rxb5 Ba8
+24. Ra1 O-O
+25. Rxa8 Rxa8
+26. Qxc7 Ra1+
+27. Bf1 Qxc7
+28. Rc5 Qb7
+29. Nd2 Rd1
+30. Nb3 g5
+31. g3 Nd8
+32. Rc3 Qb5
+33. Rd3 Rb1
+34. Rxd8+ Kg7
+35. Nd2 Rc1
+36. c4 Qc5
+37. Kg2 Qxe5
+38. Bd3 Qc7
+39. Rd4 Qa7
+40. Rd8 Qb6
+41. Rd7 Qc6+
+42. Be4 Qa4
+43. Rd3 g4
+44. h3 h5
+45. hxg4 hxg4
+46. f3 Qd1
+47. fxg4 Qh1+
+48. Kf2 Qh2+
+49. Bg2 Rg1
+50. Ke3 Qxg3+
+51. Bf3 Re1+
+52. Kd4 Qe5#",0-1,gpt-3.5-turbo-instruct,Stockfish 5,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,53,22.532869815826416
+1695411848-3286,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 e6
+3. Nf3 d6
+4. c4 Be7
+5. Nc3 c5
+6. d5 Nf6
+7. Bd3 Nbd7
+8. O-O O-O
+9. h3 e5
+10. Nh2 Kh8
+11. f4 exf4
+12. Bxf4 Ne5
+13. Bxe5 dxe5
+14. Nf3 Qd6
+15. Nb5 Qb6
+16. Nxe5 a6
+17. Nc3 Qd6
+18. Nf3 Nd7
+19. Qe2 Bf6
+20. Rae1 Be5
+21. Nxe5 Nxe5
+22. Nd1 Bd7
+23. Ne3 f6
+24. Nf5 Bxf5
+25. Rxf5 h6
+26. Ref1 g6
+27. R5f2 Kh7
+28. b3 a5
+29. Bc2 Rf7
+30. Qe3 h5
+31. Qg3 Kg7
+32. Bd1 Rh8
+33. Qc3 b6
+34. a3 Re8
+35. Bc2 Ra8
+36. Qg3 Rh8
+37. Qc3 Rhf8
+38. Bd1 Rb8
+39. Qg3 Kh7
+40. Qc3 Re8
+41. Bc2 Ree7
+42. Qg3 Kh6
+43. Qf4+ Kg7
+44. Qg3 Nxc4
+45. Qxd6 Nxd6
+46. Re1 b5
+47. Rfe2 c4
+48. bxc4 bxc4
+49. Ba4 Re5
+50. Bc6 Rc7
+51. Kf2 h4
+52. Kf3 Rce7
+53. Re3 g5
+54. R1e2 Kg6
+55. Ba4 Nf5
+56. exf5+ Rxf5+
+57. Kg4 Rf4#",0-1,gpt-3.5-turbo-instruct,Stockfish 5,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,58,26.062756061553955
+1695411920-1540,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d6
+3. Nc3 Nf6
+4. f4 Qa5
+5. Bd3 Na6
+6. Nf3 Nb4
+7. O-O Bg4
+8. h3 Bxf3
+9. Qxf3 O-O-O
+10. Be3 Kb8
+11. a3 Nxd3
+12. cxd3 d5
+13. b4 Qb6
+14. e5 Ne8
+15. f5 e6
+16. fxe6 fxe6
+17. Qf7 Qa6
+18. b5 cxb5
+19. Rfb1 Nc7
+20. Bg5 Rc8
+21. a4 b4
+22. Nb5 Nxb5
+23. axb5 Qxb5
+24. Qxe6 Rc3
+25. Be7 Rc6
+26. Qd7 Rc1+
+27. Rxc1 Qxd7
+28. Bd6+ Bxd6
+29. exd6 Qxd6
+30. Rc5 Qb6
+31. Rxd5 b3
+32. Rb1 g5
+33. Rxg5 Qxd4+
+34. Kh1 Qb6
+35. Rg3 Re8
+36. d4 b2
+37. Rd3 Qh6
+38. Rdd1 Rd8
+39. Rxb2 Kc8
+40. Rc2+ Kb8
+41. Rdc1 Qe6
+42. Rd2 a5
+43. Rcd1 Qf5
+44. d5 Ka7
+45. d6 b6
+46. d7 Qf6
+47. Rd6 Qh4
+48. R6d4 Qg5
+49. Rd5 Qg6
+50. Rd6 Qe4
+51. R6d4 Qg6
+52. Rd6 Qf5
+53. R6d5 Qc2
+54. R5d2 Qc5
+55. Rd5 Qe3
+56. R5d3 Qe6
+57. Rd6 Qe7
+58. R6d5 h6
+59. Rd6 Qf8
+60. R6d5 Ka6
+61. Rd6 h5
+62. R6d5 Qf7
+63. Rd6 Qh7
+64. R6d5 Qg6
+65. Rd6 Qc2
+66. R6d2 Qc5
+67. Rd5 Qc4
+68. R5d4 Qc6
+69. Rd6 Qc5
+70. R6d5 Qc2
+71. R5d2 Qc6
+72. Rd6 Qc7
+73. R6d5 Qb7
+74. R5d4 h4
+75. Rd6 Qe4
+76. R6d4 Qc6
+77. Rd6 Qe4
+78. R6d4 Qc2
+79. R4d2 Qc6
+80. Rd6 Qc3
+81. R6d3 Qc5
+82. Rd5 Qc4
+83. R5d4 Qc7
+84. Rd6 Ka7
+85. R6d5 Ka6
+86. R5d4 Kb7
+87. R4d3 Qc2
+88. R3d2 Qc6
+89. Rd6 Qc7
+90. R6d5 a4
+91. R5d4 Qc6
+92. Rd6 Qc5
+93. R6d5 Qc3
+94. R5d3 Qc5
+95. Rd5 Qc2
+96. R5d2 Qb3
+97. Rd3 Qc2
+98. R3d2 Qc6
+99. Rd6 Qc4
+100. R6d4 Qa2
+101. R4d2 Qb3
+102. Rd3 Qf7
+103. Rd4 Qe6
+104. Rxa4 Rxd7
+105. Rda1 Kc6
+106. Rc1+ Kb7
+107. Rca1 Qe3
+108. Ra7+ Kc8
+109. Ra8+ Kb7
+110. R8a7+ Kc8
+111. Ra8+ Kc7
+112. R1a7+ Kd6
+113. Ra1 Kc7
+114. R1a7+ Kd6
+115. Ra1 b5
+116. R8a6+ Ke7
+117. Rh6 Rd1+
+118. Rxd1 Qxh6
+119. Re1+ Kd7
+120. Rd1+ Kc7
+121. Kg1 Qe3+
+122. Kh1 Kc6
+123. Rf1 Qc3
+124. Kg1 Qd4+
+125. Kh1 b4
+126. Rc1+ Kb6
+127. Rb1 Kc5
+128. Rc1+ Kb6
+129. Rb1 Kc6
+130. Rc1+ Kb5
+131. Rb1 Kb6
+132. Rc1 Kb5
+133. Rb1 Qd3
+134. Re1 b3
+135. Re5+ Kc6
+136. Re6+ Kd5
+137. Re1 Qc3
+138. Rd1+ Kc6
+139. Rf1 b2
+140. Kh2 Kb5
+141. Rf5+ Kc6
+142. Rf1 Qd3
+143. Re1 Qg3+
+144. Kh1 Qxe1+
+145. Kh2 Qg3+
+146. Kh1 b1=R#",0-1,gpt-3.5-turbo-instruct,Stockfish 5,0,1,4,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,147,72.30489993095398
+1695411935-8401,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d5
+2. exd5 c6
+3. dxc6 Nxc6
+4. Nf3 g6
+5. d4 Bg7
+6. c3 Nh6
+7. Bf4 e5
+8. Nxe5 g5
+9. Nxc6 bxc6
+10. Be3 Rb8
+11. b4 a5
+12. a3 O-O
+13. Bd3 Qd6
+14. O-O Ng4
+15. g3 Qh6
+16. h4 Nxe3
+17. fxe3 gxh4
+18. Qf3 Bh3
+19. Rf2 Rfe8
+20. e4 hxg3
+21. Qxg3 c5
+22. Rh2 Rb6
+23. Rxh3 Qc1+
+24. Kh2 Rg6
+25. Qf2 axb4
+26. axb4 cxd4
+27. cxd4 Bxd4
+28. Qxd4 Qf4+
+29. Kh1 Qc1+
+30. Kh2 Qf4+
+31. Kh1 Qc1+
+32. Kh2 Qc7+
+33. Kh1 Qc1+
+34. Kh2 Qc7+
+35. Kh1 Qc1+
+36. Kh2",1/2-1/2,gpt-3.5-turbo-instruct,Stockfish 5,1/2,1/2,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,36,15.118685960769653
+1695411961-4072,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 Be7
+3. Nc3 d5
+4. Nf3 a6
+5. Bd3 Nf6
+6. e5 Ng8
+7. O-O g6
+8. Ne2 Bf8
+9. c3 a5
+10. Bg5 Be7
+11. Qd2 Bxg5
+12. Nxg5 b6
+13. f4 Nh6
+14. h3 Ba6
+15. g4 Bxd3
+16. Qxd3 a4
+17. Ng3 Nc6
+18. Qe3 Kd7
+19. f5 exf5
+20. gxf5 Nxf5
+21. Nxf5 gxf5
+22. Rxf5 Ne7
+23. Rxf7 a3
+24. b3 h6
+25. e6+ Kc8
+26. Nf3 h5
+27. Ne5 Qd6
+28. Rxe7 Qxe7
+29. Ng6 Qg7
+30. Qg5 Rg8
+31. Ne7+ Kb7
+32. Qxg7 Rxg7+
+33. Kf2 Rf8+
+34. Ke3 Rxe7
+35. Kd3 c6
+36. Re1 Rg8
+37. Re3 Ree8
+38. c4 Kb8
+39. cxd5 cxd5
+40. Re5 Rg3+
+41. Ke2 Rg6
+42. Rxd5 Rgxe6+
+43. Kd3 Rh6
+44. Kc4 Re2
+45. Kb5 Kc7
+46. Rg5 Kd6
+47. Kxb6 Rh2
+48. Ra5 Rc2
+49. Rxa3 Rc8
+50. Kb7 Rc6
+51. Ra5 Rh8
+52. Ra8 Rh7+
+53. Kb8 Rh8+
+54. Kb7 Rh7+
+55. Kb8 Rb6+
+56. Kc8 Rh8#",0-1,gpt-3.5-turbo-instruct,Stockfish 5,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,57,26.039201736450195
+1695411983-4617,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 cxd4
+4. Nxd4 g6
+5. Nc3 Nf6
+6. Be3 Bg7
+7. f3 a6
+8. Qd2 b5
+9. O-O-O h5
+10. Kb1 Bb7
+11. h3 Qc7
+12. Be2 h4
+13. Rhe1 b4
+14. Na4 Qa5
+15. b3 Nbd7
+16. a3 O-O
+17. axb4 Qc7
+18. Bh6 Bxh6
+19. Qxh6 Ne5
+20. Qxh4 Bc6
+21. Nxc6 Qxc6
+22. Qf2 Rfb8
+23. Qd4 Qe8
+24. f4 Nc6
+25. Qc3 Nxb4
+26. Bf3 Qxa4
+27. bxa4 Nbd5+
+28. Qb3 Nxe4
+29. Bxe4 Rxb3+
+30. cxb3 e6
+31. Bxd5 exd5
+32. Rxd5 Rb8
+33. Kb2 Rd8
+34. Red1 f5
+35. Rxd6 Rxd6
+36. Rxd6 Kf8
+37. Rxg6 Ke8
+38. Rxa6 Ke7
+39. Kc3 Kf7
+40. Kd4 Kf8
+41. Ke5 Kf7
+42. Kxf5 Kg7
+43. Ra7+ Kf8
+44. Ke6 Kg8
+45. Kf6 Kh8
+46. Kg6 Kg8
+47. Ra8#",1-0,gpt-3.5-turbo-instruct,Stockfish 5,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,47,22.377777814865112
+1695412016-7590,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 Bb4
+4. e5 Ne7
+5. a3 Bxc3+
+6. bxc3 O-O
+7. Bd3 c5
+8. Qh5 Ng6
+9. Nf3 cxd4
+10. Ng5 h6
+11. Nxf7 Rxf7
+12. Qxg6 Kf8
+13. a4 Nc6
+14. Ba3+ Ke8
+15. Qh7 Re7
+16. Bg6+ Kd7
+17. Bd6 a6
+18. O-O dxc3
+19. f4 Na5
+20. f5 exf5
+21. Bxf5+ Kc6
+22. Bxe7 Bxf5
+23. Qxf5 Qxe7
+24. Qg6+ Kc5
+25. Rf7 Qxe5
+26. Qxg7 Re8
+27. Rc7+ Nc6
+28. Qxe5 Rxe5
+29. Rxb7 d4
+30. Kf2 Nb4
+31. Rc1 d3
+32. Rc7+ Kd4
+33. Rd7+ Kc4
+34. cxd3+ Nxd3+
+35. Rxd3 Kxd3
+36. Rd1+ Kc4
+37. Rd6 c2
+38. Rc6+ Rc5
+39. Rxc5+ Kxc5
+40. Ke2 c1=R
+41. Kd2 Rc4
+42. Kd3 Rf4
+43. Ke3 Rh4
+44. h3 Rc4
+45. Kd3 Kb4
+46. Ke3 Kxa4
+47. Kd3 Rc8
+48. Kd4 Kb4
+49. Kd3 Rc1
+50. Kd2 Rc4
+51. Kd3 Kb5
+52. Kd2 Kc5
+53. Kd3 a5
+54. Kd2 Kb5
+55. Kd3 Rc1
+56. Kd2 Rc4
+57. Kd3 h5
+58. Kd2 h4
+59. Kd3 a4
+60. Kd2 a3
+61. Kd3 Kc5
+62. Kd2 Kb4
+63. Kd3 Kc5
+64. Kd2 a2
+65. Kd3 a1=Q
+66. Kd2 Qb2+
+67. Kd3 Qa3+
+68. Kd2 Qb3
+69. Ke2 Rc2+
+70. Kd1 Ra2+
+71. Kc1 Rc2+
+72. Kd1 Qd3+
+73. Ke1 Qd2+
+74. Kf1 Qd1#",0-1,gpt-3.5-turbo-instruct,Stockfish 5,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,75,32.205140352249146
+1695412041-7240,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Bc5
+4. c3 a6
+5. Ba4 Ba7
+6. O-O b5
+7. Bb3 Nf6
+8. d4 Qe7
+9. Bg5 h6
+10. Bh4 g5
+11. Bg3 d6
+12. dxe5 dxe5
+13. Bd5 Bd7
+14. Nxe5 Nxe5
+15. Bxa8 c6
+16. a4 Bg4
+17. Qc2 h5
+18. axb5 h4
+19. Bxe5 Qxe5
+20. Bxc6+ Kf8
+21. Rxa6 Bb8
+22. f4 gxf4
+23. Nd2 Rg8
+24. Nf3 Bxf3
+25. Rxf3 Ng4
+26. Qd2 Ne3
+27. Qd8+ Kg7
+28. Qxh4 Rh8
+29. Qf2 Rd8
+30. Ra1 Qc7
+31. Re1 Rd3
+32. Qh4 Rd1
+33. Qg5+ Kf8
+34. Rxd1 Nxd1
+35. Qh6+ Ke7
+36. Qh4+ f6
+37. Qh7+ Kd6
+38. Rd3+ Kc5
+39. Qxc7 Bxc7
+40. Rxd1 f3
+41. gxf3 Bf4
+42. Kg2 Be3
+43. h4 Kc4
+44. h5 Bb6
+45. h6 Kb3
+46. h7 Kc2
+47. Rd7 Kxb2
+48. h8=Q f5
+49. c4+ Kb1
+50. Rd1+ Kc2
+51. Qa1 Bd8
+52. Qb1+ Kc3
+53. Rd3+ Kxc4
+54. Qb3+ Kc5
+55. Rd5+ Kb6
+56. Qe3+ Kc7
+57. Rd7+ Kc8
+58. Qa7 Ba5
+59. Qb7#",1-0,gpt-3.5-turbo-instruct,Stockfish 5,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,59,25.631183862686157
+1695412075-7933,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 cxd4
+4. Nxd4 e5
+5. Nb5 d6
+6. N1c3 Nf6
+7. Bg5 a6
+8. Na3 Be6
+9. Nd5 Be7
+10. Bxf6 Bxf6
+11. c3 Rb8
+12. Nc2 Bg5
+13. a4 O-O
+14. Bc4 Bh6
+15. O-O Bg5
+16. Qd3 Kh8
+17. Rad1 Na5
+18. Ba2 Kg8
+19. b4 Nc6
+20. Bb3 Ne7
+21. Nxe7+ Bxe7
+22. Bxe6 fxe6
+23. Qh3 Qd7
+24. Ne3 Qc8
+25. c4 Rf6
+26. Rd3 Rf4
+27. f3 Rf8
+28. Rfd1 Bg5
+29. Rxd6 Bxe3+
+30. Kh1 Qxc4
+31. Qxe6+ Qxe6
+32. Rxe6 Rbd8
+33. Re1 Bd4
+34. Re7 Rf7
+35. Re6 Rc7
+36. h4 Kf7
+37. Rb6 h5
+38. a5 Bxb6
+39. axb6 Rc6
+40. b5 Rcd6
+41. bxa6 bxa6
+42. b7 Rb6
+43. Ra1 Kf8
+44. Ra5 Kg8
+45. Rxe5 Rf8
+46. Rxh5 Rb1+
+47. Kh2 Rb5
+48. Rg5 Rxg5
+49. hxg5 Rb8
+50. f4 a5
+51. f5 Kf8
+52. e5 Rxb7
+53. f6 Rb6
+54. Kh3 a4
+55. Kg4 a3
+56. Kf5 gxf6
+57. gxf6 Rb5
+58. g4 Rb8
+59. g5 Rb5
+60. g6 a2
+61. g7+ Kg8
+62. Kg6 Rb6
+63. e6 Rxe6
+64. Kf5 Rc6
+65. Kg6 Re6
+66. Kf5 Re3
+67. Kg6 Rf3
+68. f7+ Rxf7
+69. Kh6 a1=Q
+70. Kg6 Rf1
+71. Kg5 Qe5+
+72. Kg4 Qxg7+
+73. Kh3 Rf6
+74. Kh4 Rf7
+75. Kh5 Rf2
+76. Kh4 Rf1
+77. Kh3 Rh1#",0-1,gpt-3.5-turbo-instruct,Stockfish 5,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,78,33.66013693809509
+1695412113-8857,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 d6
+4. Nf3 Nc6
+5. Nc3 Bg4
+6. Be2 g6
+7. d4 a6
+8. O-O Bg7
+9. Bg5 O-O
+10. Qd2 h6
+11. Bxh6 Bxf3
+12. Bxf3 Nxd4
+13. Bxg7 Nxf3+
+14. gxf3 Kxg7
+15. Kh1 Rh8
+16. Rg1 Rh3
+17. Rg3 Qh8
+18. Rxh3 Qxh3
+19. Qf4 a5
+20. Rg1 Re8
+21. Qg3 Rh8
+22. Qxh3 Rxh3
+23. Rg3 Rh8
+24. Kg2 c6
+25. f4 Re8
+26. Re3 a4
+27. f3 d5
+28. e5 Kg8
+29. Kf2 d4
+30. Rd3 dxc3
+31. exf6 cxb2
+32. Rd1 a3
+33. c3 c5
+34. h4 Kh8
+35. Kg3 b5
+36. Kg4 Kh7
+37. Kg5 Re6
+38. h5 gxh5
+39. Kxh5 Rxf6
+40. Kg5 Rg6+
+41. Kf5 Kg7
+42. Ke5 Rg2
+43. Kd5 Rd2+
+44. Rxd2 b1=Q
+45. Kxc5 Kg6
+46. Rd6+ Kf5
+47. Rd5+ Kxf4
+48. Rd4+ Kxf3
+49. Rb4 Qd3
+50. Rxb5 Qxc3+
+51. Kb6 Qe3+
+52. Ka5 Qe6
+53. Rb3+ Kf2
+54. Rxa3 Ke2
+55. Ra4 Qd5+
+56. Kb4 Qd4+
+57. Kb5 Qd5+
+58. Kb4 f5
+59. Ra5 Qd2+
+60. Kb5 Qd6
+61. Ra6 Qd5+
+62. Kb6 Qd6+
+63. Kb5 Qd3+
+64. Kb6 Qd4+
+65. Kb5 Qe5+
+66. Kb6 f4
+67. Ra5 Qxa5+
+68. Kxa5 Ke3
+69. a4 f3
+70. Kb6 Ke2
+71. a5 f2
+72. a6 f1=Q
+73. a7 Qf3
+74. Kc7 Qa8
+75. Kb6 Qd5
+76. Kc7 Qa8
+77. Kb6 Qc8
+78. Kb5 Kd3
+79. Kb6 Qa8
+80. Ka6 Qc8+
+81. Kb6 Kc4
+82. Ka5 Qc7+
+83. Ka6 Qc6+
+84. Ka5 Kc5
+85. a8=Q Qxa8#",0-1,gpt-3.5-turbo-instruct,Stockfish 5,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,86,38.28072905540466
+1695412124-9801,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 Be7
+4. Nf3 dxe4
+5. Nxe4 h6
+6. Bd3 a5
+7. O-O Bd7
+8. Ne5 Nf6
+9. Qf3 O-O
+10. Nxf6+ Bxf6
+11. Qxb7 Bxe5
+12. Qxa8 Bf6
+13. Qe4 Re8
+14. Qh7+ Kf8
+15. b3 Bxd4
+16. Ba3+ c5
+17. Rad1 Qh4
+18. Be4 Nc6
+19. Rxd4 Qh5
+20. Rxd7 Qxh2+
+21. Kxh2 e5
+22. Qh8#",1-0,gpt-3.5-turbo-instruct,Stockfish 5,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,22,10.418561935424805
+1695412158-5163,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 h6
+5. O-O Nf6
+6. Re1 b5
+7. Bb3 Be7
+8. c3 Rb8
+9. d4 d6
+10. h3 O-O
+11. Nbd2 exd4
+12. cxd4 Nb4
+13. Nf1 c5
+14. a3 Nc6
+15. d5 Ne5
+16. Nxe5 dxe5
+17. Ng3 Ne8
+18. Bc2 Bd6
+19. Qf3 Rb7
+20. Nf5 Bxf5
+21. exf5 Nf6
+22. g4 Re8
+23. g5 hxg5
+24. Bxg5 Kf8
+25. Rad1 c4
+26. Re4 Qd7
+27. Rh4 Qd8
+28. Rh8+ Ke7
+29. Rh7 Rg8
+30. Kh1 Rc7
+31. Rg1 Qf8
+32. Qe3 Kd7
+33. Bxf6 gxf6
+34. Rxg8 Qxg8
+35. Qh6 c3
+36. b4 Be7
+37. Rh8 Qg5
+38. Qxg5 fxg5
+39. Rh6 f6
+40. Rh8 a5
+41. bxa5 Bxa3
+42. a6 Bc5
+43. Rb8 Kd6
+44. Rxb5 Bxf2
+45. Kg2 Be3
+46. Kf3 Bd4
+47. Ke4 Ra7
+48. Ra5 Bg1
+49. Bd3 Bc5
+50. Ra4 Rh7
+51. Bf1 Rh4+
+52. Kd3 Rxa4
+53. Kxc3 e4
+54. Kb3 Ra1
+55. Be2 Kxd5
+56. Bc4+ Kc6
+57. Be2 Ra3+
+58. Kc4 Rxa6
+59. Kb3 Ra1
+60. Kc4 Ra2
+61. Bg4 Ra4+
+62. Kb3 Ra3+
+63. Kc4 Ra5
+64. Kc3 Ra1
+65. Kc4 e3
+66. Kd3 Kd5
+67. Bf3+ Ke5
+68. Bg4 Ra3+
+69. Ke2 Kd4
+70. Bh5 Ra4
+71. Bg4 Ra2+
+72. Kf3 Rf2+
+73. Kg3 Bd6#",0-1,gpt-3.5-turbo-instruct,Stockfish 5,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,74,34.15620183944702
+1695412171-7639,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d5
+3. Nxe5 Bd6
+4. d4 dxe4
+5. Nc3 Ne7
+6. Nxe4 O-O
+7. Bd3 Nbc6
+8. Nxc6 bxc6
+9. O-O Ng6
+10. Qh5 Bf4
+11. Bxf4 Bg4
+12. Qxg4 Nxf4
+13. Qxf4 f6
+14. Qf5 g6
+15. Qe6+ Kh8
+16. Qxc6 Qe8
+17. Qxe8 Rfxe8
+18. Nxf6 Rf8
+19. Nd5 c6
+20. Ne3 Rab8
+21. b3 Rbe8
+22. c4 Rf4
+23. d5 c5
+24. Rae1 Rf7
+25. Ng4 Rxe1
+26. Rxe1 h6
+27. Nxh6 Rg7
+28. Re8+ Rg8
+29. Rxg8+ Kh7
+30. Rxg6 a6
+31. Ng4 a5
+32. Nf6+ Kh8
+33. Rg8#",1-0,gpt-3.5-turbo-instruct,Stockfish 5,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,33,13.351408004760742
+1695412197-3730,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d5
+3. Nd2 e6
+4. Ngf3 c5
+5. exd5 exd5
+6. Bb5+ Nc6
+7. O-O Be6
+8. Re1 Nf6
+9. Ng5 Qd7
+10. Ndf3 Be7
+11. Ne5 Qc8
+12. dxc5 O-O
+13. Bxc6 bxc6
+14. b4 Nd7
+15. Nxe6 fxe6
+16. Bb2 a5
+17. a3 Re8
+18. Qg4 Bf6
+19. Nxd7 Bxb2
+20. Nb6 Qb7
+21. Rab1 Bc3
+22. Re3 d4
+23. Rxe6 Qf7
+24. Rxe8+ Rxe8
+25. bxa5 Bxa5
+26. h3 Bc3
+27. Qd7 Qxd7
+28. Nxd7 Re2
+29. Rb6 h5
+30. Rxc6 h4
+31. Rc8+ Kf7
+32. c6 Ba5
+33. c7 Ke7
+34. Re8+ Kd6
+35. c8=Q Re1+
+36. Rxe1 Bxe1
+37. Qc5+ Kxd7
+38. Qxd4+ Kc8
+39. Qxg7 Bd2
+40. Qg4+ Kb7
+41. Qxh4 Ba5
+42. Qe7+ Ka6
+43. Qd6+ Bb6
+44. c4 Kb7
+45. c5 Ba5
+46. c6+ Kb6
+47. c7+ Kb5
+48. c8=Q Be1
+49. Qcc5+ Ka4
+50. Qdd4+ Kb3
+51. Qcc4+ Kxa3
+52. Qdc5+ Kb2
+53. Q5b5+ Ka3
+54. Qca4#",1-0,gpt-3.5-turbo-instruct,Stockfish 5,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,54,25.87447190284729
+1695412220-6475,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 a6
+3. d4 cxd4
+4. Nxd4 Nf6
+5. Nc3 Nc6
+6. Be3 Qc7
+7. Be2 e6
+8. O-O d6
+9. f4 Be7
+10. Kh1 h6
+11. Qe1 O-O
+12. Qg3 Bd7
+13. f5 Kh8
+14. fxe6 fxe6
+15. Rad1 Nxd4
+16. Bxd4 e5
+17. Be3 b5
+18. a3 Be6
+19. Qg6 Qc8
+20. Rd2 Qb7
+21. Bf3 Bg8
+22. Rfd1 Bh7
+23. Qg3 a5
+24. Nd5 Bxe4
+25. Nxf6 Rxf6
+26. Bxe4 Qxe4
+27. h3 Rc8
+28. c3 a4
+29. Re1 Kh7
+30. Bg5 Qg6
+31. Bh4 Qxg3
+32. Bxg3 Rf7
+33. Rd5 Rb8
+34. Kg1 h5
+35. Re4 g5
+36. Bf2 Kg6
+37. Be3 Kf6
+38. Rb4 Rbf8
+39. Rdxb5 Ke6
+40. Rxa4 Rf1+
+41. Kh2 Rb1
+42. Ra6 Re1
+43. Bxg5 Bxg5
+44. Rbb6 Bf4+
+45. g3 Re2+
+46. Kg1 Be3+
+47. Kh1 Re1+
+48. Kg2 Re2+
+49. Kh1 Bxb6
+50. Rxb6 Rf1#",0-1,gpt-3.5-turbo-instruct,Stockfish 5,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 5,51,22.607150077819824
+1695412242-2774,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 Bb4
+4. e5 c5
+5. a3 Ba5
+6. b4 cxb4
+7. Nb5 a6
+8. Nd6+ Kf8
+9. Qf3 f5
+10. exf6 Nxf6
+11. Nxc8 Qxc8
+12. Bd2 Nc6
+13. axb4 Nxd4
+14. Qd3 Bb6
+15. c3 Nb3
+16. Rd1 Nxd2
+17. Rxd2 a5
+18. b5 Ne4
+19. Rc2 Qc5
+20. Nh3 Rc8
+21. Qf3+ Ke7
+22. Bd3 Nxc3
+23. O-O Qb4
+24. Ng5 Rhf8
+25. Qh3 Qd6
+26. Qxh7 Qe5
+27. Qg6 Rc7
+28. Rcc1 Rxf2
+29. Rxf2 Ne2+
+30. Bxe2 Rxc1+
+31. Bf1 Qf6
+32. Qxf6+ gxf6
+33. Nf3 a4
+34. g3 Rc2
+35. Be2 Rxe2
+36. Kf1 Rxf2+
+37. Ke1 Rxf3
+38. Ke2 Rf2+
+39. Kd3 a3
+40. Kc3 Kf8
+41. Kb3 a2
+42. Kb4 Kf7
+43. Kc3 a1=Q+
+44. Kd3 Qa3#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,45,21.158029079437256
+1695412266-9630,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 a6
+3. Nf3 d5
+4. Nc3 dxe4
+5. Nxe4 Be7
+6. Bd3 h6
+7. O-O Nf6
+8. Re1 Nxe4
+9. Bxe4 c5
+10. d5 Qc7
+11. c4 Bd6
+12. Bd2 O-O
+13. Bc3 exd5
+14. Bxd5 Nc6
+15. Qd3 a5
+16. Rad1 Ne7
+17. Bxf7+ Kxf7
+18. Qxd6 Qxd6
+19. Rxd6 Re8
+20. Ne5+ Kg8
+21. Nd7 Bxd7
+22. Rxd7 Nf5
+23. Rxe8+ Rxe8
+24. Rxb7 Nd4
+25. Kf1 g5
+26. Rc7 Ne2
+27. Rxc5 Nxc3
+28. bxc3 a4
+29. Ra5 Kf7
+30. Rxa4 Rc8
+31. Ke2 Kf6
+32. Kd3 Rd8+
+33. Kc2 Rc8
+34. Kb3 Rb8+
+35. Rb4 Rf8
+36. c5 Ke6
+37. f3 Rf7
+38. c6 h5
+39. Rb7 Re7
+40. Rxe7+ Kxe7
+41. Kb4 h4
+42. Kb5 Kf7
+43. c7 Ke7
+44. c8=Q Kf6
+45. Qc6+ Ke7
+46. Kc5 Kd8
+47. Kd6 g4
+48. Qd7#",1-0,gpt-3.5-turbo-instruct,Stockfish 6,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,48,24.01741600036621
+1695412295-4530,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 Nf6
+4. Bg5 dxe4
+5. Nxe4 Be7
+6. Bxf6 gxf6
+7. Nf3 Nd7
+8. Bd3 c5
+9. O-O h5
+10. dxc5 Bxc5
+11. Nxc5 Nxc5
+12. Bb5+ Bd7
+13. Bxd7+ Nxd7
+14. Qd4 Rg8
+15. Rad1 Qc8
+16. Rd2 Qc6
+17. Rfd1 Ne5
+18. Qd8+ Rxd8
+19. Rxd8+ Ke7
+20. Rxg8 Qxc2
+21. Rgd8 Qxb2
+22. Nxe5 fxe5
+23. R8d7+ Ke8
+24. Rc7 Qb6
+25. Rc8+ Ke7
+26. h4 f5
+27. Rh8 e4
+28. Rxh5 a5
+29. Rh7+ Kf6
+30. Rdd7 Qb4
+31. Rxb7 Qe1+
+32. Kh2 Qxf2
+33. Rbf7+ Ke5
+34. h5 Qh4+
+35. Kg1 e3
+36. Rb7 Qf2+
+37. Kh2 Qh4+
+38. Kg1 Qf2+
+39. Kh2 Kf4
+40. Rhg7 e2
+41. Rb1 e1=R
+42. Rxe1 Qh4+
+43. Kg1 Qxe1+
+44. Kh2 Qh4+
+45. Kg1 Qxh5
+46. Ra7 Qd1+
+47. Kh2 Qd6
+48. Rxa5 e5
+49. Ra4+ e4
+50. g3+ Kg4
+51. Ra8 Qd2+
+52. Kh1 Qc1+
+53. Kg2 Qd2+
+54. Kh1 Kf3
+55. Ra3+ Kf2
+56. Kh2 Qd1
+57. g4 Qd6+
+58. Kh1 Qh6+
+59. Rh3 Qc1+
+60. Kh2 Qd2
+61. gxf5 Kf1+
+62. Kg3 Qg5+
+63. Kh2 Qg2#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,64,29.37987780570984
+1695412313-5734,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 d6
+2. d4 Nf6
+3. Nc3 g6
+4. Be3 a6
+5. Qd2 Bg7
+6. Bh6 Bf8
+7. Bxf8 Rxf8
+8. O-O-O Be6
+9. f4 c6
+10. Nf3 d5
+11. e5 Nfd7
+12. Ng5 Bf5
+13. Nxh7 Rh8
+14. Ng5 Qa5
+15. Kb1 Nb6
+16. h3 c5
+17. dxc5 Qxc5
+18. Nxd5 Nxd5
+19. Qxd5 Bxc2+
+20. Ka1 Bxd1
+21. Qxc5 Nd7
+22. Qd5 O-O-O
+23. Qxd1 Nxe5
+24. Qc2+ Nc6
+25. Nxf7 Kb8
+26. Nxh8 Ne5
+27. fxe5 Rxh8
+28. Qxg6 Rc8
+29. Bd3 Ka7
+30. Qe6 Rc7
+31. h4 Kb8
+32. h5 a5
+33. h6 Rc2
+34. Bxc2 Kc7
+35. h7 a4
+36. h8=Q b5
+37. Qhc8#",1-0,gpt-3.5-turbo-instruct,Stockfish 6,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,37,18.083369970321655
+1695412356-3177,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 Nf6
+4. Nc3 cxd4
+5. Nxd4 a6
+6. Bg5 e6
+7. f4 Be7
+8. Qf3 Qc7
+9. O-O-O Nbd7
+10. g4 Rb8
+11. Bxf6 Nxf6
+12. g5 Nd7
+13. f5 Ne5
+14. Qh5 g6
+15. fxg6 Nxg6
+16. Bh3 Nf4
+17. Qh6 Qa5
+18. Rhg1 Ng6
+19. Nf5 exf5
+20. exf5 Bxf5
+21. Rd5 Qb6
+22. Re1 Bxh3
+23. Qxh3 Qf2
+24. Rf1 Nf4
+25. Rxf2 Nxh3
+26. Re2 Kf8
+27. Ne4 Nf4
+28. Red2 Nxd5
+29. Rxd5 h6
+30. h4 Rc8
+31. c3 Rb8
+32. Kc2 Ra8
+33. Kd3 Rd8
+34. Kd4 b5
+35. b3 Ke8
+36. c4 Kf8
+37. cxb5 axb5
+38. Rxb5 Rc8
+39. Rd5 Rb8
+40. Nxd6 Rh7
+41. Nf5 hxg5
+42. hxg5 Rh1
+43. Ke5 Ra8
+44. Rd7 Ra5+
+45. Kf4 Re1
+46. Rb7 Ra8
+47. a4 Re8
+48. a5 Rg1
+49. a6 Bxg5+
+50. Kf3 Be7
+51. a7 Bc5
+52. Rb8 Bxa7
+53. Rxe8+ Kxe8
+54. Nd6+ Kf8
+55. Nc4 Rf1+
+56. Ke4 Rh1
+57. Kd5 Rh6
+58. b4 Bb8
+59. b5 Bg3
+60. b6 Rg6
+61. b7 Re6
+62. Na5 Rb6
+63. Kc5 Rh6
+64. Nc6 Bd6+
+65. Kb6 Rh1
+66. Ka7 Ra1+
+67. Kb6 Rb1+
+68. Ka7 Ra1+
+69. Kb6 Rb1+
+70. Ka7 Bc7
+71. Ka6 Rb6+
+72. Ka7 Rxc6
+73. b8=Q+ Bxb8+
+74. Kxb8 f5
+75. Kb7 Rc1
+76. Kb6 f4
+77. Kb5 Ke8
+78. Kb4 f3
+79. Kb3 f2
+80. Kb2 Rd1
+81. Kc2 f1=Q
+82. Kc3 Ke7
+83. Kb4 Rd6
+84. Kc5 Rd1
+85. Kb4 Qd3
+86. Kc5 Kd7
+87. Kb4 Rb1+
+88. Kc5 Rb5#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,89,43.28968405723572
+1695412375-3405,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Nge7
+4. O-O Ng6
+5. c3 d5
+6. exd5 Qxd5
+7. c4 Qd6
+8. Nc3 Bg4
+9. h3 Bd7
+10. Re1 O-O-O
+11. Ne4 Qb4
+12. a3 Qe7
+13. d4 Nxd4
+14. Nxd4 Bxh3
+15. gxh3 exd4
+16. Qg4+ Kb8
+17. Bg5 Qe5
+18. Bxd8 f5
+19. Qg3 fxe4
+20. Qxe5 Nxe5
+21. Rxe4 Nf7
+22. Bh4 Bd6
+23. Rae1 c6
+24. Ba4 c5
+25. Re8+ Rxe8
+26. Rxe8+ Kc7
+27. Be7 Kb6
+28. Bxd6 Nxd6
+29. Re6 a6
+30. Rxd6+ Kc7
+31. Rd7+ Kb6
+32. Rxg7 h5
+33. f4 Ka5
+34. Bd1 b5
+35. cxb5 d3
+36. f5 axb5
+37. f6 Kb6
+38. f7 Ka6
+39. f8=Q h4
+40. Qa8+ Kb6
+41. Qb7+ Ka5
+42. Qa7#",1-0,gpt-3.5-turbo-instruct,Stockfish 6,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,42,18.113062143325806
+1695412421-6144,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 c5
+3. Nf3 d5
+4. exd5 Nf6
+5. dxe6 fxe6
+6. Be3 Nd5
+7. Bb5+ Bd7
+8. Bxd7+ Nxd7
+9. O-O Nxe3
+10. fxe3 Qb6
+11. Nc3 Be7
+12. d5 O-O
+13. dxe6 Nf6
+14. Nd5 Qxe6
+15. Nxe7+ Qxe7
+16. Qe2 Qe4
+17. Ng5 Qd5
+18. Nf3 Qe4
+19. Rad1 Rfe8
+20. Rfe1 h6
+21. h3 Rad8
+22. Rxd8 Rxd8
+23. Rd1 Rxd1+
+24. Qxd1 Qxe3+
+25. Kh1 Kh7
+26. Qd3+ Qxd3
+27. cxd3 Nd7
+28. Kg1 Kg6
+29. Kf2 Kf6
+30. Ke3 Nb6
+31. Ke4 Na4
+32. b3 Nc3+
+33. Ke3 Nxa2
+34. d4 cxd4+
+35. Kxd4 h5
+36. Ne5 Nc1
+37. Nd7+ Kg6
+38. Nc5 Kf5
+39. b4 b6
+40. Ne4 Ne2+
+41. Ke3 Ke5
+42. Ng5 Nd4
+43. Nf7+ Kd5
+44. Kd3 a5
+45. bxa5 bxa5
+46. Ng5 a4
+47. Ne4 Ne2
+48. Nd2 Ng3
+49. Nb1 Ne4
+50. Na3 Nc5+
+51. Ke3 g5
+52. g3 Ne4
+53. Kf3 Nd2+
+54. Ke3 Ne4
+55. Kf3 Kd4
+56. g4 h4
+57. Nb5+ Kc4
+58. Na3+ Kb3
+59. Nb5 Nc3
+60. Nd4+ Kc4
+61. Nc2 Nd5
+62. Ke4 Nf4
+63. Kf5 Kc3
+64. Na3 Nxh3
+65. Nb5+ Kd3
+66. Na3 Kd4
+67. Nb5+ Kc4
+68. Na3+ Kd3
+69. Nb5 Ke3
+70. Na3 Kd3
+71. Nb5 Kc4
+72. Na3+ Kd4
+73. Nb5+ Kd3
+74. Na3 Ke3
+75. Nc4+ Kf2
+76. Na3 Ke3
+77. Nc4+ Kf2
+78. Na3 Kg3
+79. Nc4 Nf2
+80. Kxg5 h3
+81. Kf5 Ne4
+82. Kxe4 Kf2
+83. g5 h2
+84. g6 h1=Q+
+85. Kf5 Qd5+
+86. Ne5 Qg8
+87. Kf6 a3
+88. g7 a2
+89. Ng4+ Ke2
+90. Nh6 a1=Q+
+91. Kg6 Qe8+
+92. Kh7 Qb1+
+93. Nf5 Qe6
+94. Kh8 Qh1+
+95. Nh6 Qexh6+
+96. Kg8 Qe6+
+97. Kf8 Qf6+
+98. Kg8 Qd8+
+99. Kf7 Qg1
+100. Ke6 Qg8+
+101. Kf5 Q8xg7
+102. Ke4 Q1g4+
+103. Kd5 Q4d7+
+104. Kc4 Qdd4+
+105. Kb5 Qb7+
+106. Ka5 Qbb6#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,107,46.94447112083435
+1695412445-7929,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 e6
+3. d4 a6
+4. d5 Nf6
+5. Nc3 Qc7
+6. e5 Nxd5
+7. Nxd5 exd5
+8. Qxd5 Qc6
+9. Bc4 Qxd5
+10. Bxd5 Nc6
+11. O-O h6
+12. c3 b5
+13. Be3 Be7
+14. Rad1 Ra7
+15. b4 Nd8
+16. bxc5 Nc6
+17. Nd4 Nxd4
+18. Bxd4 Rc7
+19. f4 O-O
+20. f5 Bxc5
+21. f6 g6
+22. Rf3 Re8
+23. Rg3 Kf8
+24. Rh3 h5
+25. g4 d6
+26. gxh5 Bxh3
+27. hxg6 fxg6
+28. Rd3 Bf5
+29. Rg3 Rh7
+30. e6 Bxd4+
+31. cxd4 Bxe6
+32. Bxe6 Rxe6
+33. Rxg6 Re1+
+34. Kf2 Rc1
+35. Kg3 Rg1+
+36. Kf4 Rxg6
+37. Kf5 Rhh6
+38. Ke6 b4
+39. Kxd6 Rg2
+40. Kc5 a5
+41. d5 Rxf6
+42. d6 Rxa2
+43. d7 Ke7
+44. h4 Kxd7
+45. h5 Rh6
+46. Kb5 Rxh5+
+47. Kc4 Rc2+
+48. Kb3 Rc3+
+49. Ka4 Rc2
+50. Kb3 Rc3+
+51. Ka4 Ra3#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,52,23.984188079833984
+1695412469-7596,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 Be7
+4. Nf3 a6
+5. Bd3 dxe4
+6. Nxe4 Nf6
+7. O-O h6
+8. c3 Nxe4
+9. Bxe4 c5
+10. Be3 Qb6
+11. Ne5 Nd7
+12. Qg4 Kf8
+13. Nxd7+ Bxd7
+14. dxc5 Qc7
+15. Qf3 Bxc5
+16. Bxc5+ Qxc5
+17. Bxb7 Rb8
+18. b4 Qb6
+19. Be4 Qc7
+20. Rfd1 Ke7
+21. Rd3 f5
+22. Rad1 Rhd8
+23. Bxf5 exf5
+24. Qe3+ Be6
+25. Rxd8 Rxd8
+26. Rxd8 Qxd8
+27. Qa7+ Kf8
+28. Qc5+ Kg8
+29. h3 Qd5
+30. Qxd5 Bxd5
+31. a4 f4
+32. g3 Bc6
+33. a5 Bb5
+34. gxf4 Bd7
+35. Kg2 Kf7
+36. Kg3 Kf6
+37. h4 Kf5
+38. Kf3 h5
+39. Ke3 Kg4
+40. c4 Bc6
+41. Kd4 Bf3
+42. b5 Kxh4
+43. b6 Kg4
+44. Kc5 h4
+45. Kd6 h3
+46. c5 h2
+47. c6 h1=Q
+48. b7 Qh6+
+49. Kc7 Qxc6+
+50. Kb8 Qxb7#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,51,23.211047887802124
+1695412493-6844,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 dxe4
+4. Nxe4 Bd7
+5. Nf3 Bc6
+6. Bd3 Bd6
+7. O-O Nd7
+8. c4 Be7
+9. Re1 Ngf6
+10. Nc3 Bxf3
+11. Qxf3 Nb6
+12. Be3 c5
+13. d5 O-O
+14. Rad1 exd5
+15. cxd5 Bd6
+16. Bg5 h6
+17. Bh4 g5
+18. Bg3 Re8
+19. Rxe8+ Nxe8
+20. Qf5 Nf6
+21. Ne4 Nxe4
+22. Bxe4 Kf8
+23. Qh7 Qf6
+24. Bxd6+ Qxd6
+25. Qh8+ Ke7
+26. Qg7 Qf6
+27. d6+ Ke6
+28. Bd5+ Nxd5
+29. Re1+ Kxd6
+30. Qh7 b6
+31. Qd3 a6
+32. Rd1 Qe6
+33. Qg3+ Kc6
+34. Qf3 Rc8
+35. h3 a5
+36. a3 Re8
+37. b4 axb4
+38. axb4 cxb4
+39. Rc1+ Kb7
+40. Rd1 Rd8
+41. Qb3 f6
+42. Rd4 Qe1+
+43. Kh2 Qe5+
+44. g3 Qxd4
+45. Qf3 Qc4
+46. Qf5 b3
+47. Qh7+ Ka6
+48. Qb1 Qc2
+49. Qa1+ Kb7
+50. Qd4 b2
+51. Qg4 Qxf2+
+52. Kh1 b1=R+
+53. Qd1 Ne3
+54. Qxb1 Rd1+
+55. Qxd1 Qg2#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,56,24.382275819778442
+1695412515-5352,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d5
+3. Nc3 dxe4
+4. Nxe4 h6
+5. Nf3 Bf5
+6. Ng3 Bh7
+7. Bd3 Nf6
+8. Bxh7 Rxh7
+9. O-O Nbd7
+10. c4 Rh8
+11. Re1 e6
+12. d5 Bb4
+13. Bd2 Qa5
+14. dxe6 Nb6
+15. exf7+ Kxf7
+16. Ne5+ Kg8
+17. Bxb4 Qxb4
+18. Qc2 Re8
+19. a3 Qc5
+20. b4 Qd6
+21. c5 Qd4
+22. Rad1 Rxe5
+23. Rxe5 Qxe5
+24. cxb6 axb6
+25. Rd8+ Ne8
+26. Qg6 Kf8
+27. h3 Ke7
+28. Rd3 Qa1+
+29. Kh2 Rf8
+30. Re3+ Kd8
+31. Qe6 Qf6
+32. Rd3+ Kc7
+33. Qd7+ Kb8
+34. Rf3 Rh8
+35. Rxf6 gxf6
+36. Nf5 b5
+37. Nd6 Rh7
+38. Qxh7 Nxd6
+39. Qxh6 Nc8
+40. Qxf6 Nb6
+41. h4 c5
+42. bxc5 Nd7
+43. Qd6+ Kc8
+44. h5 Nf6
+45. Qxf6 Kb8
+46. Qd6+ Ka8
+47. h6 Ka7
+48. h7 Ka8
+49. h8=Q+ Ka7
+50. Qhb8#",1-0,gpt-3.5-turbo-instruct,Stockfish 6,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,50,21.942131996154785
+1695412540-8060,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 exd4
+4. Nxd4 a6
+5. Nc3 g6
+6. Be3 Nc6
+7. Qd2 Nxd4
+8. Bxd4 f6
+9. Bc4 Be7
+10. O-O-O Kf8
+11. f4 Bg4
+12. Rde1 b5
+13. Bd5 b4
+14. Ne2 Bd7
+15. Bxa8 Qxa8
+16. Ng3 h5
+17. h4 d5
+18. exd5 Qxd5
+19. Kb1 c5
+20. Be3 Qxd2
+21. Bxd2 Nh6
+22. Ne4 Kf7
+23. Be3 Rc8
+24. Rd1 Bc6
+25. Nd6+ Bxd6
+26. Rxd6 Nf5
+27. Rd3 c4
+28. Rd2 Nxe3
+29. Re1 Nxg2
+30. Rf1 Nxh4
+31. Rd6 a5
+32. Re1 Nf5
+33. Rd2 h4
+34. Rh2 Rh8
+35. b3 Re8
+36. Rxe8 Bxe8
+37. bxc4 Bc6
+38. Kb2 g5
+39. fxg5 fxg5
+40. c3 bxc3+
+41. Kxc3 Bf3
+42. c5 Bc6
+43. Kc4 g4
+44. Rf2 Ke6
+45. Re2+ Kf7
+46. Rf2 Ke6
+47. Re2+ Kf7
+48. Rf2 Kf6
+49. Rf4 Ke5
+50. Rxg4 Ne3+
+51. Kd3 Nxg4
+52. Ke2 Kf4
+53. Kf1 h3
+54. Kg1 h2+
+55. Kf1 Bf3
+56. Ke1 Ke3
+57. c6 a4
+58. c7 h1=Q#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,59,24.942036867141724
+1695412574-6024,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 Nc6
+4. Nxc6 bxc6
+5. Nc3 d5
+6. exd5 cxd5
+7. d4 Bd6
+8. Bd3 c6
+9. O-O Bg4
+10. f3 Bc8
+11. Re1+ Be7
+12. Bg5 Qc7
+13. Qe2 Rb8
+14. Bxf6 gxf6
+15. b3 h5
+16. Na4 h4
+17. Nc5 Kf8
+18. c4 a5
+19. Rac1 Qa7
+20. cxd5 cxd5
+21. Kh1 Bd6
+22. Qe8+ Kg7
+23. Qc6 Bf4
+24. Rc2 Rd8
+25. Rce2 Qa8
+26. Qxa8 Rxa8
+27. Re8 Rd6
+28. R1e7 Rc6
+29. Rd8 Rd6
+30. Rc7 Rxd8
+31. Rxc8 Rdxc8
+32. Kg1 Kh8
+33. Kf2 Rc7
+34. g3 Bd2
+35. gxh4 Re8
+36. Kg3 Rce7
+37. Kg4 Re3
+38. Bf5 Bb4
+39. Nd7 Re2
+40. Nxf6 Rd8
+41. h5 Rb2
+42. h6 Rxh2
+43. h7 Be7
+44. Nh5 Rg2+
+45. Kf4 Rxa2
+46. Ke5 Ra1
+47. Nf4 Ra3
+48. Nxd5 Bf8
+49. Kf6 Rxb3
+50. Kxf7 Rxf3
+51. Nf6 Bg7
+52. Ke7 Bxf6+
+53. Kxf6 Rxf5+
+54. Kxf5 Rxd4
+55. Ke5 Rd8
+56. Ke6 a4
+57. Ke7 Rd1
+58. Ke6 a3
+59. Ke5 a2
+60. Ke4 a1=Q
+61. Ke3 Kxh7
+62. Ke2 Rd4
+63. Ke3 Kh8
+64. Ke2 Qc3
+65. Kf2 Rd1
+66. Ke2 Rd4
+67. Kf2 Rd5
+68. Ke2 Kg7
+69. Kf2 Rd4
+70. Ke2 Rd5
+71. Kf2 Kh8
+72. Ke2 Rd2+
+73. Ke1 Rd8+
+74. Ke2 Rd2+
+75. Ke1 Ra2+
+76. Kd1 Qa1#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,77,34.459486961364746
+1695412600-8535,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Be7
+5. O-O d6
+6. c3 Nf6
+7. Re1 Bg4
+8. h3 Bh5
+9. d3 O-O
+10. Nbd2 Nd7
+11. Nf1 Nc5
+12. Bc2 b5
+13. Ng3 Bxf3
+14. Qxf3 Bg5
+15. Nf5 Bxc1
+16. Raxc1 Qf6
+17. Qg4 Kh8
+18. Re3 g6
+19. Ng3 Rac8
+20. Rf3 Qe7
+21. h4 Ne6
+22. Ne2 Rce8
+23. h5 Ng5
+24. Rg3 Ne6
+25. hxg6 fxg6
+26. Rh3 Kg7
+27. g3 Ng5
+28. Rh1 h5
+29. Qh4 Qf7
+30. Rf1 Nf3+
+31. Kg2 Nxh4+
+32. Rxh4 Nb4
+33. Bb1 Qf3+
+34. Kg1 Kh8
+35. Nc1 Nc6
+36. Nb3 Rf7
+37. Nd2 Qe2
+38. Nb3 b4
+39. cxb4 Nxb4
+40. d4 Qb5
+41. dxe5 Qxe5
+42. f4 Qxb2
+43. Rh2 Qc3
+44. Rg2 Rg7
+45. Kh2 g5
+46. f5 Rh7
+47. f6 Rf7
+48. Rgf2 Nd3
+49. Rf3 Qb2+
+50. Kh1 Ne5
+51. R3f2 Qxf2
+52. Rxf2 Ref8
+53. Nd4 Ng4
+54. Rf5 Rxf6
+55. Rxg5 Rf1+
+56. Kg2 R8f2+
+57. Kh3 Rh1#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,58,25.410571098327637
+1695412634-5090,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 cxd4
+4. Nxd4 a6
+5. Nc3 Nf6
+6. Bg5 Bd7
+7. Bxf6 gxf6
+8. Bc4 Qa5
+9. O-O e6
+10. Bb3 Nc6
+11. Nxc6 Bxc6
+12. Qf3 Be7
+13. Rad1 h5
+14. Rfe1 Qg5
+15. Qg3 h4
+16. Qxg5 fxg5
+17. h3 Rb8
+18. a4 Rc8
+19. Rd3 Rd8
+20. Red1 Ra8
+21. f3 Rd8
+22. Kf2 Kd7
+23. Ne2 Rc8
+24. Nd4 Kc7
+25. Nxc6 Kxc6
+26. Rc3+ Kd7
+27. Rxc8 Rxc8
+28. Ke3 Rc7
+29. Rd3 b5
+30. axb5 axb5
+31. Rc3 Ra7
+32. Rd3 Bf6
+33. c3 Rb7
+34. Rd2 Ke7
+35. Rc2 Kd7
+36. Rd2 Bg7
+37. Rc2 Be5
+38. Rd2 Bf4+
+39. Ke2 Bxd2
+40. Kxd2 Ke7
+41. Kd3 Rc7
+42. Kd4 Ra7
+43. Kd3 Ra1
+44. Ke2 Rb1
+45. Kd3 Rxb2
+46. Bc2 b4
+47. cxb4 Rxb4
+48. Kc3 Rb7
+49. Kd3 Kf6
+50. Kd4 Ke7
+51. Kd3 Rb8
+52. Kd4 Rb4+
+53. Kd3 Rb8
+54. Kd4 Rb2
+55. Kd3 Ra2
+56. Kc3 Ra1
+57. Kd2 Rg1
+58. Ke3 Kf6
+59. Kf2 Ra1
+60. Ke3 Ra8
+61. Kf2 Ra2
+62. Ke3 Ke5
+63. Kd3 g4
+64. hxg4 Ra3+
+65. Ke2 Kf4
+66. Kf2 d5
+67. exd5 Ra2
+68. dxe6 Rxc2+
+69. Kg1 Kg3
+70. Kf1 fxe6
+71. g5 Rf2+
+72. Ke1 Rxg2
+73. g6 Kf4
+74. g7 Kxf3
+75. g8=Q Rxg8
+76. Kf1 h3
+77. Ke1 Rd8
+78. Kf1 h2
+79. Ke1 h1=R#",0-1,gpt-3.5-turbo-instruct,Stockfish 6,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 6,80,34.701913833618164
+1695412657-4887,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 dxe4
+4. Nxe4 Be7
+5. Nf3 Nf6
+6. Nxf6+ gxf6
+7. Bd3 c5
+8. dxc5 Nc6
+9. Be3 Qa5+
+10. c3 Bd7
+11. b4 Qa3
+12. Qb3 Qxb3
+13. axb3 Rg8
+14. O-O e5
+15. Rfd1 f5
+16. Bc4 f4
+17. Bc1 Bh3
+18. g3 Bg4
+19. Bd5 fxg3
+20. fxg3 O-O-O
+21. Be3 Rxd5
+22. Rxd5 Bxf3
+23. Rd2 a6
+24. Rf1 Bh5
+25. Rf5 Bg6
+26. Rf1 f6
+27. Rfd1 Bf5
+28. Rf1 Be6
+29. Rb2 h5
+30. c4 Nxb4
+31. Rd1 Bh3
+32. Rbd2 Bg4
+33. Rf1 Nc6
+34. Kg2 h4
+35. h3 Be6
+36. g4 f5
+37. g5 Kc7
+38. Kh2 Rg6
+39. Rg2 f4
+40. Bf2 Bf5
+41. Bxh4 Nd4
+42. b4 Bd3
+43. Rc1 a5
+44. bxa5 Be4
+45. Rf2 Re6
+46. Rb2 Nf3+
+47. Kg2 Nxh4+
+48. Kf2 Bxc5+
+49. Ke1 f3
+50. Rb5 Ng2+
+51. Kf1 Bd3#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,52,21.73355007171631
+1695412685-2787,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 Nf6
+4. Bg5 h6
+5. Bxf6 Qxf6
+6. exd5 c6
+7. dxc6 Bb4
+8. cxb7 Bxb7
+9. Bb5+ Nc6
+10. Nf3 a6
+11. Ba4 Rc8
+12. O-O O-O
+13. Ne4 Qf4
+14. Ng3 Ne7
+15. c3 Bxf3
+16. Qxf3 Qxf3
+17. gxf3 Bd6
+18. Ne4 Bc7
+19. Nc5 Ng6
+20. Nxa6 Bf4
+21. Nc5 e5
+22. Nd3 exd4
+23. cxd4 Rb8
+24. Bb3 Rfd8
+25. d5 Bc7
+26. Rac1 Bd6
+27. Rc6 Nh4
+28. f4 Nf3+
+29. Kg2 Nd2
+30. Re1 Nxb3
+31. axb3 Bf8
+32. Nc1 Rxd5
+33. Rc4 Bd6
+34. Re2 g5
+35. fxg5 Rxg5+
+36. Kf1 Bxh2
+37. f4 Rg1+
+38. Kf2 Rg6
+39. Kf3 Bg3
+40. Rg2 Be1
+41. Rxg6+ fxg6
+42. Rc6 Kg7
+43. Rc7+ Kf6
+44. Rc6+ Kg7
+45. Rc7+ Kf8
+46. Rc6 Kf7
+47. Rc7+ Kf8
+48. Rc6 Kg7
+49. Rc7+ Kg8
+50. Rc6 Kh7
+51. Rc7+ Kg8
+52. Rc6 Kg7
+53. Rc7+ Kf8
+54. Rc6 Kf7
+55. Rc7+ Kf8
+56. Rc6 Kf7
+57. Rc7+ Kf8",1/2-1/2,gpt-3.5-turbo-instruct,Stockfish 7,1/2,1/2,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,58,28.071945190429688
+1695412721-4726,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 g6
+2. d4 d6
+3. Nc3 a6
+4. f4 b5
+5. Nf3 Bg7
+6. Bd3 Nd7
+7. e5 Bb7
+8. O-O Rb8
+9. Ne4 e6
+10. exd6 Ngf6
+11. dxc7 Qxc7
+12. Nxf6+ Nxf6
+13. c3 Bxf3
+14. Qxf3 Qc8
+15. f5 gxf5
+16. Bf4 Rb6
+17. Rae1 Kf8
+18. Be5 h5
+19. Qg3 h4
+20. Qg5 Rh5
+21. Qf4 Nd5
+22. Qf3 Rg5
+23. Bxf5 Rxf5
+24. Qg4 Bxe5
+25. Rxf5 exf5
+26. Qxh4 Bg7
+27. Qg5 Re6
+28. Rf1 Ne7
+29. h4 Bf6
+30. Qh6+ Bg7
+31. Qg5 Bh6
+32. Qh5 Qc4
+33. Qf3 Be3+
+34. Kh1 Rh6
+35. g3 Re6
+36. Re1 Bh6
+37. Rf1 Re4
+38. b3 Qc6
+39. Kh2 Bg7
+40. Rf2 b4
+41. cxb4 Bxd4
+42. Rd2 Qe6
+43. Qd3 Kg7
+44. a4 Qe5
+45. Kh3 Ba1
+46. b5 Re3
+47. Qd6 Rxg3+
+48. Kh2 Rd3+
+49. Qxe5+ Bxe5+
+50. Kg2 Rxd2+
+51. Kf3 axb5
+52. axb5 Nd5
+53. b6 Nxb6
+54. b4 Rh2
+55. b5 Rxh4
+56. Ke3 Rh2
+57. Kd3 Rb2
+58. Ke3 Rxb5
+59. Kd3 Rb2
+60. Ke3 Rb3+
+61. Kd2 Rb5
+62. Kd3 Rb2
+63. Ke3 Rb3+
+64. Kd2 Rb4
+65. Kd3 Rb5
+66. Kd2 f6
+67. Kd3 Rb4
+68. Kd2 f4
+69. Kd3 Rb3+
+70. Kd2 Rb4
+71. Kd3 f3
+72. Kd2 Rb3
+73. Kc2 Rb4
+74. Kd2 f2
+75. Kc2 f5
+76. Kd2 Nd5
+77. Kc2 f1=Q
+78. Kd2 f4
+79. Kc2 Qe2+
+80. Kc1 Rb1+
+81. Kxb1 f3
+82. Kc1 Bb2+
+83. Kb1 Nc3#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,84,35.98944306373596
+1695412738-8985,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. Bb5 e5
+4. O-O Qc7
+5. Nc3 Nf6
+6. d3 Be7
+7. Bg5 O-O
+8. Bxf6 Bxf6
+9. Nd5 Qd6
+10. Nd2 Bg5
+11. Nc4 Qg6
+12. Bxc6 bxc6
+13. Nxe5 Qe6
+14. Nc7 Qxe5
+15. Nxa8 Be7
+16. f4 Qb8
+17. Qh5 Qxa8
+18. Rf3 Qb7
+19. Rh3 h6
+20. Rg3 Qxb2
+21. Rf1 Kh7
+22. e5 d5
+23. f5 Qxe5
+24. Qg4 Bf6
+25. Kh1 Re8
+26. Qh5 Re7
+27. Rgf3 Kg8
+28. g4 Qe2
+29. R3f2 Qe3
+30. Rf3 Qe2
+31. R3f2 Qe5
+32. h4 Qg3
+33. g5 Qh3+
+34. Kg1 Bd4
+35. gxh6 Qg3+
+36. Kh1 Bxf2
+37. hxg7 Qh3#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,38,16.893723011016846
+1695412755-3079,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 Nc6
+2. d4 d5
+3. Nc3 Nf6
+4. e5 Ng8
+5. f4 Nh6
+6. Nf3 Bg4
+7. Be3 Nf5
+8. Bf2 e6
+9. Be2 Qd7
+10. O-O g6
+11. h3 h5
+12. hxg4 hxg4
+13. Ng5 g3
+14. Be1 Ncxd4
+15. Qd3 Bc5
+16. Bf2 O-O-O
+17. Nh3 Nxe2+
+18. Nxe2 gxf2+
+19. Nxf2 Qe7
+20. g3 Ne3
+21. Rfc1 f6
+22. Nd4 fxe5
+23. Qxe3 Bxd4
+24. Qf3 Bxb2
+25. Rab1 Bxc1
+26. Rxc1 exf4
+27. gxf4 Kb8
+28. Rb1 Qd6
+29. c4 Qc5
+30. cxd5 Rxd5
+31. Kg2 Rhd8
+32. Qb3 Qc6
+33. Kg3 g5
+34. fxg5 Rxg5+
+35. Ng4 b6
+36. Qe3 Rxg4+
+37. Kxg4 Qg2+
+38. Kf4 Rf8+
+39. Ke5 Qd5#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,40,17.61926507949829
+1695412777-2659,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 g6
+2. d4 d6
+3. Nc3 Nd7
+4. Nf3 Bg7
+5. Bc4 Nb6
+6. Bb3 a5
+7. a4 Bd7
+8. O-O c6
+9. Ng5 e6
+10. d5 cxd5
+11. exd5 e5
+12. Nge4 Qc7
+13. Be3 Nf6
+14. Qd3 Ng4
+15. Bxb6 Qxb6
+16. Nb5 Bxb5
+17. Qxb5+ Qxb5
+18. axb5 a4
+19. Rxa4 Rxa4
+20. Bxa4 Ke7
+21. c4 f5
+22. Ng5 Ra8
+23. b3 e4
+24. Ne6 Bh6
+25. h3 Ne5
+26. Ra1 b6
+27. Ra2 Bc1
+28. Rc2 Ba3
+29. Ra2 Bc5
+30. Kf1 h5
+31. Ke2 h4
+32. Nxc5 dxc5
+33. Ke3 Kf6
+34. Rd2 Nf7
+35. f3 Nd6
+36. fxe4 fxe4
+37. Rf2+ Kg5
+38. Rf4 Nf5+
+39. Kxe4 Re8+
+40. Kf3 Re3+
+41. Kf2 Kxf4
+42. d6 Nxd6
+43. b4 Ne4+
+44. Kf1 Kg3
+45. bxc5 bxc5
+46. b6 g5
+47. b7 Nd2+
+48. Kg1 Nf3+
+49. gxf3 Re1#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,50,21.819463968276978
+1695412797-4083,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 a6
+3. d4 cxd4
+4. Nxd4 Nf6
+5. Nc3 Qc7
+6. Be3 e6
+7. Be2 Bb4
+8. O-O Bxc3
+9. bxc3 Nxe4
+10. Bd3 Nf6
+11. Bg5 Qxc3
+12. Bxf6 gxf6
+13. Qg4 Nc6
+14. Nxc6 bxc6
+15. Qg7 Rf8
+16. Bxh7 Qe5
+17. Rfe1 Qg5
+18. Qxg5 fxg5
+19. Rab1 Ke7
+20. Rb6 Kd8
+21. Reb1 Kc7
+22. Bd3 f5
+23. a4 Rh8
+24. a5 Ra7
+25. c4 Kd6
+26. Rb8 c5
+27. R1b6+ Ke5
+28. Be2 Rc7
+29. Ra8 Rh7
+30. Rbb8 Rh8
+31. Bf3 d5
+32. cxd5 g4
+33. Be2 c4
+34. dxe6 Kf6
+35. e7 Rg8
+36. Rb6+ Kxe7
+37. Raxa6 Bxa6
+38. Rxa6 c3
+39. Bd3 c2
+40. Bxc2 Rxc2
+41. g3 Rd8
+42. Ra7+ Kd6
+43. a6 Rc1+
+44. Kg2 Ke6
+45. Rh7 Rdd1
+46. f3 Rd2#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,47,20.220407009124756
+1695412816-2654,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 c5
+3. Nf3 cxd4
+4. Nxd4 Nc6
+5. Nc3 Nf6
+6. Ndb5 Bc5
+7. Nd6+ Ke7
+8. Nxc8+ Rxc8
+9. Bd3 Qa5
+10. O-O h5
+11. Bg5 Bxf2+
+12. Rxf2 Qxg5
+13. Qe2 Ng4
+14. Rf3 Nd4
+15. Qf1 Nxf3+
+16. Qxf3 Qc5+
+17. Kh1 Nf2+
+18. Kg1 Ng4+
+19. Kh1 Nf2+
+20. Kg1 Nxd3+
+21. Kh1 Nf2+
+22. Kg1 Nd1+
+23. Kh1 Nf2+
+24. Kg1 Nxe4+
+25. Kh1 Nf2+
+26. Kg1 Ng4+
+27. Kh1 Nf2+
+28. Kg1 Ng4+
+29. Kh1 f5
+30. h3 Qe5
+31. g3 Qc7
+32. hxg4 hxg4+
+33. Kg2 gxf3+
+34. Kxf3 Qc6+
+35. Kf2 Rh2+
+36. Ke3 Qc5+
+37. Kd3 Rg2
+38. Re1 Rc6
+39. Re3 Rd6+
+40. Nd5+ Rxd5#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,41,18.196919202804565
+1695412841-1502,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 Nc6
+4. Bb5 Nf6
+5. Nc3 exd4
+6. Nxd4 Bd7
+7. O-O Nxd4
+8. Qxd4 Be7
+9. Bxd7+ Qxd7
+10. Bg5 Qg4
+11. f4 Bd8
+12. Rae1 O-O
+13. Re3 h6
+14. Rg3 c5
+15. Qd3 c4
+16. Qd4 hxg5
+17. Rxg4 Nxg4
+18. Nd5 gxf4
+19. Rxf4 Ne5
+20. Qc3 Re8
+21. Qh3 Re6
+22. Qh5 Bb6+
+23. Kf1 Rae8
+24. Rh4 Rh6
+25. Qg5 Bd8
+26. Ne7+ Bxe7
+27. Qxe7 Rxe7
+28. Rxh6 gxh6
+29. Ke2 Nc6
+30. Ke3 f5
+31. Kf4 Kg7
+32. exf5 a5
+33. g4 Re2
+34. h4 Rf2+
+35. Kg3 Rd2
+36. g5 hxg5
+37. hxg5 Rxc2
+38. Kf4 Rxb2
+39. f6+ Kf7
+40. Kf5 Ne5
+41. g6+ Nxg6
+42. Kg5 Rg2+
+43. Kf5 Rxa2
+44. Kg5 c3
+45. Kf5 d5
+46. Kg5 c2
+47. Kf5 b5
+48. Kg5 c1=Q+
+49. Kf5 b4
+50. Kg4 b3
+51. Kf5 a4
+52. Kg4 Kxf6
+53. Kf3 Qc3+
+54. Kg4 Qd4+
+55. Kf3 Qe4+
+56. Kg3 Qg2#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,57,25.422630786895752
+1695412858-8045,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 cxd4
+4. Nxd4 e5
+5. Nb5 d6
+6. N1c3 Be6
+7. Nd5 Bxd5
+8. exd5 Nce7
+9. c4 a6
+10. Nc3 Nf6
+11. Bd3 Rc8
+12. O-O Nd7
+13. f4 Ng6
+14. f5 Nf4
+15. Bxf4 exf4
+16. Rxf4 Be7
+17. Qh5 Qb6+
+18. Kh1 Qxb2
+19. Re1 Qxc3
+20. Rfe4 Ne5
+21. Bf1 O-O
+22. R1e3 Qc1
+23. Re1 Qb2
+24. R1e3 Bf6
+25. Rh3 h6
+26. Rg3 Qa1
+27. Kg1 Kh8
+28. Rh3 b6
+29. g4 Rxc4
+30. Rxc4 Nxc4
+31. g5 Nd2
+32. Qe2 Bxg5
+33. Rg3 Nxf1
+34. Qxf1 Qf6
+35. Qh3 Rc8
+36. Rf3 Rc1+
+37. Kg2 Qa1
+38. Kg3 Rg1+
+39. Kf2 Qe1#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,40,17.5012948513031
+1695412882-5619,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 cxd4
+4. Nxd4 Nf6
+5. Nc3 e5
+6. Ndb5 d6
+7. Bg5 Rb8
+8. Nd5 Be6
+9. Nbc7+ Kd7
+10. Bxf6 gxf6
+11. c3 Rc8
+12. Nb5 a6
+13. Na3 Nb8
+14. Nc4 Bxd5
+15. Qxd5 Kc7
+16. Qxf7+ Nd7
+17. O-O-O b5
+18. Ne3 Bh6
+19. Kb1 Bxe3
+20. fxe3 Qg8
+21. Qe7 Qf8
+22. Qe6 Nc5
+23. Qd5 h5
+24. Be2 Rd8
+25. Rhf1 Qg7
+26. g3 Qh6
+27. Rf3 Qg5
+28. Rdf1 Qg4
+29. Bd3 Nd7
+30. c4 Nb6
+31. Qf7+ Rd7
+32. Qxf6 bxc4
+33. Bc2 Rhh7
+34. Qf5 Rhg7
+35. Qxg4 hxg4
+36. Rf8 Kc6
+37. R1f6 Rc7
+38. Rd8 Nd7
+39. Ba4+ Kb7
+40. Rxd6 Nc5
+41. Bc6+ Rxc6
+42. Rxc6 Kxc6
+43. Rc8+ Rc7
+44. Rg8 a5
+45. Rxg4 Rd7
+46. Kc2 Rf7
+47. Rg6+ Kb5
+48. h4 Rf2+
+49. Kc1 Nd3+
+50. Kd1 Nxb2+
+51. Ke1 Nd3+
+52. Kd1 c3
+53. Rg8 c2#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,54,23.531185150146484
+1695412904-5004,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 cxd4
+4. Nxd4 e6
+5. Nc3 Nf6
+6. Be3 Bb4
+7. Bd3 O-O
+8. O-O e5
+9. Nf5 Bxc3
+10. bxc3 d5
+11. exd5 Bxf5
+12. Bxf5 Ne7
+13. Bh3 Nfxd5
+14. Bc5 f5
+15. c4 Qc8
+16. Ba3 Qxc4
+17. Re1 Rad8
+18. Rxe5 Nf4
+19. Qf3 Nc6
+20. Rxf5 Nxh3+
+21. Qxh3 Rxf5
+22. Qxf5 Qxa2
+23. Re1 Qxa3
+24. Qe6+ Kh8
+25. Qf7 Qf8
+26. Qxb7 Qf6
+27. h3 h6
+28. Re3 Rb8
+29. Qc7 Rd8
+30. Rf3 Rd1+
+31. Kh2 Qd6+
+32. Qxd6 Rxd6
+33. Rf7 Kh7
+34. Rc7 h5
+35. c4 Rf6
+36. Kg3 a5
+37. f4 Kg6
+38. Kf3 a4
+39. g4 a3
+40. f5+ Kh7
+41. Kf4 hxg4
+42. hxg4 a2
+43. g5 a1=Q
+44. gxf6 Qf1+
+45. Kg5 Qc1+
+46. Kh5 Qh6+
+47. Kg4 Ne5+
+48. Kg3 Qg5+
+49. Kh3 Qg4+
+50. Kh2 Nf3+
+51. Kh1 Qg1#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,52,21.80145001411438
+1695412922-7514,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 Qa5+
+4. Bd2 Qd8
+5. d5 Nd4
+6. Nxd4 cxd4
+7. Bf4 Qa5+
+8. Nd2 e6
+9. dxe6 dxe6
+10. Bd3 Nf6
+11. O-O Qd8
+12. Bg5 Qc7
+13. Bxf6 gxf6
+14. f4 h5
+15. f5 a6
+16. fxe6 Bxe6
+17. Rxf6 h4
+18. Qf3 Bh6
+19. Nb3 O-O-O
+20. Rf1 Be3+
+21. Kh1 Qe5
+22. c3 Rhg8
+23. cxd4 Bxd4
+24. Nxd4 Qxd4
+25. Rc1+ Kb8
+26. Qf4+ Ka8
+27. Bf1 h3
+28. g3 Qxb2
+29. Qf2 Rd2
+30. Qg1 Qxc1
+31. Rf2 Rd1
+32. a4 Qb1
+33. Rf4 Bc4
+34. Qf2 Qc1
+35. Kg1 Bxf1
+36. Qxf1 Rxf1+
+37. Rxf1 Qc2
+38. Rf2 Qd1+
+39. Rf1 Qd4+
+40. Rf2 Rc8
+41. Kf1 Qd3+
+42. Re2 Qf3+
+43. Ke1 Rc1+
+44. Kd2 Qc3#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,45,18.374738931655884
+1695412942-4974,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 Nf6
+4. Nc3 cxd4
+5. Nxd4 a6
+6. Be3 Nbd7
+7. f3 Qb6
+8. Qd2 Qd8
+9. g4 Nb6
+10. g5 Nfd7
+11. O-O-O Qc7
+12. Kb1 g6
+13. h4 Ne5
+14. b3 Bd7
+15. f4 Rc8
+16. Nd5 Nxd5
+17. exd5 h5
+18. fxe5 dxe5
+19. Nf3 Bg4
+20. Be2 Bf5
+21. Rc1 Qd6
+22. Kb2 Rd8
+23. c4 b5
+24. Rhd1 Bg7
+25. c5 Qc7
+26. Qb4 e4+
+27. Nd4 Rxd5
+28. Kb1 Bg4
+29. Bxg4 O-O
+30. Be2 Qe5
+31. c6 Kh7
+32. c7 Rc8
+33. Rc2 Rxc7
+34. Rxc7 Qxc7
+35. Rc1 Qe5
+36. Rd1 Rd7
+37. Qd2 Qg3
+38. Qc3 Rc7
+39. Qd2 Rd7
+40. Qc3 Rc7
+41. Qd2 Rd7
+42. Qc3 Rc7
+43. Qd2 Rd7
+44. Qc3 Rc7
+45. Qd2 Rd7",1/2-1/2,gpt-3.5-turbo-instruct,Stockfish 7,1/2,1/2,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,46,19.651845693588257
+1695412971-6918,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 Nd7
+4. Bc4 Nb6
+5. Bb3 exd4
+6. Nxd4 Nf6
+7. Nc3 c5
+8. Nf3 c4
+9. Ba4+ Nxa4
+10. Nxa4 Nxe4
+11. O-O d5
+12. Re1 Be6
+13. Nd4 Be7
+14. Nxe6 fxe6
+15. Qh5+ Kf8
+16. Qg4 Qd7
+17. Nc3 Nf6
+18. Qxe6 Bb4
+19. Qxd7 Nxd7
+20. Bd2 Rd8
+21. Rad1 Nf6
+22. Nb5 a5
+23. Bxb4+ axb4
+24. Nc7 Rd6
+25. Re5 Kf7
+26. Nxd5 Rhd8
+27. Re7+ Kf8
+28. Rxb7 Rxd5
+29. Rxd5 Rxd5
+30. Kf1 Ra5
+31. Rxb4 c3
+32. bxc3 Rxa2
+33. Rb8+ Kf7
+34. Rb7+ Kf8
+35. Rb8+ Ne8
+36. c4 Rxc2
+37. Rc8 h6
+38. c5 Ke7
+39. c6 Nd6
+40. Rc7+ Kf6
+41. Rd7 Nf5
+42. c7 Rc6
+43. g4 Ke6
+44. Rd8 Ne7
+45. Re8 Kd7
+46. Rg8 Rc1+
+47. Kg2 Nxg8
+48. h4 Kc8
+49. g5 Rc3
+50. gxh6 Nxh6
+51. f3 g6
+52. Kg3 Nf7
+53. Kg4 Nd6
+54. Kg5 Rxf3
+55. Kxg6 Rg3+
+56. Kh5 Rg8
+57. Kh6 Ne4
+58. h5 Rg2
+59. Kh7 Nf6+
+60. Kh6 Ne4
+61. Kh7 Nf6+
+62. Kh6 Ng8+
+63. Kh7 Rg4
+64. h6 Nf6+
+65. Kh8 Rg8#",0-1,gpt-3.5-turbo-instruct,Stockfish 7,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 7,66,29.51439094543457
+1695412989-7188,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 Be7
+3. Nc3 d5
+4. Nf3 dxe4
+5. Nxe4 Bd7
+6. Bd3 Nf6
+7. Qe2 Nxe4
+8. Bxe4 Qc8
+9. O-O Bc6
+10. Bd3 Qd8
+11. c3 Bd5
+12. Bf4 Nd7
+13. Rfe1 c6
+14. Rad1 a6
+15. b3 h5
+16. c4 Bxf3
+17. Qxf3 g5
+18. Bc1 Bf6
+19. d5 Ne5
+20. Rxe5 Bxe5
+21. dxe6 Qf6
+22. exf7+ Kxf7
+23. Qe4 Rae8
+24. g3 Bxg3
+25. Qg2 Bf4
+26. Ba3 g4
+27. Bb4 Rh6
+28. Bc2 Kg8
+29. Rd7 b6
+30. Qf1 a5
+31. Ba3 Qh4
+32. h3 gxh3
+33. Kh1 Qg4
+34. Rd3 Rg6
+35. Rxh3 Re1
+36. Qxe1 Qxh3#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,37,17.450613021850586
+1695413003-3883,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 Nc6
+2. d4 e5
+3. d5 Nce7
+4. c4 Nf6
+5. Nc3 h6
+6. Bd3 d6
+7. Nge2 c6
+8. O-O a6
+9. f4 exf4
+10. Bxf4 Ng6
+11. Bg3 Ne5
+12. Nd4 Be7
+13. Nf5 Bxf5
+14. Rxf5 Nfg4
+15. Qe2 Bh4
+16. Bf4 Nxd3
+17. Qxd3 Qb6+
+18. Be3 Qxe3+
+19. Qxe3 Nxe3
+20. Rf3 Nxc4
+21. dxc6 bxc6
+22. b3 Ne5
+23. Rf5 Bd8
+24. Rd1 Bc7
+25. Ne2 g6
+26. Rff1 O-O
+27. Nd4 Rad8
+28. Rc1 Bb6
+29. Rfd1 Rfe8
+30. Kf1 Ng4
+31. Nxc6 Rxe4
+32. Nxd8 Nxh2#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,33,13.922437906265259
+1695413012-7333,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d6
+3. Nc3 Nd7
+4. f4 e5
+5. Nf3 Ngf6
+6. Bc4 exd4
+7. Qxd4 d5
+8. exd5 Bc5
+9. Qd3 O-O
+10. Bd2 cxd5
+11. Nxd5 Re8+
+12. Kd1 Ne4
+13. Rf1 Ndf6
+14. Nxf6+ Qxf6
+15. Ne5 Nxd2
+16. Bxf7+ Qxf7
+17. Nxf7 Nxf1
+18. Ng5 Bg4+
+19. Kc1 Re1+
+20. Qd1 Be3+
+21. Kb1 Rxd1#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,22,9.117667198181152
+1695413020-2338,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d5
+3. Nxe5 dxe4
+4. d4 exd3
+5. Bxd3 Bd6
+6. Nc4 Bb4+
+7. c3 Qe7+
+8. Be3 Bc5
+9. O-O Be6
+10. Qh5 Nd7
+11. Bxc5 Qxc5
+12. Qxc5 Nxc5
+13. Be2 Ne7
+14. Nbd2 Nd5
+15. Nb3 Nf4
+16. Rfe1 Nxb3
+17. axb3 Nxe2+
+18. Rxe2 O-O-O
+19. Rxa7 Rd1+
+20. Re1 Rxe1#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,21,8.143325805664062
+1695413035-1588,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d5
+3. exd5 Qa5+
+4. Nc3 cxd5
+5. Bd2 Qd8
+6. Nf3 Nc6
+7. Bb5 Nf6
+8. O-O Bg4
+9. h3 Bxf3
+10. Qxf3 a6
+11. Bxc6+ bxc6
+12. Rfe1 e6
+13. Bg5 Be7
+14. Na4 h6
+15. Bxf6 Bxf6
+16. Rad1 Qb8
+17. b3 O-O
+18. Nc5 Ra7
+19. c3 Qd8
+20. Qg4 Be7
+21. Nd3 Qa5
+22. Ne5 Rc7
+23. Rd3 Bf6
+24. Rg3 Qxa2
+25. Qf4 Bg5
+26. Qg4 c5
+27. h4 f5
+28. Qh3 Bd2
+29. Re2 cxd4
+30. cxd4 Qb1+
+31. Kh2 Bf4
+32. Ng6 Rc1
+33. Nxf4 Rh1#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,34,14.543551921844482
+1695413069-6722,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d5
+3. exd5 Bd6
+4. d4 Nd7
+5. Bb5 e4
+6. Ne5 Ne7
+7. Nc3 O-O
+8. Nxd7 Bxd7
+9. Bxd7 Qxd7
+10. O-O f5
+11. f3 Rae8
+12. fxe4 fxe4
+13. Rxf8+ Rxf8
+14. Be3 Qf5
+15. Qe2 h5
+16. Rf1 Bxh2+
+17. Kxh2 Qxf1
+18. Qxf1 Rxf1
+19. Nxe4 Re1
+20. d6 cxd6
+21. Nxd6 Rxe3
+22. Nxb7 Re2
+23. c4 Nc8
+24. d5 Rxb2
+25. Nd8 Rd2
+26. Ne6 Rd1
+27. Kg3 h4+
+28. Kf4 h3
+29. gxh3 Nb6
+30. Ke5 Nxc4+
+31. Ke4 Nd6+
+32. Ke5 Nc4+
+33. Ke4 Rd2
+34. a4 Rd1
+35. h4 Ra1
+36. Kd4 Rc1
+37. Nc5 Nb6
+38. d6 a5
+39. Nb3 Rc4+
+40. Ke5 Rxh4
+41. Nxa5 Rh5+
+42. Ke6 Rxa5
+43. d7 Ra8
+44. Ke7 Nxa4
+45. d8=Q+ Rxd8
+46. Kxd8 g5
+47. Ke7 Kh7
+48. Kf6 g4
+49. Kg5 g3
+50. Kh4 g2
+51. Kh3 g1=Q
+52. Kh4 Qg6
+53. Kh3 Qg1
+54. Kh4 Nb2
+55. Kh3 Nc4
+56. Kh4 Qg6
+57. Kh3 Nb6
+58. Kh4 Nd5
+59. Kh3 Kh6
+60. Kh4 Kh7
+61. Kh3 Nf4+
+62. Kh4 Ng2+
+63. Kh3 Nf4+
+64. Kh4 Ne2
+65. Kh3 Ng1+
+66. Kh4 Ne2
+67. Kh3 Qg1
+68. Kh4 Kg6
+69. Kh3 Nf4+
+70. Kh4 Nh3
+71. Kxh3 Kf7
+72. Kh4 Ke6
+73. Kh3 Kf5
+74. Kh4 Kf4
+75. Kh5 Kf5
+76. Kh4 Kf4
+77. Kh3 Qg4+
+78. Kh2 Ke3
+79. Kh1 Kf2
+80. Kh2 Qh5#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,81,34.74896836280823
+1695413085-1506,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d5
+3. exd5 Nf6
+4. c4 cxd5
+5. Nc3 e6
+6. Nf3 Bb4
+7. Bd3 O-O
+8. O-O Be7
+9. Bg5 h6
+10. Bh4 a5
+11. Rc1 Nc6
+12. c5 Bd7
+13. Re1 Nh7
+14. Bg3 Ng5
+15. Nxg5 Bxg5
+16. f4 Bf6
+17. Nb5 Bxd4+
+18. Nxd4 Nxd4
+19. Bh7+ Kxh7
+20. Qxd4 Bc6
+21. Re5 Qd7
+22. Rce1 f5
+23. Rxe6 Rfe8
+24. R6e5 a4
+25. Bh4 Rxe5
+26. Rxe5 Re8
+27. h3 Rxe5
+28. fxe5 f4
+29. Qxf4 a3
+30. bxa3 g5
+31. Bxg5 hxg5
+32. Qxg5 Qg7
+33. Qh5+ Kg8
+34. e6 d4
+35. g4 d3
+36. Qf5 d2
+37. Qd3 Qa1+
+38. Kf2 Qe1#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,39,15.9198739528656
+1695413124-8046,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 a6
+3. d4 cxd4
+4. Nxd4 Nf6
+5. Nc3 Qc7
+6. Be2 g6
+7. O-O Bg7
+8. Be3 O-O
+9. f4 e5
+10. fxe5 Qxe5
+11. Bf4 Qc5
+12. Kh1 Nxe4
+13. Nxe4 Qd5
+14. Bf3 Qxd4
+15. Qxd4 Bxd4
+16. c3 d5
+17. cxd4 dxe4
+18. Bxe4 Nc6
+19. d5 Ne7
+20. d6 Nf5
+21. Rac1 Rd8
+22. Rfd1 Ng7
+23. Rc7 Ne6
+24. Bxb7 Bxb7
+25. Rxb7 Nxf4
+26. d7 Kg7
+27. Rc7 Ne6
+28. Rc6 a5
+29. a3 Ra7
+30. Rcd6 Kf8
+31. b4 g5
+32. b5 Rb7
+33. b6 Nc5
+34. R6d5 Rdxd7
+35. Rxd7 Rxd7
+36. Rxd7 Nxd7
+37. b7 a4
+38. Kg1 Ke7
+39. Kf2 f6
+40. Ke3 Kd6
+41. Kd4 f5
+42. Kc4 f4
+43. Kb4 Kc6
+44. Kxa4 g4
+45. Kb4 f3
+46. gxf3 gxf3
+47. Kc3 f2
+48. Kd2 f1=R
+49. Ke2 Rc1
+50. Kd2 Rg1
+51. Ke2 Rc1
+52. Kd2 Rf1
+53. Ke2 Rf6
+54. Ke3 Rf5
+55. Ke4 Rb5
+56. Kd4 Kxb7
+57. Kc4 Ka6
+58. a4 Rf5
+59. Kd4 Rf4+
+60. Ke3 Rg4
+61. Kf3 Ne5+
+62. Ke3 Nc6
+63. Kf3 Rg7
+64. Ke4 Rg4+
+65. Kf3 Rg6
+66. Ke4 Ne7
+67. Ke5 Kb6
+68. Kd4 h5
+69. Ke5 Kb7
+70. Kd4 Nc6+
+71. Kd5 h4
+72. Ke4 h3
+73. Kd5 Ne7+
+74. Ke4 Rg4+
+75. Kf3 Rg2
+76. Ke3 Rxh2
+77. Kf3 Ra2
+78. Kg3 h2
+79. Kf3 h1=Q+
+80. Kf4 Rxa4+
+81. Ke5 Re4+
+82. Kd6 Qh4
+83. Kc5 Qh1
+84. Kd6 Qd1+
+85. Kc5 Qh5+
+86. Kd6 Qd5#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,87,38.260915994644165
+1695413173-6970,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Bc5
+4. O-O d6
+5. c3 a6
+6. Ba4 Ba7
+7. d4 b5
+8. Bb3 Bb7
+9. Ng5 Nh6
+10. Qh5 O-O
+11. Nf3 Na5
+12. Bxh6 Nxb3
+13. axb3 gxh6
+14. Qxh6 f6
+15. Nbd2 Bc8
+16. Nh4 exd4
+17. cxd4 Bxd4
+18. Ndf3 Bb6
+19. Rad1 Bg4
+20. Rd5 Qd7
+21. h3 Be6
+22. Rh5 Qg7
+23. Qf4 Rae8
+24. Nf5 Bxf5
+25. exf5 Qd7
+26. Nh4 d5
+27. Ng6 hxg6
+28. fxg6 Re4
+29. Qh6 Qg7
+30. Qd2 Qxg6
+31. Qxd5+ Kg7
+32. Kh1 Rd4
+33. Qf3 Rd3
+34. Qe2 Re8
+35. Qg4 Qxg4
+36. hxg4 Re5
+37. Rh4 Red5
+38. Kh2 Bc5
+39. g3 Rd2
+40. Kg2 Bb6
+41. Kf3 Re5
+42. Rh2 Ree2
+43. Rfh1 Rxf2+
+44. Rxf2 Rxf2+
+45. Ke4 Re2+
+46. Kd3 Re3+
+47. Kc2 Rxg3
+48. Rh4 a5
+49. Kb1 Rg1+
+50. Ka2 a4
+51. bxa4 Re1
+52. axb5 Re8
+53. Kb3 Re5
+54. Kc4 Re2
+55. b4 Rd2
+56. Kc3 Re2
+57. Kd3 Rg2
+58. Kc4 Re2
+59. Kd3 Rg2
+60. Kc4 Bf2
+61. Rh3 Bg1
+62. Rd3 Rxg4+
+63. Kb3 Kg6
+64. Rd7 Bh2
+65. Rd2 Bg1
+66. Rd7 Bh2
+67. Rd2 Be5
+68. Rd8 Kf7
+69. Rd7+ Ke6
+70. Rd8 Bd6
+71. Re8+ Kd5
+72. Re1 Rxb4+
+73. Kc3 Rd4
+74. Rf1 Rc4+
+75. Kd3 Be5
+76. Rb1 Kc5
+77. Rb3 Rd4+
+78. Ke3 Rc4
+79. Kd3 Rd4+
+80. Ke3 Rb4
+81. Rd3 Kc4
+82. Rd8 Kc5
+83. Kd3 Rd4+
+84. Rxd4 Bxd4
+85. Ke4 Kc4
+86. Kf5 Kxb5
+87. Ke4 c5
+88. Kd3 Be5
+89. Kc2 Kc4
+90. Kd2 Kb4
+91. Kc2 f5
+92. Kd2 Kb3
+93. Kc1 Bd4
+94. Kd2 Kb4
+95. Kc2 Bh8
+96. Kd2 Be5
+97. Kc2 Bd4
+98. Kd2 c4
+99. Kc2 Bg7
+100. Kd2 c3+
+101. Kc2 Kc4
+102. Kc1 Kd3
+103. Kd1 Bh6
+104. Ke1 Be3
+105. Kd1 Bh6
+106. Ke1 c2
+107. Kf2 Bd2
+108. Kf3 c1=Q
+109. Kg3 Bh6
+110. Kf3 Bg7
+111. Kg3 Be5+
+112. Kf3 Qf1#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,113,49.797935962677
+1695413183-5708,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 Nxd4
+4. Nxd4 cxd4
+5. Qxd4 a6
+6. Nc3 d6
+7. Bc4 e5
+8. Qd3 h6
+9. O-O Nf6
+10. f4 Be6
+11. Bxe6 fxe6
+12. fxe5 dxe5
+13. Qg3 Bc5+
+14. Kh1 Qe7
+15. Qxe5 O-O
+16. Bd2 Ng4
+17. Qg3 Nf2+
+18. Rxf2 Rxf2
+19. Bxh6 Qf6
+20. Be3 Rf1+
+21. Rxf1 Qxf1+
+22. Bg1 Qxg1#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,23,9.887441158294678
+1695413213-5860,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 Nf6
+4. Nc3 cxd4
+5. Nxd4 g6
+6. Be3 Nc6
+7. f3 e5
+8. Nb3 h5
+9. Qd2 Be7
+10. O-O-O a6
+11. Kb1 Be6
+12. Nd5 Nd7
+13. Nxe7 Qxe7
+14. Qxd6 f6
+15. Be2 Rc8
+16. Rd2 Rg8
+17. Rhd1 h4
+18. h3 g5
+19. c3 Qxd6
+20. Rxd6 Nd8
+21. Na5 Rc7
+22. Bb6 Nxb6
+23. Rxb6 Ke7
+24. Rdd6 Rh8
+25. b3 Bc8
+26. Kb2 Bd7
+27. Nc4 Rc6
+28. Rdxc6 Bxc6
+29. Na5 Kd7
+30. Nxc6 Kc7
+31. Rb4 Kxc6
+32. Rc4+ Kd7
+33. b4 Rg8
+34. a4 Re8
+35. b5 a5
+36. b6 Ne6
+37. Bd1 Kd6
+38. Bb3 Nc5
+39. Bc2 Ne6
+40. Bb3 Ra8
+41. Kc2 Nc5
+42. Kb2 Rd8
+43. Kc2 Kc6
+44. Ba2 Kxb6
+45. Bb3 Nd3
+46. Kb1 Nf4
+47. Bc2 Nxg2
+48. Bb3 Ne3
+49. Kb2 Ng2
+50. Ka3 Nf4
+51. Bc2 Ra8
+52. Bb3 Rd8
+53. Bc2 Nxh3
+54. Bb3 Nf4
+55. Bc2 h3
+56. Bb3 h2
+57. Bc2 h1=Q
+58. Bb3 Qc1+
+59. Ka2 Nd3
+60. Bc2 Qxc2+
+61. Ka3 Nf4
+62. Rc8
+62. Rd1
+63. c4 Rd3#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,10,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,64,30.230772018432617
+1695413228-5152,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d5
+3. exd5 Bd6
+4. d4 e4
+5. Ne5 Nf6
+6. c4 c6
+7. dxc6 Bxe5
+8. dxe5 Qxd1+
+9. Kxd1 Ng4
+10. Ke1 Nxc6
+11. Nc3 Nb4
+12. Rb1 Bf5
+13. Be2 Nc2+
+14. Kf1 Nxe5
+15. Bf4 Nd3
+16. Bxd3 exd3
+17. Nb5 Kd7
+18. Nd6 Bg6
+19. Nxb7 Kc6
+20. Na5+ Kd7
+21. Nb7 Rae8
+22. Nc5+ Kc6
+23. Na6 Re4
+24. Bd2 Re2
+25. Bc3 Kb6
+26. Nb4 Kc5
+27. Nd5 Rhe8
+28. Nf4 Nb4
+29. Nxg6 fxg6
+30. a3 Nc2
+31. g3 Rf8
+32. f4 Ne3+
+33. Kg1 Rxf4
+34. gxf4 Rg2#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,35,14.872022151947021
+1695413257-9252,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 Be7
+4. Nf3 Nf6
+5. e5 Ne4
+6. Bd3 Nxc3
+7. bxc3 c5
+8. O-O c4
+9. Be2 Nc6
+10. Ne1 Bd7
+11. f4 Qa5
+12. Bd2 Ba3
+13. Rb1 b6
+14. Bg4 Ne7
+15. Bh3 h5
+16. Nf3 O-O-O
+17. Ng5 Rdf8
+18. Qe2 g6
+19. g3 Ng8
+20. Bg2 Qa4
+21. Be3 Be7
+22. h4 Nh6
+23. Bh3 Qa3
+24. Qd2 Kc7
+25. Bf2 a5
+26. Ra1 Ba4
+27. Rfb1 Ra8
+28. Bg2 b5
+29. Bf3 Rhc8
+30. Kg2 b4
+31. cxb4 axb4
+32. Be1 Nf5
+33. Nxf7 Ne3+
+34. Kh3 Bxc2
+35. Rc1 Bf5+
+36. Kh2 Nf1+
+37. Kg2 Nxd2
+38. Bxd2 Kb8
+39. Nd6 Bxd6
+40. exd6 Qb2
+41. Rd1 Rd8
+42. Kg1 Rd7
+43. Be3 c3
+44. Rdc1 c2
+45. Be2 Qc3
+46. Kf2 Ra3
+47. Bb5 Qxe3+
+48. Kg2 Qf3+
+49. Kh2 Qf2+
+50. Kh1 Qxg3
+51. Bxd7 Qf3+
+52. Kg1 Qxf4
+53. Bb5 Qg3+
+54. Kf1 Qf4+
+55. Ke1 Qe3+
+56. Kf1 Qf4+
+57. Ke1 Qg3+
+58. Kf1 Re3
+59. Rxc2 Bxc2
+60. d7 Qf4+
+61. Kg2 Be4+
+62. Kg1 Re1+
+63. Rxe1 Qg4+
+64. Kf2 Qf3+
+65. Kg1 Qg3+
+66. Kf1 Qg2#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,67,28.905504941940308
+1695413269-1742,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nf6
+3. Nxe5 d6
+4. Nf3 Nxe4
+5. d4 Bg4
+6. Bd3 Nf6
+7. O-O d5
+8. Re1+ Be7
+9. Qe2 Bxf3
+10. Qxf3 a6
+11. Bg5 O-O
+12. Qh3 h5
+13. Bxf6 Bxf6
+14. Qxh5 g6
+15. Qg4 c5
+16. c3 Nc6
+17. dxc5 Ne5
+18. Qd1 b6
+19. cxb6 Qxb6
+20. b3 Kg7
+21. Bc2 Rfd8
+22. Nd2 Rac8
+23. Re3 d4
+24. cxd4 Qxd4
+25. Ne4 Rxc2
+26. Qxc2 Qxa1+
+27. Re1 Qxe1#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,1,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,28,11.92657208442688
+1695413287-9417,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d5
+3. Nc3 a6
+4. Nf3 Bg4
+5. h3 Bc8
+6. Bd3 e6
+7. O-O h6
+8. Re1 Nf6
+9. e5 Nh7
+10. Ne2 Be7
+11. c3 Ng5
+12. Ng3 Nxf3+
+13. Qxf3 g6
+14. Qg4 c5
+15. Bxg6 fxg6
+16. Qxg6+ Kd7
+17. dxc5 Qg8
+18. Qd3 Kc7
+19. b4 Bd7
+20. a4 h5
+21. Be3 h4
+22. Ne2 Qh7
+23. Qd2 Kc8
+24. Nd4 Rg8
+25. Kh1 Nc6
+26. Nf3 Kc7
+27. b5 Qg6
+28. Rg1 axb5
+29. axb5 Rxa1
+30. b6+ Kd8
+31. Ne1 Ke8
+32. f4 Ra8
+33. Nf3 Qh7
+34. Nd4 Nxd4
+35. cxd4 Qe4
+36. Qe2 Kd8
+37. Kh2 Ra3
+38. Re1 Rxe3
+39. Qxe3 Qxg2#",0-1,gpt-3.5-turbo-instruct,Stockfish 8,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 8,40,17.718318939208984
+1695413315-1289,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e6
+2. d4 d5
+3. Nc3 dxe4
+4. Nxe4 Nd7
+5. Nf3 Ngf6
+6. Nxf6+ Nxf6
+7. Bd3 b6
+8. Bb5+ Bd7
+9. Bd3 c5
+10. O-O cxd4
+11. Nxd4 a5
+12. Bg5 h6
+13. Bh4 Bd6
+14. Qf3 Be7
+15. Rad1 O-O
+16. Nc6 Bxc6
+17. Qxc6 Nd5
+18. Bxe7 Qxe7
+19. Be4 Qb4
+20. Bxd5 exd5
+21. b3 Qa3
+22. Qxb6 Rab8
+23. Qd4 Qxa2
+24. Qd3 Rfc8
+25. Rd2 a4
+26. bxa4 Rc4
+27. Qxd5 Qxa4
+28. Qd3 Qc6
+29. Rfd1 Rc3
+30. Qf5 Rf8
+31. h3 Rc5
+32. Qd3 Rc3
+33. Qf5 g6
+34. Qf4 Qc5
+35. Qxh6 Rc4
+36. Rd8 Rxc2
+37. Rxf8+ Qxf8
+38. Qg5 Rc8
+39. Rd7 Qe8
+40. Re7 Qc6
+41. Qf4 Qc1+
+42. Qxc1 Rxc1+
+43. Kh2 Rc5
+44. g4 Kf8
+45. Ra7 Rc2
+46. Kg3 g5
+47. Ra5 f6
+48. Ra7 Rc1
+49. f3 Rf1
+50. Kg2 Re1
+51. Kf2 Rb1
+52. Ke3 Rb5
+53. Ke4 Re5+
+54. Kd4 Re2
+55. Ra3 Re5
+56. Re3 Ra5
+57. Ke4 Ra4+
+58. Kf5 Kf7
+59. Rb3 Rf4#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,60,27.696156978607178
+1695413352-1107,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d5
+3. Nc3 dxe4
+4. Nxe4 Nf6
+5. Nxf6+ exf6
+6. Bc4 Bd6
+7. Qe2+ Be7
+8. Nf3 Nd7
+9. O-O Nf8
+10. Re1 Be6
+11. Bb3 Qd7
+12. c4 Ng6
+13. d5 cxd5
+14. cxd5 Bg4
+15. h3 Bxf3
+16. Qxf3 O-O
+17. Bd2 Bd6
+18. Bc3 Rae8
+19. Qg4 Qc7
+20. h4 Ne5
+21. Qf5 Qd8
+22. h5 a5
+23. Re3 b5
+24. Rae1 Bc5
+25. Re4 b4
+26. Bd2 Qc8
+27. Qxc8 Rxc8
+28. Kf1 Bd6
+29. f4 Nd7
+30. Rc4 Rxc4
+31. Bxc4 f5
+32. Bd3 Nb6
+33. Bxf5 Nxd5
+34. g3 Rd8
+35. Rd1 Be7
+36. Ke2 Nb6
+37. Be3 Rxd1
+38. Kxd1 Nc4
+39. Bc1 Bf6
+40. b3 Nd6
+41. Bd3 g6
+42. hxg6 hxg6
+43. Be3 Bd8
+44. Ke2 Bc7
+45. Kf3 Kg7
+46. Bd4+ Kf8
+47. g4 Bd8
+48. g5 Bc7
+49. Bc5 Ke7
+50. Bc4 Ke8
+51. Bd5 Nf5
+52. Ke4 Ng7
+53. Bd4 Nh5
+54. Be5 Ng3+
+55. Kf3 Bxe5
+56. fxe5 Nf5
+57. Ke4 Ng3+
+58. Kd4 Ne2+
+59. Kc5 Kf8
+60. Kb6 Ke7
+61. Kxa5 Nc3
+62. Bc4 Nxa2
+63. Kb5 Nc3+
+64. Kxb4 Ne4
+65. Ka5 Nxg5
+66. b4 f6
+67. exf6+ Kxf6
+68. b5 Ne4
+69. b6 Nc5
+70. Kb5 Nb7
+71. Kc6 Na5+
+72. Kc7 g5
+73. Bd5 Ke5
+74. Bg2 Kd4
+75. Kd6 Kc3
+76. Kc5 g4
+77. Kb5 Nc4
+78. b7 Nd6+
+79. Kc6 Nxb7
+80. Kxb7 g3
+81. Kc6 Kc2
+82. Kd5 Kd2
+83. Ke4 Kd1
+84. Kf3 Kc1
+85. Kxg3",1/2-1/2,gpt-3.5-turbo-instruct,Stockfish 9,1/2,1/2,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,85,37.05939316749573
+1695413384-8232,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d6
+3. Nc3 e5
+4. Nf3 Qc7
+5. a4 h6
+6. Bc4 Be7
+7. O-O Nf6
+8. Re1 O-O
+9. h3 Nbd7
+10. Be3 exd4
+11. Nxd4 Nc5
+12. Qf3 Ne6
+13. Nf5 Kh8
+14. Rad1 b6
+15. Qg3 Ne8
+16. Bxe6 fxe6
+17. Nxh6 gxh6
+18. Bxh6 Rg8
+19. Qf3 e5
+20. Qh5 Nf6
+21. Qh4 Nh7
+22. Qh5 Bd7
+23. Rd3 Qc8
+24. Rg3 Rxg3
+25. fxg3 Qe8
+26. Qf3 Be6
+27. Rf1 Qg6
+28. Be3 Rf8
+29. Qe2 Rxf1+
+30. Qxf1 Qxg3
+31. Bf2 Qg5
+32. Kh2 Qf6
+33. Qe1 Nf8
+34. Bh4 Qxh4
+35. Qxh4+ Bxh4
+36. g3 Be7
+37. Kg2 Kg7
+38. Kf3 Bg5
+39. h4 Be7
+40. Ne2 Nd7
+41. b3 Nf6
+42. Nc3 Bh3
+43. Ke3 Kf8
+44. Kf3 d5
+45. exd5 Bg4+
+46. Ke3 Bc5+
+47. Kd3 cxd5
+48. Nb5 Bf5+
+49. Kd2 Bg4
+50. Nxa7 Ne4+
+51. Kd3 Bf5
+52. Ke2 Bg4+
+53. Kd3 Bd7
+54. c4 Bf2
+55. cxd5 Nf6
+56. Nc6 Bxg3
+57. Kc4 e4
+58. Nd4 Bxh4
+59. b4 Ne8
+60. a5 bxa5
+61. bxa5 Bc8
+62. Kc5 Bf2
+63. Kc4 Ke7
+64. Nc6+ Kd6
+65. Nb4 Nc7
+66. Nc2 Nxd5
+67. Kb5 Bd7+
+68. Kc4 Ke5
+69. a6 Nb6+
+70. Kb4 Be6
+71. Kb5 Na8
+72. Kc6 Bc8
+73. Kb5 Kd6
+74. Nb4 Bd7+
+75. Ka5 Bb6#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,76,31.802346229553223
+1695413404-9798,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 Bc5
+4. c3 a6
+5. Ba4 Ba7
+6. O-O Nge7
+7. d4 b5
+8. Bb3 Ng6
+9. Ng5 f6
+10. Nf7 Qe7
+11. Nxh8 Nxh8
+12. Be3 Na5
+13. Bc2 exd4
+14. cxd4 Nc4
+15. Bc1 Bb7
+16. b3 Nd6
+17. Nc3 c6
+18. Ba3 Nhf7
+19. Re1 Qe6
+20. d5 Qe5
+21. dxc6 dxc6
+22. Bxd6 Nxd6
+23. Qd3 Bd4
+24. Rad1 Bxc3
+25. Qxd6 Qxd6
+26. Rxd6 Bxe1
+27. Re6+ Kd7
+28. Kf1 Bc3
+29. Rxc6 Bxc6
+30. Ke2 Ke6
+31. Kd3 Ba5
+32. f4 Rd8+
+33. Ke3 Rd2
+34. Bd3 Rxg2
+35. f5+ Ke5
+36. h4 Rxa2
+37. h5 Bb6+
+38. Kf3 Rd2
+39. Bb1 Rb2
+40. Bd3 Kd4
+41. Bf1 Bxe4+
+42. Kg4 Ke5
+43. h6 Rxb3
+44. hxg7 Bxf5+
+45. Kh4 Bf2+
+46. Kh5 Bg6+
+47. Kh6 Be3#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,48,20.056371927261353
+1695413420-4979,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 Nxd4
+4. Nxd4 cxd4
+5. Qxd4 e6
+6. Nc3 Qa5
+7. Bd2 Qc5
+8. Qd3 Nf6
+9. Be3 Qa5
+10. Be2 Be7
+11. O-O a6
+12. f4 d6
+13. Rad1 O-O
+14. Bd4 Qc7
+15. e5 Ne8
+16. Qe3 b5
+17. Bd3 dxe5
+18. fxe5 f5
+19. exf6 Nxf6
+20. Ne4 Ng4
+21. Qh3 Rxf1+
+22. Rxf1 e5
+23. Qh5 g6
+24. Bxe5 Qa7+
+25. Kh1 gxh5
+26. Bc3 Qb8
+27. g3 Bb7
+28. Rf5 Qa7
+29. Rxh5 Qf2
+30. Rg5+ Bxg5
+31. Bc4+ Kf8
+32. Bb4+ Kg7
+33. Bc3+ Bf6
+34. Bxf6+ Nxf6
+35. Bd5 Nxe4
+36. Bxb7 Rd8
+37. Bxe4 Rd2
+38. Bg2 Rxc2
+39. h4 Qxg2#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,40,16.66336679458618
+1695413446-3600,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 e6
+3. d4 d5
+4. exd5 Qxd5
+5. Nc3 Qd6
+6. Nb5 Qd7
+7. Bf4 Na6
+8. Ne5 Qd8
+9. Qf3 Nf6
+10. O-O-O Qd5
+11. dxc5 Qxf3
+12. gxf3 Bxc5
+13. Nd6+ Bxd6
+14. Rxd6 Nb8
+15. Bb5+ Ke7
+16. Rhd1 a6
+17. Ba4 Nd5
+18. R6xd5 exd5
+19. Rxd5 Be6
+20. Rc5 Rc8
+21. Rxc8 Bxc8
+22. Nc4 Nd7
+23. Bd6+ Ke6
+24. Bb3 b5
+25. Nb6+ Kxd6
+26. Nxa8 f6
+27. a4 Bb7
+28. axb5 axb5
+29. c4 bxc4
+30. Bxc4 Bxf3
+31. Kd2 Bxa8
+32. Ke3 Bd5
+33. Bd3 Nf8
+34. b4 g6
+35. f4 Bg8
+36. h4 Be6
+37. h5 gxh5
+38. Kf3 Ng6
+39. Kg3 Bg4
+40. Bc4 Bc8
+41. Bd3 f5
+42. Be2 Kc7
+43. Bxh5 Kb6
+44. Be2 Kc6
+45. Bc4 Kb6
+46. Be2 Be6
+47. Bd3 h5
+48. Be2 h4+
+49. Kh3 Nxf4+
+50. Kxh4 Nxe2
+51. Kg5 f4
+52. Kh4 Bd7
+53. Kg5 f3
+54. Kh4 f2
+55. Kg5 Bc8
+56. Kh4 Bb7
+57. Kg5 Bd5
+58. Kh4 Be6
+59. Kg5 f1=Q
+60. Kh4 Bf7
+61. Kg5 Qf4#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,62,26.043920755386353
+1695413483-2866,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d6
+3. Nc3 e5
+4. Nf3 Qe7
+5. Bc4 Nf6
+6. O-O Bg4
+7. Be3 Bh5
+8. h3 Qc7
+9. g4 exd4
+10. Nxd4 Bg6
+11. Nf5 Bxf5
+12. exf5 h6
+13. Re1 Be7
+14. Bf4 O-O
+15. Rxe7 Qxe7
+16. Bxd6 Qd7
+17. Bxf8 Kxf8
+18. Qxd7 Nbxd7
+19. Rd1 b5
+20. Bf1 Ke7
+21. Bg2 Rc8
+22. f4 b4
+23. Ne2 Nb6
+24. Nd4 Nbd5
+25. g5 Ng8
+26. Nxc6+ Rxc6
+27. Bxd5 Rxc2
+28. Re1+ Kf8
+29. g6 Ne7
+30. Bxf7 Rxb2
+31. Rd1 Nxf5
+32. Rd7 Nh4
+33. Rxa7 Rd2
+34. Rb7 Rd6
+35. Rxb4 Ke7
+36. Re4+ Kf6
+37. Kf2 Rd3
+38. Re3 Rd2+
+39. Re2 Rd3
+40. Re3 Rd2+
+41. Kg3 Nf5+
+42. Kf3 Nxe3
+43. Kxe3 Rh2
+44. Ke4 Rxh3
+45. a4 h5
+46. Be8 Ra3
+47. f5 h4
+48. Kf4 h3
+49. Bc6 h2
+50. Kg4 Ra1
+51. Kg3 h1=Q
+52. Bxh1 Rxh1
+53. Kf4 Rh4+
+54. Ke3 Rg4
+55. Kf3 Rxa4
+56. Ke3 Ra5
+57. Kf3 Ra8
+58. Kf4 Ra5
+59. Kg4 Ra2
+60. Kf4 Ra4+
+61. Kf3 Ra5
+62. Kf4 Rxf5+
+63. Kg4 Kxg6
+64. Kg3 Kf6
+65. Kg4 Kg6
+66. Kg3 Kh5
+67. Kh3 Rf4
+68. Kg3 Rf5
+69. Kh3 Rf3+
+70. Kg2 Kg4
+71. Kh2 Rf2+
+72. Kg1 Kg3
+73. Kh1 Ra2
+74. Kg1 Rf2
+75. Kh1 g5
+76. Kg1 Rf7
+77. Kh1 Re7
+78. Kg1 Re6
+79. Kh1 Re5
+80. Kg1 Re6
+81. Kh1 Re3
+82. Kg1 Re8
+83. Kh1 Re1#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,84,36.23055696487427
+1695413501-3769,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 d6
+3. d4 Nd7
+4. Nc3 cxd4
+5. Nxd4 a6
+6. Bc4 g6
+7. O-O Bg7
+8. Be3 Ngf6
+9. f4 b5
+10. Bb3 Bb7
+11. Qf3 Rc8
+12. Rae1 O-O
+13. Bf2 b4
+14. Nd5 a5
+15. Nxf6+ Nxf6
+16. Qd3 Ng4
+17. Bh4 Qb6
+18. c3 Ba6
+19. Qd1 Bxf1
+20. Qxg4 bxc3
+21. bxc3 Rxc3
+22. Kxf1 a4
+23. Bxe7 Bxd4
+24. Bxf8 axb3
+25. axb3 h5
+26. Qd1 Qa6+
+27. Qe2 Qxe2+
+28. Kxe2 Kxf8
+29. Rd1 Re3+
+30. Kf1 Rxe4
+31. g3 Bc5
+32. Rd3 Rb4
+33. Ke2 Re4+
+34. Kf3 f5
+35. h3 Rb4
+36. g4 Kg7
+37. gxh5 gxh5
+38. Kg3 Kf6
+39. Kh4 Rxf4+
+40. Kxh5 Re4
+41. Rg3 Re7
+42. Rg6+ Ke5
+43. Kg5 Rh7
+44. h4 Be3#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,45,18.434417009353638
+1695413527-6394,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 Nd7
+4. Bc4 exd4
+5. Nxd4 a6
+6. O-O Ngf6
+7. Nc3 c6
+8. Bg5 Nc5
+9. b4 Ne6
+10. Nxe6 Bxe6
+11. Bxe6 fxe6
+12. f4 Be7
+13. e5 dxe5
+14. fxe5 Qxd1
+15. Raxd1 Nd5
+16. Nxd5 exd5
+17. Bxe7 Kxe7
+18. Rd3 Raf8
+19. Rdf3 Rhg8
+20. Rxf8 Rxf8
+21. Rxf8 Kxf8
+22. Kf2 b6
+23. Ke3 Ke7
+24. Kd4 Ke6
+25. g4 a5
+26. bxa5 c5+
+27. Kd3 bxa5
+28. c4 Kxe5
+29. cxd5 Kxd5
+30. h4 h6
+31. h5 c4+
+32. Kc3 Kc5
+33. a3 Kd5
+34. a4 Kc5
+35. Kc2 Kd4
+36. Kd2 Ke4
+37. Kc3 Kd5
+38. Kc2 Kd4
+39. Kd2 Kd5
+40. Kc3 Kc5
+41. Kc2 Kb4
+42. Kb2 c3+
+43. Kc2 Kc4
+44. Kc1 Kb4
+45. Kc2 Kc4
+46. Kc1 Kb3
+47. Kb1 Kxa4
+48. Kc2 Kb4
+49. Kc1 Ka4
+50. Kc2 Kb4
+51. Kc1 Kc4
+52. Kc2 a4
+53. Kc1 Kb3
+54. Kb1 Kc4
+55. Kc2 a3
+56. Kb1 Kb3
+57. Ka1 c2
+58. g5 g6
+59. gxh6 a2
+60. hxg6 c1=Q#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,61,26.175557851791382
+1695413567-4435,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 Nc6
+3. d4 d6
+4. d5 Na5
+5. Bd2 a6
+6. Nc3 g6
+7. Be2 b5
+8. O-O e5
+9. dxe6 Bxe6
+10. Nd5 Bg7
+11. Bxa5 Qxa5
+12. c3 Qd8
+13. Qd2 Ne7
+14. Rad1 Bxd5
+15. exd5 O-O
+16. Rfe1 Qd7
+17. Ng5 h6
+18. Ne4 Kh7
+19. Qf4 Be5
+20. Nf6+ Bxf6
+21. Qxf6 Rab8
+22. Bg4 Qxg4
+23. Qxe7 Rbe8
+24. Qxd6 Rxe1+
+25. Rxe1 Re8
+26. Rf1 Kg7
+27. Qxc5 Re2
+28. d6 Qe4
+29. h3 Rd2
+30. Qb6 Qd3
+31. Qxa6 Rxb2
+32. Qc6 Rxa2
+33. d7 Rd2
+34. Re1 Qf5
+35. Qb6 Rxd7
+36. Qe3 Rd5
+37. g4 Qd7
+38. Qe4 Rc5
+39. Re3 Rd5
+40. Kg2 Rc5
+41. Rd3 Qc7
+42. Qd4+ Kg8
+43. Qf6 Kh7
+44. Rd8 Qc6+
+45. Qxc6 Rxc6
+46. Rb8 Rc4
+47. Rxb5 h5
+48. gxh5 g5
+49. Rxg5 Rxc3
+50. f3 Rc1
+51. Kg3 Kh6
+52. Rf5 Kg7
+53. h6+ Kxh6
+54. Rxf7 Ra1
+55. Rb7 Kg5
+56. Rb5+ Kh6
+57. h4 Rc1
+58. Rb6+ Kg7
+59. Kg4 Rg1+
+60. Kf5 Rh1
+61. Rb7+ Kh6
+62. Rb8 Kg7
+63. Rb4 Ra1
+64. Kg5 Rg1+
+65. Rg4 Rc1
+66. f4 Rh1
+67. f5 Ra1
+68. Rb4 Rg1+
+69. Kh5 Kf6
+70. Rb5 Rg8
+71. Rb6+ Kf7
+72. Rg6 Rc8
+73. Kg5 Rc1
+74. Rf6+ Kg7
+75. Ra6 Rg1+
+76. Kh5 Kf7
+77. Kh6 Rc1
+78. h5 Re1
+79. Kh7 Rb1
+80. h6 Rb7
+81. Rg6 Rb8
+82. Rg7+ Kf6
+83. Rg8 Rb1
+84. Rf8+ Ke7
+85. Kg7 Rg1+
+86. Kh8 Kxf8
+87. f6 Rc1
+88. h7 Rc8
+89. f7 Kxf7#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,90,39.93535900115967
+1695413611-5692,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 d5
+3. Nc3 dxe4
+4. Nxe4 Nd7
+5. Ng5 Ngf6
+6. Bd3 Qc7
+7. N1f3 e6
+8. Qe2 h6
+9. Nxe6 fxe6
+10. Bg6+ Kd8
+11. O-O Bd6
+12. Re1 Nf8
+13. Bd3 Bd7
+14. c4 Be8
+15. c5 Bf4
+16. Ne5 Bxe5
+17. dxe5 Nd5
+18. Bd2 Bg6
+19. Bc4 Ke8
+20. b4 Kf7
+21. Rac1 Kg8
+22. b5 Rd8
+23. a4 cxb5
+24. axb5 Qxc5
+25. Bxd5 Qxd5
+26. Bb4 Kh7
+27. Red1 Qe4
+28. Qxe4 Rxd1+
+29. Rxd1 Bxe4
+30. Rd8 Ng6
+31. Rd7 a5
+32. bxa6 bxa6
+33. f3 Bd5
+34. Ra7 Ra8
+35. Rxa8 Bxa8
+36. Kf2 Nf4
+37. Bd2 Ng6
+38. Bc3 Ne7
+39. Ke3 g5
+40. Kd4 Bc6
+41. Kc5 Bd5
+42. Kd6 Nf5+
+43. Kc5 Nh4
+44. Kb6 Nxg2
+45. Kxa6 Bc4+
+46. Kb6 Bb3
+47. Kc5 Nh4
+48. Kd4 Nxf3+
+49. Ke3 Nxh2
+50. Kf2 Ng4+
+51. Kg3 h5
+52. Bd2 Kh6
+53. Bc3 Bc4
+54. Bd4 Kg6
+55. Bc3 Kg7
+56. Bd4 Kh7
+57. Bc3 Bd5
+58. Bd4 Kg6
+59. Bc3 Kh7
+60. Bd4 Kh6
+61. Bc3 Be4
+62. Bd4 Kh7
+63. Bc3 Kg6
+64. Bd4 Kf5
+65. Bc3 Nxe5
+66. Bd4 Nf3
+67. Bc3 h4+
+68. Kf2 Bd5
+69. Bb4 g4
+70. Bd6 g3+
+71. Bxg3 hxg3+
+72. Kxg3 Nd4
+73. Kf2 Kf4
+74. Ke1 Ke3
+75. Kd1 e5
+76. Ke1 e4
+77. Kd1 Bc6
+78. Ke1 Nf3+
+79. Kf1 Bb5+
+80. Kg2 Kf4
+81. Kf2 Bc4
+82. Kg2 Nd2
+83. Kf2 e3+
+84. Ke1 Bb5
+85. Kd1 Nc4
+86. Ke1 Nd2
+87. Kd1 Nf3
+88. Kc2 e2
+89. Kc3 e1=Q+
+90. Kb3 Bc6
+91. Kc4 Qe5
+92. Kd3 Qe1
+93. Kc4 Qc1+
+94. Kb4 Nd4
+95. Ka5 Qc5+
+96. Ka6 Qb4
+97. Ka7 Qa5+
+98. Kb8 Nb5
+99. Kc8 Qc7#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,100,43.550748348236084
+1695413660-1489,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 g6
+3. Nc3 d5
+4. Nf3 a6
+5. Bd3 Bg4
+6. h3 Bxf3
+7. Qxf3 Bg7
+8. exd5 Bxd4
+9. O-O Nd7
+10. dxc6 Ne5
+11. Qe4 Nf6
+12. Qe2 Nxc6
+13. Bh6 Qd6
+14. Rad1 Qe6
+15. Qxe6 fxe6
+16. Bc4 Bxc3
+17. bxc3 Nd8
+18. Rfe1 b5
+19. Bxe6 Nxe6
+20. Rxe6 Kf7
+21. Rde1 Rhe8
+22. Bg5 Nd5
+23. R6e5 e6
+24. Bd2 Rad8
+25. R1e4 h5
+26. c4 bxc4
+27. Rxc4 Rd6
+28. Bg5 Rf8
+29. Rc5 Kg8
+30. c4 Nf4
+31. Bxf4 Rxf4
+32. Rc7 Rf7
+33. Rc8+ Rf8
+34. Rxf8+ Kxf8
+35. c5 Rd1+
+36. Kh2 Kf7
+37. c6 Rc1
+38. Ra5 Rxc6
+39. Kg3 Kg7
+40. Kf4 Kh6
+41. Ke5 g5
+42. Kf6 Rc2
+43. Rxa6 Re2
+44. Ra8 Rxf2+
+45. Kxe6 Re2+
+46. Kf6 Rf2+
+47. Ke5 Rxg2
+48. a4 Rg3
+49. a5 Kh7
+50. a6 Kg7
+51. a7 Re3+
+52. Kf5 Rf3+
+53. Kxg5 Ra3
+54. Kxh5 Ra4
+55. Kg5 Ra3
+56. h4 Ra6
+57. h5 Ra2
+58. h6+ Kh7
+59. Kf5 Ra3
+60. Ke5 Ra2
+61. Kd5 Ra1
+62. Kc5 Rc1+
+63. Kb6 Rb1+
+64. Kc7 Ra1
+65. Kd6 Ra3
+66. Ke5 Ra1
+67. Kf4 Rf1+
+68. Kg3 Ra1
+69. Kg4 Ra3
+70. Kf5 Ra1
+71. Ke6 Ra3
+72. Kd6 Ra4
+73. Kc6 Ra1
+74. Kb6 Rb1+
+75. Kc7 Rc1+
+76. Kd6 Ra1
+77. Ke5 Ra2
+78. Kf4 Ra5
+79. Kg4 Ra1
+80. Kf5 Ra4
+81. Ke5 Ra2
+82. Kd5 Ra3
+83. Kc5 Ra6
+84. Kb5 Ra2
+85. Kb6 Rb2+
+86. Kc7 Ra2
+87. Kd6 Ra1
+88. Ke5 Ra5+
+89. Kf4 Ra6
+90. Kg4 Ra2
+91. Kf5 Rf2+
+92. Ke6 Re2+
+93. Kd5 Ra2
+94. Kc5 Ra1
+95. Kb5 Ra2
+96. Kb6 Rb2+
+97. Kc7 Rc2+
+98. Kd6 Rd2+
+99. Ke5 Ra2
+100. Kf4 Ra3
+101. Kg4 Ra1
+102. Kf5 Ra6
+103. Ke5 Ra5+
+104. Kd4 Ra4+
+105. Kc3 Ra2
+106. Kb3 Ra5
+107. Kb4 Ra1
+108. Kb5 Ra4
+109. Kxa4 Kg6
+110. Rg8+ Kxh6
+111. a8=Q Kh7
+112. Qg2 Kh6
+113. Qg6#",1-0,gpt-3.5-turbo-instruct,Stockfish 9,1,0,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,113,49.08048701286316
+1695413688-9292,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 e5
+2. Nf3 d6
+3. d4 exd4
+4. Nxd4 Nf6
+5. Nc3 Be7
+6. Bc4 Nc6
+7. O-O O-O
+8. Re1 Nxd4
+9. Qxd4 c6
+10. a4 Qb6
+11. Qd3 Qd8
+12. Bf4 Ng4
+13. Rad1 Ne5
+14. Bxe5 dxe5
+15. Qg3 Bd6
+16. Rd3 Qf6
+17. Red1 Bc7
+18. Rf3 Qe7
+19. h4 Kh8
+20. h5 f5
+21. exf5 Bxf5
+22. Re3 e4
+23. f4 Bb6
+24. Kh2 Bxe3
+25. Qxe3 Qh4+
+26. Kg1 Rad8
+27. Rf1 Rfe8
+28. Bf7 Re7
+29. Bc4 Qxh5
+30. Ne2 b6
+31. Ng3 Qg4
+32. Be2 Qg6
+33. Bh5 Qe6
+34. Be2 Qf6
+35. Nh5 Qe6
+36. Ng3 Qf6
+37. Nh5 Qxb2
+38. g4 Be6
+39. f5 Bg8
+40. f6 gxf6
+41. Nxf6 Qd4
+42. Qxd4 Rxd4
+43. g5 Rg7
+44. Rf5 h6
+45. Kf2 Rxg5
+46. Rf4 Rxa4
+47. Nxe4 Rd5
+48. Bd3 Kg7
+49. Rg4+ Rg5
+50. Rf4 Bd5
+51. Nxg5 Rxf4+
+52. Ke3 hxg5
+53. c4 Be6
+54. Be4 c5
+55. Bd3 Bxc4
+56. Bc2 a5
+57. Bb1 Bd5
+58. Bc2 Kf6
+59. Bb1 a4
+60. Bc2 a3
+61. Bb1 Ke5
+62. Bc2 a2
+63. Bb1 axb1=Q
+64. Kd2 Bc4
+65. Kc3 Qc1#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,66,28.0743088722229
+1695413700-5190,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c5
+2. Nf3 e6
+3. d4 d5
+4. exd5 exd5
+5. Bb5+ Nc6
+6. O-O Be7
+7. dxc5 Bxc5
+8. Re1+ Ne7
+9. Nbd2 Bxf2+
+10. Kxf2 Qb6+
+11. Kg3 Qxb5
+12. Nb3 O-O
+13. Nbd4 Nf5+
+14. Nxf5 Bxf5
+15. c3 Rae8
+16. Rxe8 Rxe8
+17. Qb3 Qf1
+18. Qxd5 Be4
+19. Qd7 Rf8
+20. Qxb7 f5
+21. Bh6 f4+
+22. Kh4 Qf2+
+23. g3 gxh6
+24. Rg1 Bxf3
+25. Qb3+ Kh8
+26. Qa3 Rf5
+27. Qd6 Rh5#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,28,11.817530870437622
+1695413731-6177,"[Event ""FIDE World Championship Match 2024""]
+[Site ""Los Angeles, USA""]
+[Date ""2024.12.01""]
+[Round ""5""]
+[White ""Carlsen, Magnus""]
+[Black ""Nepomniachtchi, Ian""]
+[Result ""1-0""]
+[WhiteElo ""2885""]
+[White Title ""GM""]
+[WhiteFideId ""1503014""]
+[BlackElo ""2812""]
+[BlackTitle ""GM""]
+[BlackFideId""4168119""]
+[TimeControl40/7200:20/3600:900+30""]
+[UTCDate ""2024.11.27""]
+[UTCTime ""09:01:25""]
+[Variant ""Standard']
+1. e4 c6
+2. d4 g6
+3. Nc3 a5
+4. Nf3 a4
+5. Bc4 d5
+6. exd5 b5
+7. Bd3 Ba6
+8. dxc6 b4
+9. Bxa6 Rxa6
+10. Ne4 Nxc6
+11. O-O e6
+12. Bg5 Be7
+13. Bxe7 Ngxe7
+14. Nf6+ Kf8
+15. Qd2 Nf5
+16. Ne4 Ncxd4
+17. Nxd4 Qxd4
+18. Qxd4 Nxd4
+19. c3 Nc6
+20. cxb4 Nxb4
+21. a3 Nd5
+22. Rac1 Ke7
+23. Rc4 Ra7
+24. Rfc1 Rha8
+25. g3 Rb7
+26. R1c2 h6
+27. Nc5 Rba7
+28. Nd3 g5
+29. Ne5 Kf6
+30. Ng4+ Ke7
+31. Nxh6 Rh8
+32. Ng4 f5
+33. Ne5 Kf6
+34. Nd3 Rah7
+35. f3 Ne3
+36. Rc7 Nxc2
+37. Rxc2 Rd7
+38. Nc5 Rd4
+39. Re2 Rc4
+40. Nd7+ Kg7
+41. Ne5 Rd4
+42. Nc6 Rd6
+43. Nb4 Rhd8
+44. Kf2 Rd2
+45. Ke3 Rxe2+
+46. Kxe2 Rh8
+47. Nd3 Rxh2+
+48. Ke3 Rc2
+49. f4 g4
+50. Kd4 Rd2
+51. Kc3 Rg2
+52. Nc5 Kf7
+53. Nxa4 Rxg3+
+54. Kd4 Rb3
+55. Nc5 g3
+56. Nxb3 g2
+57. Nd2 g1=Q+
+58. Kc3 Qh2
+59. b4 Qxf4
+60. b5 Ke8
+61. Nc4 Qc1+
+62. Kb4 Kd8
+63. a4 f4
+64. a5 Qb1+
+65. Kc5 Qa1
+66. a6 f3
+67. Kb6 f2
+68. Na5 Qd4+
+69. Kb7 Qd7+
+70. Kb6 Qc7#",0-1,gpt-3.5-turbo-instruct,Stockfish 9,0,1,0,0,False,False,False,False,gpt-3.5-turbo-instruct vs. Stockfish 9,71,30.82927703857422
