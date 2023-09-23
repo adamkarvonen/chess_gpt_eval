@@ -20,6 +20,8 @@ Median Moves: 45.0
 Standard Deviation of Moves: 21.90
 ```
 
+All results were gathered on Stockfish 16 with 0.1 seconds per move on a 2023 M1 Mac. 
+
 **Setup**
 
 - Install the necessary libraries in `requirements.txt` using pip.
@@ -48,4 +50,19 @@ play_game(player_one, player_two, num_games)
 
 **Other Capabilities**
 
-There is the ability to run other models using OpenRouter or Hugging Face. However, I've found that other models, like Llama2-70b chat won't provide formatted moves, and Llama2-70b base will hallucinate illegal moves. In addition, it seems like gpt-4 consistently loses to gpt-3.5-turbo-instruct, usually due to forced resignation after 5 illegal moves. 
+There is the ability to run other models using OpenRouter or Hugging Face. However, I've found that other models, like Llama2-70b chat won't provide formatted moves, and Llama2-70b base will hallucinate illegal moves. In addition, it seems like gpt-4 consistently loses to gpt-3.5-turbo-instruct, usually due to forced resignation after 5 illegal moves.
+
+**Stockfish to ELO**
+
+It's difficult to find Stockfish level to ELO ratings online. And of course, there are additional variables such as the time per move and the hardware it's ran on. I did find some estimates such as [this one](https://groups.google.com/g/picochess/c/AixKpYnCrRo):
+
+sf20 : 3100.0
+sf18 : 2757.1
+sf15 : 2651.5
+sf12 : 2470.1
+sf9 : 2270.1
+sf6 : 2012.8
+sf3 : 1596.7
+sf0 : 1242.4
+
+But they should be taken with a grain of salt.
