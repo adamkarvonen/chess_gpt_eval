@@ -4,7 +4,7 @@ There has recently been some buzz about the ability of GPT-3.5-turbo-instruct's 
 
 **Results**
 
-GPT-3.5-turbo instruct 
+GPT-3.5-turbo instruct does well in 150 games against various Stockfish levels and 30 games against GPT-4. Most of gpt-4's losses were due to illegal moves, so it may be possible to come up with a prompt to have gpt-4 correct illegal moves and improve its score.
 
 ![](./gpt-3.5-turbo-instruct-win-rate.png)
 
@@ -22,9 +22,9 @@ Standard Deviation of Moves: 21.90
 
 **Setup**
 
-- Install the necessary libraries using pip.
+- Install the necessary libraries in `requirements.txt` using pip.
 - Copy paste your OpenAI API key in `gpt_inputs/api_key.txt`.
-- If you plan on using StockfishPlayer, ensure Stockfish is installed on your system and accessible from your system path. On Mac, this is done with `brew install stockfish`.
+- If you plan on using StockfishPlayer, ensure Stockfish is installed on your system and accessible from your system path. On Mac, this is done with `brew install stockfish`. On Linux, you can use `apt install stockfish`.
 
 **Game Recording**
 
