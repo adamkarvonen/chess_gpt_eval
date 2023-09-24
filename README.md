@@ -8,12 +8,12 @@ GPT-3.5-turbo instruct does well in 150 games against various Stockfish levels a
 
 ![](./gpt-3.5-turbo-instruct-win-rate.png)
 
-gpt-3.5-turbo-instruct's illegal move rate is 0.3% over 8205 moves, and the longest game had 147 moves.
+gpt-3.5-turbo-instruct's illegal move rate is under 0.1% over 8205 moves (possibly 0%, I had insufficient recording and state validation going on during my run... TODO), and the longest game had 147 moves.
 
 `analysis.ipynb` results:
 ```
-total moves: 8205, total illegal moves: 25
-Ratio of Player One's Illegal Moves to Total Moves: 0.0030
+total moves: 8205, total illegal moves: 5 or less
+Ratio of Player One's Illegal Moves to Total Moves: 0.0006 or less
 Minimum Moves: 15
 Maximum Moves: 147
 Median Moves: 45.0
