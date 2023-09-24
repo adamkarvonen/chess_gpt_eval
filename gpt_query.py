@@ -2,6 +2,7 @@ import openai
 import tiktoken
 import json
 import os
+import replicate
 
 # for hugging face inference endpoints for codellama
 import requests
@@ -35,6 +36,8 @@ pricing_dict = {
 
 MAX_TOKENS = 10
 
+completion_models = ["gpt-3.5-turbo-instruct", "babbage", "davinci"]
+
 
 # tenacity is to handle anytime a request fails
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
@@ -57,7 +60,7 @@ def get_gpt_response(
         # prompt_cost = get_prompt_cost(model, num_tokens)
         # print("prompt cost in $:", prompt_cost)
 
-        if model == "gpt-3.5-turbo-instruct":
+        if model in completion_models:
             response = get_completions_response(model, messages, temperature)
         elif model.startswith("gpt"):
             response = openai_request(model, messages, temperature)
@@ -65,6 +68,8 @@ def get_gpt_response(
             response = openrouter_request(model, messages, temperature)
         elif model.startswith("huggingface"):
             response = hugging_face_request(model, messages, temperature)
+        elif model.startswith("replicate"):
+            response = replicate_request(model, messages, temperature)
         else:
             raise Exception("Invalid model name")
 
@@ -115,6 +120,37 @@ def openrouter_request(model: str, messages: list[dict], temperature: float) -> 
         max_tokens=MAX_TOKENS,
     )
     response = completion.choices[0].message.content
+    return response
+
+
+def replicate_request(model: str, messages: list[dict], temperature: float) -> str:
+    if temperature == 0:
+        temperature = 0.001
+
+    with open("gpt_inputs/replicate_api_key.txt", "r") as f:
+        api_key = f.read().strip()
+    os.environ["REPLICATE_API_TOKEN"] = api_key
+
+    model = model.replace("replicate/", "")
+
+    messages = translate_to_string_input(messages)
+
+    output = replicate.run(
+        model,
+        input={
+            "prompt": messages,
+            "max_new_tokens": MAX_TOKENS,
+            "temperature": temperature,
+        },
+    )
+
+    # The meta/llama-2-7b model can stream output as it's running.
+    response = ""
+    # The predict method returns an iterator, and you can iterate over that output.
+    for item in output:
+        # https://replicate.com/meta/llama-2-7b/versions/527827021d8756c7ab79fde0abbfaac885c37a3ed5fe23c7465093f0878d55ef/api#output-schema
+        response += item
+
     return response
 
 
