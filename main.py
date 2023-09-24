@@ -195,10 +195,28 @@ def get_legal_move(
         move_san = player.get_move(
             board, game_state, ((attempt / max_attempts) * 0.5) + 0.3
         )
+
+        # Sometimes when GPT thinks it's the end of the game, it will just output the result
+        # Like "1-0". If so, this really isn't an illegal move, so we'll add a check for that.
+        if move_san is not None:
+            if "-" in move_san:
+                print(f"{move_san}, player has resigned")
+                return LegalMoveResponse(
+                    move_san=None,
+                    move_uci=None,
+                    attempts=attempt,
+                    is_resignation=True,
+                )
+
         try:
             move_uci = board.parse_san(move_san)
         except Exception as e:
             print(f"Error parsing move {move_san}: {e}")
+            # check if player is gpt-3.5-turbo-instruct
+            # only recording errors for gpt-3.5-turbo-instruct because it's errors are so rare
+            if player.get_config()["model"] == "gpt-3.5-turbo-instruct":
+                with open("gpt-3.5-turbo-instruct-illegal-moves.txt", "a") as f:
+                    f.write(f"{game_state}\n{move_san}\n")
             continue
 
         if move_uci in board.legal_moves:
@@ -207,14 +225,6 @@ def get_legal_move(
             return LegalMoveResponse(move_san, move_uci, attempt)
         print(f"Illegal move: {move_san}")
 
-    # Sometimes when GPT thinks it's the end of the game, it will just output the result
-    # Like "1-0". If so, this really isn't an illegal move, so we'll add a check for that.
-    if move_san is not None:
-        if "-" in move_san:
-            print(f"{move_san}, player has resigned")
-            return LegalMoveResponse(
-                move_san=None, move_uci=None, attempts=max_attempts, is_resignation=True
-            )
     # If we reach here, the player has made illegal moves for all attempts.
     print(f"{player} provided illegal moves for {max_attempts} attempts.")
     return LegalMoveResponse(
@@ -262,7 +272,11 @@ def play_game(player_one: Player, player_two: Player, max_games: int = 10):
             with open("game.txt", "w") as f:
                 f.write(game_state)
             current_move_num = str(board.fullmove_number) + "."
-            game_state += "\n" + current_move_num
+
+            # this if statement may be overkill, just trying to get format to exactly match PGN notation
+            if board.fullmove_number != 1:
+                game_state += " "
+            game_state += current_move_num
             print(f"{current_move_num}", end=" ")
 
             (
@@ -328,7 +342,7 @@ if __name__ == "__main__":
 
     for i in range(1):
         num_games = 15
-        player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
+        player_one = GPTPlayer(model="gpt-3.5-turbo")
         # player_one = GPTPlayer(model="gpt-4")
         # player_one = StockfishPlayer(skill_level=i, play_time=0.1)
         player_two = StockfishPlayer(skill_level=5, play_time=0.1)
