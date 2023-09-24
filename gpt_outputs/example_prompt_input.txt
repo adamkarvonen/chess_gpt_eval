@@ -1,29 +1,4 @@
-babbage
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
 
-[Event "FIDE World Championship Match 2024"]
-[Site "Los Angeles, USA"]
-[Date "2024.12.01"]
-[Round "5"]
-[White "Carlsen, Magnus"]
-[Black "Nepomniachtchi, Ian"]
-[Result "1-0"]
-[WhiteElo "2885"]
-[White Title "GM"]
-[WhiteFideId "1503014"]
-[BlackElo "2812"]
-[BlackTitle "GM"]
-[BlackFideId"4168119"]
-[TimeControl40/7200:20/3600:900+30"]
-[UTCDate "2024.11.27"]
-[UTCTime "09:01:25"]
-[Variant "Standard']
-1. e4 c5
-2. Nf3 d6
-3. d4 cxd4
-4. Nxd4 g6
-5. Nc3 Bd7
-6. Be2 Bg7
-7. O-O Nc6
-8. f3 Nxd4
-9. Qxd4 Bxd4+
-10.
+1.e4 e6 2.d4 c6 3.Nc3 d5 4.Nf3 Bb4 5.Bd3 dxe4 6.Bxe4 Nf6 7.Bd3 Nbd7 8.0-0 b6 9.Ne4 Nxe4 10.Bxe4 Qc7 11.c3 Nf6 12.Bxc6+ Qxc6 13.Ne5 Qd6 14.cxb4 O-O 15.Bf4 Ba6

@@ -185,7 +185,11 @@ def get_player_titles(player_one: Player, player_two: Player) -> Tuple[str, str]
 
 # Return is (move_san, move_uci, attempts, is_resignation, is_illegal_move)
 def get_legal_move(
-    player: Player, board: chess.Board, game_state: str, max_attempts: int = 5
+    player: Player,
+    board: chess.Board,
+    game_state: str,
+    player_one: bool,
+    max_attempts: int = 5,
 ) -> LegalMoveResponse:
     """Request a move from the player and ensure it's legal."""
     move_san = None
@@ -199,7 +203,7 @@ def get_legal_move(
         # Sometimes when GPT thinks it's the end of the game, it will just output the result
         # Like "1-0". If so, this really isn't an illegal move, so we'll add a check for that.
         if move_san is not None:
-            if "-" in move_san:
+            if move_san == "1-0" or move_san == "0-1" or move_san == "1/2-1/2":
                 print(f"{move_san}, player has resigned")
                 return LegalMoveResponse(
                     move_san=None,
@@ -220,8 +224,12 @@ def get_legal_move(
             continue
 
         if move_uci in board.legal_moves:
-            if not move_san.startswith(" "):
-                move_san = " " + move_san
+            if player_one == False:
+                if not move_san.startswith(" "):
+                    move_san = " " + move_san
+            else:
+                if move_san.startswith(" "):
+                    move_san = move_san[1:]
             return LegalMoveResponse(move_san, move_uci, attempt)
         print(f"Illegal move: {move_san}")
 
@@ -233,9 +241,9 @@ def get_legal_move(
 
 
 def play_turn(
-    player: Player, board: chess.Board, game_state: str
+    player: Player, board: chess.Board, game_state: str, player_one: bool
 ) -> Tuple[str, bool, bool, int]:
-    result = get_legal_move(player, board, game_state)
+    result = get_legal_move(player, board, game_state, player_one)
     illegal_moves = result.attempts
     move_san = result.move_san
     move_uci = result.move_uci
@@ -284,7 +292,7 @@ def play_game(player_one: Player, player_two: Player, max_games: int = 10):
                 player_one_resignation,
                 player_one_failed_to_find_legal_move,
                 illegal_moves_one,
-            ) = play_turn(player_one, board, game_state)
+            ) = play_turn(player_one, board, game_state, player_one=True)
             player_one_illegal_moves += illegal_moves_one
             if (
                 board.is_game_over()
@@ -298,7 +306,7 @@ def play_game(player_one: Player, player_two: Player, max_games: int = 10):
                 player_two_resignation,
                 player_two_failed_to_find_legal_move,
                 illegal_moves_two,
-            ) = play_turn(player_two, board, game_state)
+            ) = play_turn(player_two, board, game_state, player_one=False)
             player_two_illegal_moves += illegal_moves_two
             if (
                 board.is_game_over()
@@ -342,7 +350,7 @@ if __name__ == "__main__":
 
     for i in range(1):
         num_games = 15
-        player_one = GPTPlayer(model="gpt-3.5-turbo")
+        player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
         # player_one = GPTPlayer(model="gpt-4")
         # player_one = StockfishPlayer(skill_level=i, play_time=0.1)
         player_two = StockfishPlayer(skill_level=5, play_time=0.1)
