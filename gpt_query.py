@@ -2,7 +2,8 @@ import openai
 import tiktoken
 import json
 import os
-import replicate
+
+# import replicate
 
 # for hugging face inference endpoints for codellama
 import requests
@@ -36,7 +37,11 @@ pricing_dict = {
 
 MAX_TOKENS = 10
 
-completion_models = ["gpt-3.5-turbo-instruct", "babbage", "davinci"]
+completion_models = [
+    "gpt-3.5-turbo-instruct",
+    "babbage",
+    "davinci",
+]
 
 
 # tenacity is to handle anytime a request fails
