@@ -30,6 +30,33 @@ class Player:
         raise NotImplementedError
 
 
+class LocalLlamaPlayer:
+    def __init__(self, model_name: str):
+        # you will need to import these if using a local llama model
+        from transformers import AutoTokenizer, AutoModelForCausalLM
+        import torch
+
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModelForCausalLM.from_pretrained(
+            model_name, torch_dtype=torch.bfloat16, device_map=0
+        ).to("cuda")
+        self.model_name = model_name
+
+    def get_move(
+        self, board: str, game_state: str, temperature: float
+    ) -> Optional[str]:
+        prompt = game_state  # adjust as needed
+        toks = self.tokenizer(prompt, return_tensors="pt")
+        res = self.model.generate(
+            **toks.to("cuda"), max_new_tokens=10, temperature=temperature
+        ).to("cpu")
+        completion = self.tokenizer.batch_decode(res)[0]
+        return get_move_from_gpt_response(completion)
+
+    def get_config(self) -> dict:
+        return {"model": self.model_name}
+
+
 class GPTPlayer(Player):
     def __init__(self, model: str):
         self.model = model
