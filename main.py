@@ -6,6 +6,7 @@ import csv
 import random
 import time
 
+from llama_module import BaseLlamaPlayer, LocalLlamaPlayer, LocalLoraLlamaPlayer
 import gpt_query
 
 from typing import Optional, Tuple
@@ -30,61 +31,6 @@ class Player:
         raise NotImplementedError
 
 
-class LocalLlamaPlayer:
-    def __init__(self, model_name: str):
-        # you will need to import these if using a local llama model
-        from transformers import AutoTokenizer, AutoModelForCausalLM
-        import torch
-
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_name, torch_dtype=torch.bfloat16, device_map=0
-        ).to("cuda")
-        self.model_name = model_name
-
-    def get_move(
-        self, board: str, game_state: str, temperature: float
-    ) -> Optional[str]:
-        prompt = game_state  # adjust as needed
-        toks = self.tokenizer(prompt, return_tensors="pt")
-        res = self.model.generate(
-            **toks.to("cuda"), max_new_tokens=10, temperature=temperature
-        ).to("cpu")
-        completion = self.tokenizer.batch_decode(res)[0]
-        return get_move_from_gpt_response(completion)
-
-    def get_config(self) -> dict:
-        return {"model": self.model_name}
-
-
-class LocalLoraLlamaPlayer:
-    def __init__(self, base_model_id: str, adapter_model_id: str):
-        # TODO: is bitsandbytesconfig necessary?
-        from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
-        from peft import PeftModel
-
-        self.tokenizer = AutoTokenizer.from_pretrained(base_model_id)
-        self.model = AutoModelForCausalLM.from_pretrained(base_model_id)
-
-        self.model = PeftModel.from_pretrained(self.model, adapter_model_id)
-        self.model = self.model.merge_and_unload()
-        self.model_name = adapter_model_id
-
-    def get_move(
-        self, board: str, game_state: str, temperature: float
-    ) -> Optional[str]:
-        prompt = game_state  # adjust as needed
-        toks = self.tokenizer(prompt, return_tensors="pt")
-        res = self.model.generate(
-            **toks.to("cuda"), max_new_tokens=10, temperature=temperature
-        ).to("cpu")
-        completion = self.tokenizer.batch_decode(res)[0]
-        return get_move_from_gpt_response(completion)
-
-    def get_config(self) -> dict:
-        return {"model": self.model_name}
-
-
 class GPTPlayer(Player):
     def __init__(self, model: str):
         self.model = model
@@ -104,7 +50,7 @@ class StockfishPlayer(Player):
         self._skill_level = skill_level
         self._play_time = play_time
         # If getting started, you need to run brew install stockfish
-        self._engine = chess.engine.SimpleEngine.popen_uci("stockfish")
+        self._engine = chess.engine.SimpleEngine.popen_uci("/usr/games/stockfish")
 
     def get_move(
         self, board: chess.Board, game_state: str, temperature: float
@@ -407,6 +353,7 @@ if __name__ == "__main__":
         num_games = 15
         # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
         player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
+        # player_one = LocalLoraLlamaPlayer("meta-llama/Llama-2-7b-hf", "/workspace/axolotl/lora2-out")
         # player_one = GPTPlayer(model="gpt-4")
         # player_one = StockfishPlayer(skill_level=i, play_time=0.1)
         player_two = StockfishPlayer(skill_level=5, play_time=0.1)
