@@ -16,9 +16,6 @@ from tenacity import (
     wait_random_exponential,
 )  # for exponential backoff
 
-with open("gpt_inputs/api_key.txt", "r") as f:
-    openai.api_key = f.read().strip()
-
 # system message is used in openai_request()
 system_message = """Provide the next move in the chess game. Only provide the move, no move numbers."""
 
@@ -68,7 +65,7 @@ def get_gpt_response(
         if model in completion_models:
             response = get_completions_response(model, messages, temperature)
         elif model.startswith("gpt"):
-            response = openai_request(model, messages, temperature)
+            response = openai_chat_completion_request(model, messages, temperature)
         elif model.startswith("openrouter"):
             response = openrouter_request(model, messages, temperature)
         elif model.startswith("huggingface"):
@@ -90,7 +87,9 @@ def get_gpt_response(
         return None
 
 
-def openai_request(model: str, messages: list[dict], temperature: float) -> str:
+def openai_chat_completion_request(
+    model: str, messages: list[dict], temperature: float
+) -> str:
     system_message_dict = {
         "role": "system",
         "content": system_message,

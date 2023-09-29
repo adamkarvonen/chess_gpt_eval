@@ -33,6 +33,8 @@ class Player:
 
 class GPTPlayer(Player):
     def __init__(self, model: str):
+        with open("gpt_inputs/api_key.txt", "r") as f:
+            openai.api_key = f.read().strip()
         self.model = model
 
     def get_move(
@@ -50,7 +52,10 @@ class StockfishPlayer(Player):
         self._skill_level = skill_level
         self._play_time = play_time
         # If getting started, you need to run brew install stockfish
-        self._engine = chess.engine.SimpleEngine.popen_uci("/usr/games/stockfish")
+        self._engine = chess.engine.SimpleEngine.popen_uci(
+            "/usr/games/stockfish"
+        )  # For linux
+        # self._engine = chess.engine.SimpleEngine.popen_uci("stockfish")  # For Mac
 
     def get_move(
         self, board: chess.Board, game_state: str, temperature: float
@@ -346,9 +351,6 @@ def play_game(player_one: Player, player_two: Player, max_games: int = 10):
 
 
 if __name__ == "__main__":
-    with open("gpt_inputs/api_key.txt", "r") as f:
-        openai.api_key = f.read().strip()
-
     for i in range(1):
         num_games = 15
         # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
