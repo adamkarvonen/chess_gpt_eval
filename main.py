@@ -212,6 +212,27 @@ def get_player_titles_and_time(
     return (player_one_title, player_two_title, player_one_time, player_two_time)
 
 
+def initialize_game_with_opening(
+    game_state: str, board: chess.Board
+) -> Tuple[str, chess.Board]:
+    with open("openings.csv", "r") as file:
+        lines = file.readlines()[1:]  # Skip header
+    moves_string = random.choice(lines)
+    game_state += moves_string
+    # Splitting the moves string on spaces
+    tokens = moves_string.split()
+
+    for token in tokens:
+        # If the token contains a period, it's a move number + move combination
+        if "." in token:
+            move = token.split(".")[-1]  # Take the move part after the period
+        else:
+            move = token
+
+        board.push_san(move)
+    return game_state, board
+
+
 # Return is (move_san, move_uci, attempts, is_resignation, is_illegal_move)
 def get_legal_move(
     player: Player,
@@ -293,11 +314,19 @@ def play_turn(
     return game_state, resignation, failed_to_find_legal_move, illegal_moves
 
 
-def play_game(player_one: Player, player_two: Player, max_games: int = 10):
-    for _ in range(max_games):  # Play 10 games
+def play_game(
+    player_one: Player,
+    player_two: Player,
+    max_games: int = 10,
+    random_opening_seed: bool = False,
+):
+    for _ in range(max_games):
         with open("gpt_inputs/prompt.txt", "r") as f:
             game_state = f.read()
         board = chess.Board()
+
+        if random_opening_seed:
+            game_state, board = initialize_game_with_opening(game_state, board)
         player_one_illegal_moves = 0
         player_two_illegal_moves = 0
         player_one_resignation = False
@@ -380,9 +409,9 @@ if __name__ == "__main__":
         # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
         # player_one = LocalLoraLlamaPlayer("meta-llama/Llama-2-7b-hf", "/workspace/axolotl/lora2-out")
         # player_one = GPTPlayer(model="gpt-4")
-        player_one = StockfishPlayer(skill_level=-1, play_time=0.01)
-        player_two = StockfishPlayer(skill_level=0, play_time=0.01)
+        player_one = StockfishPlayer(skill_level=-1, play_time=0.1)
+        player_two = StockfishPlayer(skill_level=0, play_time=0.1)
         # player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
-        play_game(player_one, player_two, num_games)
+        play_game(player_one, player_two, num_games, random_opening_seed=True)
