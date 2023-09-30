@@ -166,7 +166,8 @@ def record_results(
         "time_taken": total_time,
     }
 
-    csv_file_path = "logs/dataset.csv"
+    # Generate a unique CSV file path for this process
+    csv_file_path = f"logs/dataset_{os.getpid()}.csv"
 
     # Determine if we need to write headers (in case the file doesn't exist yet)
     write_headers = not os.path.exists(csv_file_path)
