@@ -5,6 +5,7 @@ import os
 import csv
 import random
 import time
+import numpy as np
 
 from llama_module import BaseLlamaPlayer, LocalLlamaPlayer, LocalLoraLlamaPlayer
 import gpt_query
@@ -402,15 +403,29 @@ def play_game(
         # print(game_state)
 
 
+def get_player_two_skill(base=1.3, uniform_fraction=0.1) -> int:
+    # 10% of the time, choose a random skill between -2 and 20
+    if np.random.random() < uniform_fraction:
+        return np.random.randint(-2, 21)
+
+    # 90% of the time, use exponential distribution
+    else:
+        skill_levels = np.arange(-2, 21)
+        weights = base**skill_levels
+        normalized_weights = weights / sum(weights)
+        return np.random.choice(skill_levels, p=normalized_weights)
+
+
 if __name__ == "__main__":
-    for i in range(1):
+    while True:
         num_games = 15
         # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
         # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
         # player_one = LocalLoraLlamaPlayer("meta-llama/Llama-2-7b-hf", "/workspace/axolotl/lora2-out")
         # player_one = GPTPlayer(model="gpt-4")
-        player_one = StockfishPlayer(skill_level=-1, play_time=0.1)
-        player_two = StockfishPlayer(skill_level=0, play_time=0.1)
+        player_one = StockfishPlayer(skill_level=20, play_time=0.01)
+        player_two_skill = get_player_two_skill()
+        player_two = StockfishPlayer(skill_level=player_two_skill, play_time=0.01)
         # player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
