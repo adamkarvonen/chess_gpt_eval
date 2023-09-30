@@ -52,16 +52,26 @@ class StockfishPlayer(Player):
         self._skill_level = skill_level
         self._play_time = play_time
         # If getting started, you need to run brew install stockfish
-        self._engine = chess.engine.SimpleEngine.popen_uci(
-            "/usr/games/stockfish"
-        )  # For linux
-        # self._engine = chess.engine.SimpleEngine.popen_uci("stockfish")  # For Mac
+        linux_path = "/usr/games/stockfish"
+        mac_path = "stockfish"
+        self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
+        # self._engine = chess.engine.SimpleEngine.popen_uci(mac_path)
 
     def get_move(
         self, board: chess.Board, game_state: str, temperature: float
     ) -> Optional[str]:
-        self._engine.configure({"Skill Level": self._skill_level})
-        result = self._engine.play(board, chess.engine.Limit(time=self._play_time))
+        if self._skill_level == -2:
+            legal_moves = list(board.legal_moves)
+            random_move = random.choice(legal_moves)
+            return board.san(random_move)
+        elif self._skill_level < 0:
+            self._engine.configure({"Skill Level": 0})
+            result = self._engine.play(
+                board, chess.engine.Limit(time=1e-8, depth=1, nodes=1)
+            )
+        else:
+            self._engine.configure({"Skill Level": self._skill_level})
+            result = self._engine.play(board, chess.engine.Limit(time=self._play_time))
         if result.move is None:
             return None
         return board.san(result.move)
@@ -107,7 +117,12 @@ def record_results(
 ):
     unique_game_id = generate_unique_game_id()
 
-    player_one_title, player_two_title = get_player_titles(player_one, player_two)
+    (
+        player_one_title,
+        player_two_title,
+        player_one_time,
+        player_two_time,
+    ) = get_player_titles_and_time(player_one, player_two)
 
     if player_one_resignation or player_one_failed_to_find_legal_move:
         result = "0-1"
@@ -135,6 +150,8 @@ def record_results(
         "result": result,
         "player_one": player_one_title,
         "player_two": player_two_title,
+        "player_one_time": player_one_time,
+        "player_two_time": player_two_time,
         "player_one_score": player_one_score,
         "player_two_score": player_two_score,
         "player_one_illegal_moves": player_one_illegal_moves,
@@ -170,23 +187,29 @@ def generate_unique_game_id() -> str:
     return f"{timestamp}-{random_num}"
 
 
-def get_player_titles(player_one: Player, player_two: Player) -> Tuple[str, str]:
+def get_player_titles_and_time(
+    player_one: Player, player_two: Player
+) -> Tuple[str, str, Optional[float], Optional[float]]:
     player_one_config = player_one.get_config()
     player_two_config = player_two.get_config()
 
     # For player one
     if "model" in player_one_config:
         player_one_title = player_one_config["model"]
+        player_one_time = None
     else:
         player_one_title = f"Stockfish {player_one_config['skill_level']}"
+        player_one_time = player_one_config["play_time"]
 
     # For player two
     if "model" in player_two_config:
         player_two_title = player_two_config["model"]
+        player_two_time = None
     else:
         player_two_title = f"Stockfish {player_two_config['skill_level']}"
+        player_two_time = player_two_config["play_time"]
 
-    return (player_one_title, player_two_title)
+    return (player_one_title, player_two_title, player_one_time, player_two_time)
 
 
 # Return is (move_san, move_uci, attempts, is_resignation, is_illegal_move)
@@ -354,11 +377,11 @@ if __name__ == "__main__":
     for i in range(1):
         num_games = 15
         # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
-        player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
+        # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
         # player_one = LocalLoraLlamaPlayer("meta-llama/Llama-2-7b-hf", "/workspace/axolotl/lora2-out")
         # player_one = GPTPlayer(model="gpt-4")
-        # player_one = StockfishPlayer(skill_level=i, play_time=0.1)
-        player_two = StockfishPlayer(skill_level=5, play_time=0.1)
+        player_one = StockfishPlayer(skill_level=-1, play_time=0.01)
+        player_two = StockfishPlayer(skill_level=0, play_time=0.01)
         # player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
