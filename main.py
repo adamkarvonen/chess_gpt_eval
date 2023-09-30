@@ -55,8 +55,8 @@ class StockfishPlayer(Player):
         # If getting started, you need to run brew install stockfish
         linux_path = "/usr/games/stockfish"
         mac_path = "stockfish"
-        self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
-        # self._engine = chess.engine.SimpleEngine.popen_uci(mac_path)
+        # self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
+        self._engine = chess.engine.SimpleEngine.popen_uci(mac_path)
 
     def get_move(
         self, board: chess.Board, game_state: str, temperature: float
@@ -166,7 +166,7 @@ def record_results(
         "time_taken": total_time,
     }
 
-    csv_file_path = "logs/games.csv"
+    csv_file_path = "logs/dataset.csv"
 
     # Determine if we need to write headers (in case the file doesn't exist yet)
     write_headers = not os.path.exists(csv_file_path)
@@ -219,7 +219,7 @@ def initialize_game_with_opening(
     with open("openings.csv", "r") as file:
         lines = file.readlines()[1:]  # Skip header
     moves_string = random.choice(lines)
-    game_state += moves_string
+    game_state += moves_string.rstrip("\n")
     # Splitting the moves string on spaces
     tokens = moves_string.split()
 
@@ -310,7 +310,7 @@ def play_turn(
     else:
         board.push(move_uci)
         game_state += move_san
-        print(move_san, end=" ")
+        # print(move_san, end=" ")
 
     return game_state, resignation, failed_to_find_legal_move, illegal_moves
 
@@ -344,7 +344,7 @@ def play_game(
             if board.fullmove_number != 1:
                 game_state += " "
             game_state += current_move_num
-            print(f"{current_move_num}", end=" ")
+            # print(f"{current_move_num}", end=" ")
 
             (
                 game_state,
@@ -374,7 +374,7 @@ def play_game(
             ):
                 break
 
-            print("\n", end="")
+            # print("\n", end="")
 
         end_time = time.time()
         total_time = end_time - start_time
@@ -426,6 +426,7 @@ if __name__ == "__main__":
         player_one = StockfishPlayer(skill_level=20, play_time=0.01)
         player_two_skill = get_player_two_skill()
         player_two = StockfishPlayer(skill_level=player_two_skill, play_time=0.01)
+        print(f"Player two skill level: {player_two_skill}")
         # player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
