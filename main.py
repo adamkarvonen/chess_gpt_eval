@@ -6,7 +6,8 @@ import csv
 import random
 import time
 
-from llama_module import BaseLlamaPlayer, LocalLlamaPlayer, LocalLoraLlamaPlayer
+# from llama_module import BaseLlamaPlayer, LocalLlamaPlayer, LocalLoraLlamaPlayer
+from nanogpt_module import NanoGptPlayer
 import gpt_query
 
 from typing import Optional, Tuple
@@ -54,8 +55,8 @@ class StockfishPlayer(Player):
         # If getting started, you need to run brew install stockfish
         linux_path = "/usr/games/stockfish"
         mac_path = "stockfish"
-        self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
-        # self._engine = chess.engine.SimpleEngine.popen_uci(mac_path)
+        # self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
+        self._engine = chess.engine.SimpleEngine.popen_uci(mac_path)
 
     def get_move(
         self, board: chess.Board, game_state: str, temperature: float
@@ -409,9 +410,10 @@ if __name__ == "__main__":
         # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
         # player_one = LocalLoraLlamaPlayer("meta-llama/Llama-2-7b-hf", "/workspace/axolotl/lora2-out")
         # player_one = GPTPlayer(model="gpt-4")
-        player_one = StockfishPlayer(skill_level=-1, play_time=0.1)
-        player_two = StockfishPlayer(skill_level=0, play_time=0.1)
+        # player_one = StockfishPlayer(skill_level=-1, play_time=0.1)
+        player_one = NanoGptPlayer(model_name="nanogpt")
+        player_two = StockfishPlayer(skill_level=10, play_time=0.2)
         # player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
-        play_game(player_one, player_two, num_games, random_opening_seed=True)
+        play_game(player_one, player_two, num_games)
