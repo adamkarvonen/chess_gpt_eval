@@ -6,7 +6,9 @@ import pickle
 from contextlib import nullcontext
 import torch
 import tiktoken
-from model import GPTConfig, GPT
+from nanogpt.model import GPTConfig, GPT
+
+BASE_DIR = "nanogpt/"
 
 
 class NanoGptPlayer:
@@ -28,12 +30,9 @@ class NanoGptPlayer:
         dtype = "bfloat16"  # 'float32' or 'bfloat16' or 'float16'
         compile = False  # use PyTorch 2.0 to compile the model to be faster
         exec(
-            open("configurator.py").read()
+            open(f"{BASE_DIR}configurator.py").read()
         )  # overrides from command line or config file
         # -----------------------------------------------------------------------------
-
-        test_input = "data/" + input_dir + "/" + test_name
-        test_output = "data/" + input_dir + "/eval.txt"
 
         torch.manual_seed(seed)
         torch.cuda.manual_seed(seed)
@@ -56,7 +55,7 @@ class NanoGptPlayer:
         # model
         if init_from == "resume":
             # init from a model saved in a specific directory
-            ckpt_path = os.path.join(out_dir, "ckpt.pt")
+            ckpt_path = os.path.join(BASE_DIR, out_dir, "ckpt.pt")
             checkpoint = torch.load(ckpt_path, map_location=device)
             gptconf = GPTConfig(**checkpoint["model_args"])
             model = GPT(gptconf)
@@ -82,9 +81,7 @@ class NanoGptPlayer:
             and "config" in checkpoint
             and "dataset" in checkpoint["config"]
         ):  # older checkpoints might not have these...
-            meta_path = os.path.join(
-                "data", checkpoint["config"]["dataset"], "meta.pkl"
-            )
+            meta_path = os.path.join(BASE_DIR, "out", "meta.pkl")
             load_meta = os.path.exists(meta_path)
         if load_meta:
             print(f"Loading meta from {meta_path}...")

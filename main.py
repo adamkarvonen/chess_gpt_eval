@@ -6,8 +6,9 @@ import csv
 import random
 import time
 
+# NOTE: LLAMA AND NANOGPT ARE EXPERIMENTAL PLAYERS, if not using them, comment them out
 # from llama_module import BaseLlamaPlayer, LocalLlamaPlayer, LocalLoraLlamaPlayer
-from nanogpt_module import NanoGptPlayer
+from nanogpt.nanogpt_module import NanoGptPlayer
 import gpt_query
 
 from typing import Optional, Tuple
@@ -412,7 +413,7 @@ if __name__ == "__main__":
         # player_one = GPTPlayer(model="gpt-4")
         # player_one = StockfishPlayer(skill_level=-1, play_time=0.1)
         player_one = NanoGptPlayer(model_name="nanogpt")
-        player_two = StockfishPlayer(skill_level=10, play_time=0.2)
+        player_two = StockfishPlayer(skill_level=-1, play_time=0.2)
         # player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
