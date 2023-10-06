@@ -147,3 +147,20 @@ class NanoGptPlayer:
 
     def get_config(self) -> dict:
         return {"model": self.model_name}
+
+    def unload_model(self):
+        # Move the model back to CPU to free GPU memory
+        self.model.to("cpu")
+
+        # Delete the model
+        del self.model
+
+        # If using CUDA, this helps in ensuring that the GPU memory is freed up
+        if "cuda" in self.device:
+            torch.cuda.empty_cache()
+
+        # Nullifying other attributes
+        self.encode = None
+        self.decode = None
+        self.ctx = None
+        self.device = None

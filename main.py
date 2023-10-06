@@ -235,6 +235,42 @@ def initialize_game_with_opening(
     return game_state, board
 
 
+def get_board_state_input(new_move: str):
+    # Split the string by spaces
+    parts = new_move.split()
+
+    # Iterate over the parts in reverse to find the last item that ends with a period
+    for part in reversed(parts):
+        if part.endswith(".") and part[:-1].isdigit():
+            last_number = int(part[:-1])
+            break
+    else:
+        print("Pattern not found in the string.")
+        exit()
+
+    # Compute the starting number
+    start_number = last_number - 1
+
+    if start_number < 1:
+        return new_move
+
+    # Find the starting and ending indices of the desired substring
+    # Find the starting index of the desired substring
+    start_index = 0
+    for i, part in enumerate(parts):
+        if part.startswith(str(start_number) + "."):
+            start_index = i
+            break
+
+    end_index = parts.index(str(last_number) + ".")
+
+    # Extract and join the desired substring
+    result = " ".join(parts[start_index : end_index + 1])
+    print(len(result))
+
+    return result
+
+
 # Return is (move_san, move_uci, attempts, is_resignation, is_illegal_move)
 def get_legal_move(
     player: Player,
@@ -248,6 +284,9 @@ def get_legal_move(
     move_uci = None
 
     for attempt in range(max_attempts):
+        boardstate = True
+        if boardstate:
+            game_state = get_board_state_input(game_state)
         move_san = player.get_move(
             board, game_state, ((attempt / max_attempts) * 0.5) + 0.3
         )
@@ -402,6 +441,10 @@ def play_game(
         player_one.close()
     if isinstance(player_two, StockfishPlayer):
         player_two.close()
+    if isinstance(player_one, NanoGptPlayer):
+        player_one.unload_model()
+    if isinstance(player_two, NanoGptPlayer):
+        player_two.unload_model()
 
     print(results)
     return results
