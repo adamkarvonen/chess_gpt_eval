@@ -56,8 +56,8 @@ class StockfishPlayer(Player):
         # If getting started, you need to run brew install stockfish
         linux_path = "/usr/games/stockfish"
         mac_path = "stockfish"
-        # self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
-        self._engine = chess.engine.SimpleEngine.popen_uci(mac_path)
+        self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
+        # self._engine = chess.engine.SimpleEngine.popen_uci(mac_path)
 
     def get_move(
         self, board: chess.Board, game_state: str, temperature: float
@@ -322,6 +322,7 @@ def play_game(
     max_games: int = 10,
     random_opening_seed: bool = False,
 ):
+    results = []
     for _ in range(max_games):
         with open("gpt_inputs/prompt.txt", "r") as f:
             game_state = f.read()
@@ -381,6 +382,7 @@ def play_game(
         total_time = end_time - start_time
         print(f"\nGame over. Total time: {total_time} seconds")
         print(f"Result: {board.result()}")
+        results.append(board.result())
         print(board)
         print()
         record_results(
@@ -401,11 +403,15 @@ def play_game(
     if isinstance(player_two, StockfishPlayer):
         player_two.close()
 
-        # print(game_state)
+    print(results)
+    return results
+
+    # print(game_state)
 
 
 if __name__ == "__main__":
-    for i in range(1):
+    all_results = []
+    for i in range(5):
         num_games = 15
         # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
         # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
@@ -417,4 +423,6 @@ if __name__ == "__main__":
         # player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
-        play_game(player_one, player_two, num_games)
+        result = play_game(player_one, player_two, num_games)
+        all_results.append(result)
+    print(all_results)
