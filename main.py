@@ -411,7 +411,7 @@ def play_game(
 
 if __name__ == "__main__":
     all_results = []
-    for i in range(5):
+    for i in range(-2, 5):
         num_games = 15
         # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
         # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
@@ -419,10 +419,11 @@ if __name__ == "__main__":
         # player_one = GPTPlayer(model="gpt-4")
         # player_one = StockfishPlayer(skill_level=-1, play_time=0.1)
         player_one = NanoGptPlayer(model_name="nanogpt")
-        player_two = StockfishPlayer(skill_level=-1, play_time=0.2)
+        player_two = StockfishPlayer(skill_level=i, play_time=0.2)
         # player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
         result = play_game(player_one, player_two, num_games)
+        all_results.append(i)
         all_results.append(result)
     print(all_results)
