@@ -52,6 +52,8 @@ play_game(player_one, player_two, num_games)
 
 There is the ability to run other models using OpenRouter or Hugging Face. However, I've found that other models, like Llama2-70b chat won't provide formatted moves, and Llama2-70b base will hallucinate illegal moves. In addition, it seems like gpt-4 consistently loses to gpt-3.5-turbo-instruct, usually due to forced resignation after 5 illegal moves.
 
+In the local_llama branch, there is some working but poorly documented code to evaluate local Llama and NanoGPT models as well.
+
 **Stockfish to ELO**
 
 It's difficult to find Stockfish level to ELO ratings online. And of course, there are additional variables such as the time per move and the hardware it's ran on. I did find some estimates such as [this one](https://groups.google.com/g/picochess/c/AixKpYnCrRo):
