@@ -20,7 +20,7 @@ Median Moves: 45.0
 Standard Deviation of Moves: 21.90
 ```
 
-All results were gathered on Stockfish 16 with 0.1 seconds per move on a 2023 M1 Mac. 
+All results were gathered on Stockfish 16 with 0.1 seconds per move on a 2023 M1 Mac. I ran a Stockfish benchmark using `% stockfish bench 1024 16 26 default depth nnue 1>/dev/null 2>stockfish_M1Mac.bench` and stored the output in `logs/stockfish_M1Mac.bench`.
 
 **Setup**
 
