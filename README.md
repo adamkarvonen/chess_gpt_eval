@@ -54,6 +54,8 @@ There is the ability to run other models using OpenRouter or Hugging Face. Howev
 
 In the local_llama branch, there is some working but poorly documented code to evaluate local Llama and NanoGPT models as well.
 
+In the dataset_generation branch, I played a distribution of Stockfish vs Stockfish levels against each other to create a dataset to train a NanoGPT model on chess games, which worked to create a ~1200 ELO chess LLM.
+
 **Stockfish to ELO**
 
 It's difficult to find Stockfish level to ELO ratings online. And of course, there are additional variables such as the time per move and the hardware it's ran on. I did find some estimates such as [this one](https://groups.google.com/g/picochess/c/AixKpYnCrRo):
