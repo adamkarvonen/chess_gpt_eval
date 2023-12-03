@@ -116,6 +116,8 @@ def record_results(
     player_two_resignation: bool,
     player_one_failed_to_find_legal_move: bool,
     player_two_failed_to_find_legal_move: bool,
+    total_moves: int,
+    illegal_moves: int,
 ):
     unique_game_id = generate_unique_game_id()
 
@@ -165,9 +167,11 @@ def record_results(
         "game_title": f"{player_one_title} vs. {player_two_title}",
         "number_of_moves": board.fullmove_number,
         "time_taken": total_time,
+        "total_moves": total_moves,
+        "illegal_moves": illegal_moves,
     }
 
-    csv_file_path = "logs/games.csv"
+    csv_file_path = "logs/determine.csv"
 
     # Determine if we need to write headers (in case the file doesn't exist yet)
     write_headers = not os.path.exists(csv_file_path)
@@ -249,7 +253,7 @@ def get_legal_move(
 
     for attempt in range(max_attempts):
         move_san = player.get_move(
-            board, game_state, ((attempt / max_attempts) * 0.5) + 0.3
+            board, game_state, ((attempt / max_attempts) * 1) + 0.3
         )
 
         # Sometimes when GPT thinks it's the end of the game, it will just output the result
@@ -295,7 +299,7 @@ def get_legal_move(
 def play_turn(
     player: Player, board: chess.Board, game_state: str, player_one: bool
 ) -> Tuple[str, bool, bool, int]:
-    result = get_legal_move(player, board, game_state, player_one)
+    result = get_legal_move(player, board, game_state, player_one, 5)
     illegal_moves = result.attempts
     move_san = result.move_san
     move_uci = result.move_uci
@@ -336,6 +340,10 @@ def play_game(
         player_one_failed_to_find_legal_move = False
         player_two_failed_to_find_legal_move = False
         start_time = time.time()
+
+        total_moves = 0
+        illegal_moves = 0
+
         while not board.is_game_over():
             with open("game.txt", "w") as f:
                 f.write(game_state)
@@ -354,6 +362,8 @@ def play_game(
                 illegal_moves_one,
             ) = play_turn(player_one, board, game_state, player_one=True)
             player_one_illegal_moves += illegal_moves_one
+            if illegal_moves_one != 0:
+                illegal_moves += 1
             if (
                 board.is_game_over()
                 or player_one_resignation
@@ -377,6 +387,10 @@ def play_game(
 
             print("\n", end="")
 
+            total_moves += 1
+            if total_moves > 89:
+                break
+
         end_time = time.time()
         total_time = end_time - start_time
         print(f"\nGame over. Total time: {total_time} seconds")
@@ -395,6 +409,8 @@ def play_game(
             player_two_resignation,
             player_one_failed_to_find_legal_move,
             player_two_failed_to_find_legal_move,
+            total_moves,
+            illegal_moves,
         )
     if isinstance(player_one, StockfishPlayer):
         player_one.close()
@@ -406,15 +422,15 @@ def play_game(
 
 if __name__ == "__main__":
     for i in range(1):
-        num_games = 15
+        num_games = 100
         # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
         # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
         # player_one = LocalLoraLlamaPlayer("meta-llama/Llama-2-7b-hf", "/workspace/axolotl/lora2-out")
         # player_one = GPTPlayer(model="gpt-4")
         # player_one = StockfishPlayer(skill_level=-1, play_time=0.1)
         player_one = NanoGptPlayer(model_name="nanogpt")
-        player_two = StockfishPlayer(skill_level=-1, play_time=0.2)
+        # player_two = StockfishPlayer(skill_level=5, play_time=0.01)
         # player_two = GPTPlayer(model="gpt-4")
-        # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
+        player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
         play_game(player_one, player_two, num_games)
