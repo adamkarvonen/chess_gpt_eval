@@ -26,8 +26,9 @@ class NanoGptPlayer:
         temperature = 0.01  # 1.0 = no change, < 1.0 = less random, > 1.0 = more random, in predictions
         top_k = 200  # retain only the top_k most likely tokens, clamp others to have 0 probability
         seed = 1337
-        device = "cpu"  # examples: 'cpu', 'cuda', 'cuda:0', 'cuda:1', etc.
-        dtype = "bfloat16"  # 'float32' or 'bfloat16' or 'float16'
+        device = "cuda"  # examples: 'cpu', 'cuda', 'cuda:0', 'cuda:1', etc.
+        # device = "cpu"
+        dtype = "float16"  # 'float32' or 'bfloat16' or 'float16'
         compile = False  # use PyTorch 2.0 to compile the model to be faster
         exec(
             open(f"{BASE_DIR}configurator.py").read()
@@ -115,8 +116,7 @@ class NanoGptPlayer:
 
         # print("game_state", game_state)
 
-        if game_state == "1.":
-            game_state = "\n" + "1."
+        game_state = ";" + game_state
 
         start_ids = self.encode(game_state)
 
@@ -132,7 +132,10 @@ class NanoGptPlayer:
 
         # print("model_response", model_response)
         # model_response includes the input string
-        return model_response[len(game_state) :]
+        model_response = model_response[len(game_state) :]
+        if ";" in model_response:
+            model_response = model_response.split(";")[0]
+        return model_response
 
     def get_move_from_response(self, response: str) -> str:
         # Parse the response to get only the first move
