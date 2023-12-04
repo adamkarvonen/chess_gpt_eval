@@ -7,7 +7,7 @@ import random
 import time
 import numpy as np
 
-from llama_module import BaseLlamaPlayer, LocalLlamaPlayer, LocalLoraLlamaPlayer
+# from llama_module import BaseLlamaPlayer, LocalLlamaPlayer, LocalLoraLlamaPlayer
 import gpt_query
 
 from typing import Optional, Tuple
@@ -55,8 +55,8 @@ class StockfishPlayer(Player):
         # If getting started, you need to run brew install stockfish
         linux_path = "/usr/games/stockfish"
         mac_path = "stockfish"
-        # self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
-        self._engine = chess.engine.SimpleEngine.popen_uci(mac_path)
+        self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
+        # self._engine = chess.engine.SimpleEngine.popen_uci(mac_path)
 
     def get_move(
         self, board: chess.Board, game_state: str, temperature: float
@@ -167,7 +167,7 @@ def record_results(
     }
 
     # Generate a unique CSV file path for this process
-    csv_file_path = f"logs/dataset_{os.getpid()}.csv"
+    csv_file_path = f"logs/pool2/dataset_{os.getpid()}.csv"
 
     # Determine if we need to write headers (in case the file doesn't exist yet)
     write_headers = not os.path.exists(csv_file_path)
@@ -327,7 +327,7 @@ def play_game(
             game_state = f.read()
         board = chess.Board()
 
-        if random_opening_seed:
+        if random_opening_seed and random.random() > 0.7:
             game_state, board = initialize_game_with_opening(game_state, board)
         player_one_illegal_moves = 0
         player_two_illegal_moves = 0
@@ -337,8 +337,8 @@ def play_game(
         player_two_failed_to_find_legal_move = False
         start_time = time.time()
         while not board.is_game_over():
-            with open("game.txt", "w") as f:
-                f.write(game_state)
+            # with open("game.txt", "w") as f:
+            #     f.write(game_state)
             current_move_num = str(board.fullmove_number) + "."
 
             # this if statement may be overkill, just trying to get format to exactly match PGN notation
@@ -379,10 +379,11 @@ def play_game(
 
         end_time = time.time()
         total_time = end_time - start_time
-        print(f"\nGame over. Total time: {total_time} seconds")
-        print(f"Result: {board.result()}")
-        print(board)
-        print()
+        if _ % 100 == 0:
+            print(f"\nGame over. Total time: {total_time} seconds")
+            print(f"Result: {board.result()}")
+            print(board)
+            print()
         record_results(
             board,
             player_one,
@@ -404,10 +405,10 @@ def play_game(
         # print(game_state)
 
 
-def get_player_two_skill(base=1.3, uniform_fraction=0.1) -> int:
+def get_player_two_skill(base=0.93, uniform_fraction=0.15) -> int:
     # 10% of the time, choose a random skill between -2 and 20
-    if np.random.random() < uniform_fraction:
-        return np.random.randint(-2, 21)
+    if random.random() < uniform_fraction:
+        return 20
 
     # 90% of the time, use exponential distribution
     else:
@@ -419,7 +420,7 @@ def get_player_two_skill(base=1.3, uniform_fraction=0.1) -> int:
 
 if __name__ == "__main__":
     while True:
-        num_games = 15
+        num_games = 50
         # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
         # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
         # player_one = LocalLoraLlamaPlayer("meta-llama/Llama-2-7b-hf", "/workspace/axolotl/lora2-out")
