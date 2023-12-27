@@ -5,6 +5,7 @@ import os
 import csv
 import random
 import time
+import platform
 
 # NOTE: LLAMA AND NANOGPT ARE EXPERIMENTAL PLAYERS, if not using them, comment them out
 # from llama_module import BaseLlamaPlayer, LocalLlamaPlayer, LocalLoraLlamaPlayer
@@ -50,14 +51,28 @@ class GPTPlayer(Player):
 
 
 class StockfishPlayer(Player):
+
+    def get_stockfish_path() -> str:
+        """
+        Determines the operating system and returns the appropriate path for Stockfish.
+        
+        Returns:
+            str: Path to the Stockfish executable based on the operating system.
+        """
+        if platform.system() == 'Linux':
+            return "/usr/games/stockfish"
+        elif platform.system() == 'Darwin':  # Darwin is the system name for macOS
+            return "stockfish"
+        elif platform.system() == 'Windows':
+            return r"C:\Users\adamk\Documents\Stockfish\stockfish-windows-x86-64-avx2.exe"
+        else:
+            raise OSError("Unsupported operating system")
+    
     def __init__(self, skill_level: int, play_time: float):
         self._skill_level = skill_level
         self._play_time = play_time
         # If getting started, you need to run brew install stockfish
-        linux_path = "/usr/games/stockfish"
-        mac_path = "stockfish"
-        # self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
-        self._engine = chess.engine.SimpleEngine.popen_uci(mac_path)
+        self._engine = chess.engine.SimpleEngine.popen_uci(self.get_stockfish_path())
 
     def get_move(
         self, board: chess.Board, game_state: str, temperature: float
@@ -111,6 +126,8 @@ def record_results(
     game_state: str,
     player_one_illegal_moves: int,
     player_two_illegal_moves: int,
+    player_one_legal_moves: int,
+    player_two_legal_moves: int,
     total_time: float,
     player_one_resignation: bool,
     player_two_resignation: bool,
@@ -140,13 +157,16 @@ def record_results(
         result = board.result()
         # Hmmm.... debating this one. Annoying if I leave it running and it fails here for some reason, probably involving some
         # resignation / failed move situation I didn't think of
-        # -1 at least ensures it doesn't fail silently
+        # -1e10 at least ensures it doesn't fail silently
         if "-" in result:
             player_one_score = result.split("-")[0]
             player_two_score = result.split("-")[1]
+        elif result == "*": # Draw due to hitting max moves
+            player_one_score = 1/2
+            player_two_score = 1/2
         else:
-            player_one_score = -1
-            player_two_score = -1
+            player_one_score = -1e10
+            player_two_score = -1e10
 
     info_dict = {
         "game_id": unique_game_id,
@@ -160,6 +180,8 @@ def record_results(
         "player_two_score": player_two_score,
         "player_one_illegal_moves": player_one_illegal_moves,
         "player_two_illegal_moves": player_two_illegal_moves,
+        "player_one_legal_moves": player_one_legal_moves,
+        "player_two_legal_moves": player_two_legal_moves,
         "player_one_resignation": player_one_resignation,
         "player_two_resignation": player_two_resignation,
         "player_one_failed_to_find_legal_move": player_one_failed_to_find_legal_move,
@@ -171,7 +193,14 @@ def record_results(
         "illegal_moves": illegal_moves,
     }
 
-    csv_file_path = "logs/determine.csv"
+    if RUN_FOR_ANALYSIS:
+        csv_file_path = f"logs/{player_one_recording_name}_vs_{player_two_recording_name}"
+        csv_file_path = csv_file_path.replace(".", "_") # Because I'm using ckpt filenames for nanogpt models 
+        csv_file_path += ".csv"
+    else:
+        csv_file_path = recording_file
+
+
 
     # Determine if we need to write headers (in case the file doesn't exist yet)
     write_headers = not os.path.exists(csv_file_path)
@@ -253,7 +282,7 @@ def get_legal_move(
 
     for attempt in range(max_attempts):
         move_san = player.get_move(
-            board, game_state, ((attempt / max_attempts) * 1) + 0.3
+            board, game_state, min(((attempt / max_attempts) * 1) + 0.001, 0.5)
         )
 
         # Sometimes when GPT thinks it's the end of the game, it will just output the result
@@ -335,6 +364,8 @@ def play_game(
             game_state, board = initialize_game_with_opening(game_state, board)
         player_one_illegal_moves = 0
         player_two_illegal_moves = 0
+        player_one_legal_moves = 0
+        player_two_legal_moves = 0
         player_one_resignation = False
         player_two_resignation = False
         player_one_failed_to_find_legal_move = False
@@ -348,6 +379,10 @@ def play_game(
             with open("game.txt", "w") as f:
                 f.write(game_state)
             current_move_num = str(board.fullmove_number) + "."
+            total_moves += 1
+            # I increment legal moves here so player_two isn't penalized for the game ending before its turn
+            player_one_legal_moves += 1
+            player_two_legal_moves += 1
 
             # this if statement may be overkill, just trying to get format to exactly match PGN notation
             if board.fullmove_number != 1:
@@ -363,7 +398,7 @@ def play_game(
             ) = play_turn(player_one, board, game_state, player_one=True)
             player_one_illegal_moves += illegal_moves_one
             if illegal_moves_one != 0:
-                illegal_moves += 1
+                player_one_legal_moves -= 1
             if (
                 board.is_game_over()
                 or player_one_resignation
@@ -378,6 +413,8 @@ def play_game(
                 illegal_moves_two,
             ) = play_turn(player_two, board, game_state, player_one=False)
             player_two_illegal_moves += illegal_moves_two
+            if illegal_moves_two != 0:
+                player_two_legal_moves -= 1
             if (
                 board.is_game_over()
                 or player_two_resignation
@@ -387,8 +424,7 @@ def play_game(
 
             print("\n", end="")
 
-            total_moves += 1
-            if total_moves > 89:
+            if total_moves > MAX_MOVES:
                 break
 
         end_time = time.time()
@@ -404,6 +440,8 @@ def play_game(
             game_state,
             player_one_illegal_moves,
             player_two_illegal_moves,
+            player_one_legal_moves,
+            player_two_legal_moves,
             total_time,
             player_one_resignation,
             player_two_resignation,
@@ -420,17 +458,25 @@ def play_game(
         # print(game_state)
 
 
+RUN_FOR_ANALYSIS = True
+MAX_MOVES = 89 # Due to nanogpt max input length of 1024
+recording_file = "logs/determine.csv"
+player_one_recording_name = "ckpt_8.pt"
+player_ones = ["ckpt_8.pt", "ckpt_16.pt", "ckpt_32.pt"]
+player_two_recording_name = "stockfish_sweep"
 if __name__ == "__main__":
-    for i in range(1):
-        num_games = 100
-        # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
-        # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
-        # player_one = LocalLoraLlamaPlayer("meta-llama/Llama-2-7b-hf", "/workspace/axolotl/lora2-out")
-        # player_one = GPTPlayer(model="gpt-4")
-        # player_one = StockfishPlayer(skill_level=-1, play_time=0.1)
-        player_one = NanoGptPlayer(model_name="nanogpt")
-        # player_two = StockfishPlayer(skill_level=5, play_time=0.01)
-        # player_two = GPTPlayer(model="gpt-4")
-        player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
+    for nanogtp_player in player_ones:
+        player_one_recording_name = player_one
+        for i in range(11):
+            num_games = 200
+            # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
+            # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
+            # player_one = LocalLoraLlamaPlayer("meta-llama/Llama-2-7b-hf", "/workspace/axolotl/lora2-out")
+            # player_one = GPTPlayer(model="gpt-4")
+            # player_one = StockfishPlayer(skill_level=-1, play_time=0.1)
+            player_one = NanoGptPlayer(model_name=player_one_recording_name)
+            player_two = StockfishPlayer(skill_level=i, play_time=0.01)
+            # player_two = GPTPlayer(model="gpt-4")
+            # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
-        play_game(player_one, player_two, num_games)
+            play_game(player_one, player_two, num_games)
