@@ -52,6 +52,7 @@ class GPTPlayer(Player):
 
 class StockfishPlayer(Player):
 
+    @staticmethod
     def get_stockfish_path() -> str:
         """
         Determines the operating system and returns the appropriate path for Stockfish.
@@ -72,7 +73,8 @@ class StockfishPlayer(Player):
         self._skill_level = skill_level
         self._play_time = play_time
         # If getting started, you need to run brew install stockfish
-        self._engine = chess.engine.SimpleEngine.popen_uci(self.get_stockfish_path())
+        stockfish_path = StockfishPlayer.get_stockfish_path()
+        self._engine = chess.engine.SimpleEngine.popen_uci(stockfish_path)
 
     def get_move(
         self, board: chess.Board, game_state: str, temperature: float
@@ -86,6 +88,7 @@ class StockfishPlayer(Player):
             result = self._engine.play(
                 board, chess.engine.Limit(time=1e-8, depth=1, nodes=1)
             )
+
         else:
             self._engine.configure({"Skill Level": self._skill_level})
             result = self._engine.play(board, chess.engine.Limit(time=self._play_time))
@@ -475,7 +478,7 @@ if __name__ == "__main__":
             # player_one = GPTPlayer(model="gpt-4")
             # player_one = StockfishPlayer(skill_level=-1, play_time=0.1)
             player_one = NanoGptPlayer(model_name=player_one_recording_name)
-            player_two = StockfishPlayer(skill_level=i, play_time=0.01)
+            player_two = StockfishPlayer(skill_level=i, play_time=0.1)
             # player_two = GPTPlayer(model="gpt-4")
             # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
 
