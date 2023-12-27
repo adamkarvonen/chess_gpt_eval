@@ -465,10 +465,10 @@ player_one_recording_name = "ckpt_8.pt"
 player_ones = ["ckpt_8.pt", "ckpt_16.pt", "ckpt_32.pt"]
 player_two_recording_name = "stockfish_sweep"
 if __name__ == "__main__":
-    for nanogtp_player in player_ones:
-        player_one_recording_name = player_one
+    for nanogpt_player in player_ones:
+        player_one_recording_name = nanogpt_player
         for i in range(11):
-            num_games = 200
+            num_games = 100
             # player_one = GPTPlayer(model="gpt-3.5-turbo-instruct")
             # player_one = LocalLlamaPlayer(model_name="meta-llama/Llama-2-7b-hf")
             # player_one = LocalLoraLlamaPlayer("meta-llama/Llama-2-7b-hf", "/workspace/axolotl/lora2-out")
