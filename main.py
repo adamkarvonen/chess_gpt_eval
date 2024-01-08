@@ -264,11 +264,30 @@ def play_turn(
     return game_state, resignation, failed_to_find_legal_move, illegal_moves
 
 
-def play_game(player_one: Player, player_two: Player, max_games: int = 10):
+def play_game(player_one: Player, player_two: Player, max_games: int = 10, randomize_opening_moves: int = None):
     for _ in range(max_games):  # Play 10 games
         with open("gpt_inputs/prompt.txt", "r") as f:
             game_state = f.read()
         board = chess.Board()
+
+        if randomize_opening_moves is not None:
+            for moveIdx in range(1, randomize_opening_moves+1):
+                moves = list(board.legal_moves)
+                move = random.choice(moves)
+                moveString = board.san(move)
+                if (moveIdx > 1):
+                    game_state += " "
+                game_state += str(moveIdx) + ". " + moveString + " "
+                board.push(move)
+
+                moves = list(board.legal_moves)
+                move = random.choice(moves)
+                moveString = board.san(move)
+                game_state += moveString
+                board.push(move)
+
+            print(game_state)
+
         player_one_illegal_moves = 0
         player_two_illegal_moves = 0
         player_one_resignation = False
