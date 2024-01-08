@@ -463,9 +463,9 @@ def play_game(
 
 RUN_FOR_ANALYSIS = True
 MAX_MOVES = 89 # Due to nanogpt max input length of 1024
-recording_file = "logs/determine.csv"
-player_one_recording_name = "ckpt_8.pt"
-player_ones = ["ckpt_8.pt", "ckpt_16.pt", "ckpt_32.pt"]
+recording_file = "logs/determine.csv" # default recording file. Because we are using list [player_ones], recording_file is overwritten
+# player_one_recording_name = "ckpt_8.pt"
+player_ones = ["stockfish_16layers_ckpt_no_optimizer.pt"]
 player_two_recording_name = "stockfish_sweep"
 if __name__ == "__main__":
     for nanogpt_player in player_ones:
