@@ -290,7 +290,7 @@ def play_game(
     player_one: Player,
     player_two: Player,
     max_games: int = 10,
-    randomize_opening_moves: int = None,
+    randomize_opening_moves: Optional[int] = None,
 ):
     for _ in range(max_games):  # Play 10 games
         with open("gpt_inputs/prompt.txt", "r") as f:
