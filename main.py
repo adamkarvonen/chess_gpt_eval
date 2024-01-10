@@ -264,29 +264,43 @@ def play_turn(
     return game_state, resignation, failed_to_find_legal_move, illegal_moves
 
 
-def play_game(player_one: Player, player_two: Player, max_games: int = 10, randomize_opening_moves: int = None):
+def initialize_game_with_random_moves(
+    board: chess.Board, game_state: str, randomize_opening_moves: int
+) -> tuple[str, chess.Board]:
+    for moveIdx in range(1, randomize_opening_moves + 1):
+        moves = list(board.legal_moves)
+        move = random.choice(moves)
+        moveString = board.san(move)
+        if moveIdx > 1:
+            game_state += " "
+        game_state += str(moveIdx) + ". " + moveString + " "
+        board.push(move)
+
+        moves = list(board.legal_moves)
+        move = random.choice(moves)
+        moveString = board.san(move)
+        game_state += moveString
+        board.push(move)
+
+    print(game_state)
+    return game_state, board
+
+
+def play_game(
+    player_one: Player,
+    player_two: Player,
+    max_games: int = 10,
+    randomize_opening_moves: int = None,
+):
     for _ in range(max_games):  # Play 10 games
         with open("gpt_inputs/prompt.txt", "r") as f:
             game_state = f.read()
         board = chess.Board()
 
         if randomize_opening_moves is not None:
-            for moveIdx in range(1, randomize_opening_moves+1):
-                moves = list(board.legal_moves)
-                move = random.choice(moves)
-                moveString = board.san(move)
-                if (moveIdx > 1):
-                    game_state += " "
-                game_state += str(moveIdx) + ". " + moveString + " "
-                board.push(move)
-
-                moves = list(board.legal_moves)
-                move = random.choice(moves)
-                moveString = board.san(move)
-                game_state += moveString
-                board.push(move)
-
-            print(game_state)
+            game_state, board = initialize_game_with_random_moves(
+                board, game_state, randomize_opening_moves
+            )
 
         player_one_illegal_moves = 0
         player_two_illegal_moves = 0
@@ -298,7 +312,7 @@ def play_game(player_one: Player, player_two: Player, max_games: int = 10, rando
         while not board.is_game_over():
             with open("game.txt", "w") as f:
                 f.write(game_state)
-            current_move_num = str(board.fullmove_number) + "."
+            current_move_num = str(board.fullmove_number) + ". "
 
             # this if statement may be overkill, just trying to get format to exactly match PGN notation
             if board.fullmove_number != 1:
@@ -375,4 +389,4 @@ if __name__ == "__main__":
         player_two = StockfishPlayer(skill_level=5, play_time=0.1)
         # player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
-        play_game(player_one, player_two, num_games)
+        play_game(player_one, player_two, num_games, randomize_opening_moves=5)
