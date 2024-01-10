@@ -389,4 +389,4 @@ if __name__ == "__main__":
         player_two = StockfishPlayer(skill_level=5, play_time=0.1)
         # player_two = GPTPlayer(model="gpt-4")
         # player_two = GPTPlayer(model="gpt-3.5-turbo-instruct")
-        play_game(player_one, player_two, num_games, randomize_opening_moves=5)
+        play_game(player_one, player_two, num_games)
