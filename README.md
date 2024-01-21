@@ -2,17 +2,6 @@
 
 There has recently been some buzz about the ability of GPT-3.5-turbo-instruct's chess playing ability. I wanted to take a more rigourous look and created this repo. With it, you can play two models against each other, whether that's LLM vs Stockfish, LLM vs LLM, or Stockfish vs Stockfish. The primary goal is to test and record the performance of these players against one another in various configurations. Illegal moves, resignations, and game states are all tracked and recorded for later analysis. Per move, a model gets 5 illegal moves before forced resignation of the round.
 
-## NanoGPT Specific Information
-
-To avoid extra complications in the master branch of this repo, I have used this branch to evaluate nanoGPT models. To evaluate a model, run this command:
-
-`pip install torch numpy transformers datasets tiktoken wandb tqdm`
-
-Download a model from: https://huggingface.co/adamkarvonen/chess_llms
-
-And place it in `/nanogpt/out/`. `stockfish_16layers_ckpt_no_optimizer.pt` is the strongest model.
-Then follow the remaining setup directions below.
-
 **Results**
 
 GPT-3.5-turbo instruct does well in 150 games against various Stockfish levels and 30 games against GPT-4. Most of gpt-4's losses were due to illegal moves, so it may be possible to come up with a prompt to have gpt-4 correct illegal moves and improve its score.
