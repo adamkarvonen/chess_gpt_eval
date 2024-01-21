@@ -224,12 +224,8 @@ def get_legal_move(
             continue
 
         if move_uci in board.legal_moves:
-            if player_one == False:
-                if not move_san.startswith(" "):
-                    move_san = " " + move_san
-            else:
-                if move_san.startswith(" "):
-                    move_san = move_san[1:]
+            if not move_san.startswith(" "):
+                move_san = " " + move_san
             return LegalMoveResponse(move_san, move_uci, attempt)
         print(f"Illegal move: {move_san}")
 
@@ -273,7 +269,7 @@ def initialize_game_with_random_moves(
         moveString = board.san(move)
         if moveIdx > 1:
             game_state += " "
-        game_state += str(moveIdx) + ". " + moveString + " "
+        game_state += str(moveIdx) + ". " + moveString
         board.push(move)
 
         moves = list(board.legal_moves)
@@ -312,13 +308,13 @@ def play_game(
         while not board.is_game_over():
             with open("game.txt", "w") as f:
                 f.write(game_state)
-            current_move_num = str(board.fullmove_number) + ". "
+            current_move_num = str(board.fullmove_number) + "."
 
             # this if statement may be overkill, just trying to get format to exactly match PGN notation
             if board.fullmove_number != 1:
                 game_state += " "
             game_state += current_move_num
-            print(f"{current_move_num}", end=" ")
+            print(f"{current_move_num}", end="")
 
             (
                 game_state,
