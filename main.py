@@ -288,6 +288,9 @@ def play_game(
     max_games: int = 10,
     randomize_opening_moves: Optional[int] = None,
 ):
+    # NOTE: I'm being very particular with game_state formatting because I want to match the PGN notation exactly
+    # It looks like this: 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 etc. HOWEVER, GPT prompts should not end with a trailing whitespace
+    # due to tokenization issues. If you make changes, ensure it still matches the PGN notation exactly.
     for _ in range(max_games):  # Play 10 games
         with open("gpt_inputs/prompt.txt", "r") as f:
             game_state = f.read()
