@@ -31,7 +31,7 @@ All results were gathered on Stockfish 16 with 0.1 seconds per move on a 2023 M1
 **Game Recording**
 
 - record_results(): This function logs the game's outcome, various statistics, and game states into a CSV file.
-- Additionally, the entire game state is written to a game.txt file, although it gets overwritten every round.
+- The recording file is set based on `player_one_recording_name` and `player_two_recording_name`, which are set at the bottom of `main.py`. For example, if `player_one_recording_name` is `gpt-4` and `player_two_recording_name` is `stockfish_sweep`, the recording file would be `logs/gpt-4_vs_stockfish_sweep.csv`.
 - There is always a transcript of the most recent GPT API call and response in `gpt_outputs/transcript.txt`.
 
 **How to Use**
@@ -52,7 +52,7 @@ play_game(player_one, player_two, num_games)
 
 There is the ability to run other models using OpenRouter or Hugging Face. However, I've found that other models, like Llama2-70b chat won't provide formatted moves, and Llama2-70b base will hallucinate illegal moves. In addition, it seems like gpt-4 consistently loses to gpt-3.5-turbo-instruct, usually due to forced resignation after 5 illegal moves.
 
-In the local_llama branch, there is some working but poorly documented code to evaluate local Llama and NanoGPT models as well.
+You can use Llama and NanoGPT models. For more information, see the READMEs contained in `local_llama/` and `nanogpt/`.
 
 In the dataset_generation branch, I played a distribution of Stockfish vs Stockfish levels against each other to create a dataset to train a NanoGPT model on chess games, which worked to create a ~1200 ELO chess LLM.
 
