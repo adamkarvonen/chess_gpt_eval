@@ -224,12 +224,8 @@ def get_legal_move(
             continue
 
         if move_uci in board.legal_moves:
-            if player_one == False:
-                if not move_san.startswith(" "):
-                    move_san = " " + move_san
-            else:
-                if move_san.startswith(" "):
-                    move_san = move_san[1:]
+            if not move_san.startswith(" "):
+                move_san = " " + move_san
             return LegalMoveResponse(move_san, move_uci, attempt)
         print(f"Illegal move: {move_san}")
 
@@ -264,11 +260,47 @@ def play_turn(
     return game_state, resignation, failed_to_find_legal_move, illegal_moves
 
 
-def play_game(player_one: Player, player_two: Player, max_games: int = 10):
+def initialize_game_with_random_moves(
+    board: chess.Board, game_state: str, randomize_opening_moves: int
+) -> tuple[str, chess.Board]:
+    for moveIdx in range(1, randomize_opening_moves + 1):
+        moves = list(board.legal_moves)
+        move = random.choice(moves)
+        moveString = board.san(move)
+        if moveIdx > 1:
+            game_state += " "
+        game_state += str(moveIdx) + ". " + moveString
+        board.push(move)
+
+        moves = list(board.legal_moves)
+        move = random.choice(moves)
+        moveString = board.san(move)
+        game_state += moveString
+        board.push(move)
+
+    print(game_state)
+    return game_state, board
+
+
+def play_game(
+    player_one: Player,
+    player_two: Player,
+    max_games: int = 10,
+    randomize_opening_moves: Optional[int] = None,
+):
+    # NOTE: I'm being very particular with game_state formatting because I want to match the PGN notation exactly
+    # It looks like this: 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 etc. HOWEVER, GPT prompts should not end with a trailing whitespace
+    # due to tokenization issues. If you make changes, ensure it still matches the PGN notation exactly.
     for _ in range(max_games):  # Play 10 games
         with open("gpt_inputs/prompt.txt", "r") as f:
             game_state = f.read()
         board = chess.Board()
+
+        if randomize_opening_moves is not None:
+            game_state, board = initialize_game_with_random_moves(
+                board, game_state, randomize_opening_moves
+            )
+
         player_one_illegal_moves = 0
         player_two_illegal_moves = 0
         player_one_resignation = False
@@ -285,7 +317,7 @@ def play_game(player_one: Player, player_two: Player, max_games: int = 10):
             if board.fullmove_number != 1:
                 game_state += " "
             game_state += current_move_num
-            print(f"{current_move_num}", end=" ")
+            print(f"{current_move_num}", end="")
 
             (
                 game_state,
