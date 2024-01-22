@@ -6,13 +6,50 @@ import pickle
 from contextlib import nullcontext
 import torch
 import tiktoken
+from typing import Optional
 from nanogpt.model import GPTConfig, GPT
 
 BASE_DIR = "nanogpt/"
 
+def add_activation_bias_to_state_dict(state_dict, device, activation_name: str, config: GPTConfig):
+    activation_state_dict = torch.load(f"nanogpt/activations/{activation_name}", map_location=device)
+    difference_vector = activation_state_dict["difference_vector"]
+    difference_vector *= 0.1
+    layer = activation_state_dict["layer"]
+    config.bias = True
+    print(activation_state_dict.keys())
+    print(config)
+
+    state_dict["transformer.ln_f.bias"] = torch.zeros_like(state_dict["transformer.ln_f.weight"])
+
+    for i in range(config.n_layer):
+        layer_key = f"transformer.h.{i}"
+
+        state_dict[f"{layer_key}.ln_1.bias"] = torch.zeros_like(state_dict[f"{layer_key}.ln_1.weight"])
+        state_dict[f"{layer_key}.ln_2.bias"] = torch.zeros_like(state_dict[f"{layer_key}.ln_2.weight"])
+
+        mlp_bias_shape = state_dict[f"{layer_key}.mlp.c_fc.weight"].shape[0]
+
+        assert mlp_bias_shape == config.n_embd * 4
+
+        state_dict[f"{layer_key}.mlp.c_fc.bias"]  = torch.zeros(mlp_bias_shape, device=device)
+        state_dict[f"{layer_key}.mlp.c_proj.bias"]  = torch.zeros(config.n_embd, device=device)
+        
+        if i == layer:
+            # Add the difference vector to the attention bias
+            state_dict[f"{layer_key}.mlp.c_proj.bias"] = difference_vector
+
+        state_dict[f"{layer_key}.attn.c_attn.bias"] = torch.zeros(config.n_embd * 3, device=device)
+        state_dict[f"{layer_key}.attn.c_proj.bias"] = torch.zeros(config.n_embd, device=device)
+
+
+
+
+    return state_dict, config
+    
 
 class NanoGptPlayer:
-    def __init__(self, model_name: str):
+    def __init__(self, model_name: str, activation_name: Optional[str] = None):
         self.model_name = model_name
         # -----------------------------------------------------------------------------
 
@@ -60,12 +97,16 @@ class NanoGptPlayer:
             ckpt_path = f"nanogpt/out/{self.model_name}"
             checkpoint = torch.load(ckpt_path, map_location=device)
             gptconf = GPTConfig(**checkpoint["model_args"])
-            model = GPT(gptconf)
+            
             state_dict = checkpoint["model"]
             unwanted_prefix = "_orig_mod."
             for k, v in list(state_dict.items()):
                 if k.startswith(unwanted_prefix):
                     state_dict[k[len(unwanted_prefix) :]] = state_dict.pop(k)
+
+            if activation_name is not None:
+                state_dict, gptconf = add_activation_bias_to_state_dict(state_dict, device, activation_name, gptconf)
+            model = GPT(gptconf)
             model.load_state_dict(state_dict)
         elif init_from.startswith("gpt2"):
             # init from a given GPT-2 model
