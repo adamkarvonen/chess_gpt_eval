@@ -157,8 +157,6 @@ class NanoGptPlayer:
         # nanogpt was trained only on pgn transcripts
         game_state = game_state.split("\n\n")[1].strip()
 
-        # print("game_state", game_state)
-
         # Nanogpt was trained on pgn transcripts of this format: 1.e4 e5 2.Nf3 (not 1. e4 e5 2. Nf3)
         # I did this to save on tokens
         # We remove the space after the move number to match the training data
@@ -166,7 +164,7 @@ class NanoGptPlayer:
 
         game_state = ";" + game_state
 
-        print("game_state", game_state)
+        # print("game_state", game_state)
 
         start_ids = self.encode(game_state)
 
