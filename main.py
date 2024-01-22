@@ -361,7 +361,7 @@ def initialize_game_with_random_moves(
         moveString = board.san(move)
         if moveIdx > 1:
             game_state += " "
-        game_state += str(moveIdx) + ". " + moveString
+        game_state += str(moveIdx) + ". " + moveString + " "
         board.push(move)
 
         moves = list(board.legal_moves)
