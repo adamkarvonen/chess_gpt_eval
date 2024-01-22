@@ -353,22 +353,38 @@ def play_turn(
 
 
 def initialize_game_with_random_moves(
-    board: chess.Board, game_state: str, randomize_opening_moves: int
+    board: chess.Board, initial_game_state: str, randomize_opening_moves: int
 ) -> tuple[str, chess.Board]:
-    for moveIdx in range(1, randomize_opening_moves + 1):
-        moves = list(board.legal_moves)
-        move = random.choice(moves)
-        moveString = board.san(move)
-        if moveIdx > 1:
-            game_state += " "
-        game_state += str(moveIdx) + ". " + moveString + " "
-        board.push(move)
+    # We loop for multiple attempts because sometimes the random moves will result in a game over
+    MAX_INIT_ATTEMPTS = 5
+    for attempt in range(MAX_INIT_ATTEMPTS):
+        board.reset()  # Reset the board for a new attempt
+        game_state = initial_game_state  # Reset the game state for a new attempt
+        moves = []
+        for moveIdx in range(1, randomize_opening_moves + 1):
+            for player in range(2):
+                moves = list(board.legal_moves)
+                if not moves:
+                    break  # Break if no legal moves are available
 
-        moves = list(board.legal_moves)
-        move = random.choice(moves)
-        moveString = board.san(move)
-        game_state += moveString
-        board.push(move)
+                move = random.choice(moves)
+                moveString = board.san(move)
+                if moveIdx > 1 or player == 1:
+                    game_state += " "
+                game_state += (
+                    str(moveIdx) + ". " + moveString if player == 0 else moveString
+                )
+                board.push(move)
+
+            if not moves:
+                break  # Break if no legal moves are available
+
+        if moves:
+            # Successful generation of moves, break out of the attempt loop
+            break
+    else:
+        # If the loop completes without a break, raise an error
+        raise Exception("Failed to initialize the game after maximum attempts.")
 
     print(game_state)
     return game_state, board
