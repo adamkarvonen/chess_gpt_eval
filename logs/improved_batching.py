@@ -8,6 +8,12 @@ from collections import deque
 
 pandarallel.initialize(progress_bar=True)
 
+mac_path = "stockfish"
+linux_path = "/usr/games/stockfish"
+# self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
+stockfish = Stockfish(mac_path)
+stockfish.set_depth(10)
+
 
 def dedup_dataset(input_file: str):
     # Step 1: Deduplicate games
@@ -108,43 +114,45 @@ def game_over_to_value(board_result: str) -> int:
     return result_map[board_result]
 
 
-def insert_centipawn(moves_string: str, depth: int = 9, frequency: float = 0.03) -> str:
-    # Create a new board
-    board = chess.Board()
+def insert_centipawn(
+    moves_string: str, filename: str, depth: int = 9, frequency: float = 0.03
+) -> str:
+    try:
+        # Create a new board
+        board = chess.Board()
 
-    mac_path = "stockfish"
-    linux_path = "/usr/games/stockfish"
-    # self._engine = chess.engine.SimpleEngine.popen_uci(linux_path)
-    stockfish = Stockfish(mac_path)
-    stockfish.set_depth(depth)
-    eval_results = []
+        eval_results = []
 
-    new_moves_string = ""
+        new_moves_string = ""
 
-    # Apply each move to the board
-    for move in moves_string.split():
-        # Skip move numbers
-        if "." in move:
-            board.push_san(move.split(".")[1])
-        else:
-            board.push_san(move)
-
-        new_moves_string += move + " "
-        if random.random() < frequency:
-            # Check for checkmate or draw
-            eval = ""
-            if board.result() != "*":
-                # eval_results.append(game_over_to_value(board.result()))
-                eval = " <" + str(game_over_to_value(board.result())) + "> "
+        # Apply each move to the board
+        for move in moves_string.split():
+            # Skip move numbers
+            if "." in move:
+                board.push_san(move.split(".")[1])
             else:
-                stockfish.set_fen_position(board.fen())
-                evaluation = stockfish.get_evaluation()
+                board.push_san(move)
 
-                # eval_results.append(map_eval_to_int(evaluation))
-                eval = "<" + str(map_eval_to_int(evaluation)) + " "
+            new_moves_string += move + " "
+            if random.random() < frequency:
+                # Check for checkmate or draw
+                eval = ""
+                if board.result() != "*":
+                    # eval_results.append(game_over_to_value(board.result()))
+                    eval = " <" + str(game_over_to_value(board.result())) + "> "
+                else:
+                    stockfish.set_fen_position(board.fen())
+                    evaluation = stockfish.get_evaluation()
 
-            new_moves_string += eval
-    return new_moves_string
+                    # eval_results.append(map_eval_to_int(evaluation))
+                    eval = "<" + str(map_eval_to_int(evaluation)) + " "
+
+                new_moves_string += eval
+        return new_moves_string
+    except Exception as e:
+        print(f"Error {e} in {filename}")
+        # Optionally, log the exception e for debugging
+        return moves_string
 
 
 def chunk_long_games(text: str) -> list[str] | str:
@@ -238,19 +246,22 @@ def create_batched_dataset(input_file: str, output_filename: str):
 
 
 def process_dataset(input_file: str):
+    tqdm.pandas()
     output_filename = input_file.replace(".csv", "_blocks.csv")
     processed_filename = input_file.replace(".csv", "_processed.csv")
-    print(f"Deduplicating {input_file}")
-    dedup_dataset(input_file)
-    df = pd.read_csv(input_file)
-    print(f"Adding skill to {input_file}")
-    df = df.parallel_apply(add_skill_to_transcript, axis=1)
-    df["transcript"].to_csv("input_dataset.csv", index=False)
-    df = pd.read_csv("input_dataset.csv")
-    print(f"Inserting centipawns in {input_file}")
-    df["transcript"] = df["transcript"].parallel_apply(
-        lambda x: insert_centipawn(x, depth=10, frequency=0.03)
-    )
+    # print(f"Deduplicating {input_file}")
+    # dedup_dataset(input_file)
+    # df = pd.read_csv(input_file)
+    # print(f"Adding skill to {input_file}")
+    # df = df.parallel_apply(add_skill_to_transcript, axis=1)
+    # df["transcript"].to_csv(processed_filename, index=False)
+    # df = pd.read_csv(processed_filename)
+    # print(f"Inserting centipawns in {input_file}")
+    # df["transcript"] = df["transcript"].progress_apply(
+    #     lambda x: insert_centipawn(x, processed_filename, depth=10, frequency=0.03)
+    # )
+    # df["transcript"].to_csv(processed_filename, index=False)
+    df = pd.read_csv(processed_filename)
     print(f"Chunking long games in {input_file}")
     df["transcript"] = df["transcript"].parallel_apply(chunk_long_games)
     df = df.explode("transcript")
@@ -258,9 +269,9 @@ def process_dataset(input_file: str):
     df["length"] = df["transcript"].parallel_apply(len)
     print(f"Sorting file by game length")
     df.sort_values(by="length", inplace=True)
-    df.to_csv(processed_filename, index=False)
-    print(f"Creating batched {output_filename} from {processed_filename}")
-    create_batched_dataset(processed_filename, output_filename)
+    df.to_csv(output_filename, index=False)
+    print(f"Creating batched {output_filename} from {output_filename}")
+    create_batched_dataset(output_filename, output_filename)
     print(f"{input_file} complete")
 
 
@@ -269,7 +280,7 @@ input_files = [
     "linux_dataset.csv",
     "pool1_dataset.csv",
     "pool2_dataset.csv",
-    "mac_dataset.csv",
+    # "mac_dataset.csv",
 ]
 
 for file in input_files:
