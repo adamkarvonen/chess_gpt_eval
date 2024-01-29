@@ -12,45 +12,71 @@ from nanogpt.model import GPTConfig, GPT
 
 BASE_DIR = "nanogpt/"
 
-def add_activation_bias_to_state_dict(state_dict, device, activation_name: str, config: GPTConfig):
-    activation_state_dict = torch.load(f"nanogpt/activations/{activation_name}", map_location=device)
+
+def add_activation_bias_to_state_dict(
+    state_dict,
+    device,
+    activation_dir: str,
+    activation_name: str,
+    config: GPTConfig,
+    activation_coefficient: float,
+):
+    activation_state_dict = torch.load(
+        f"nanogpt/activations/{activation_dir}/{activation_name}", map_location=device
+    )
     difference_vector = activation_state_dict["difference_vector"]
-    difference_vector *= 0.1
+    difference_vector *= activation_coefficient
     layer = activation_state_dict["layer"]
     config.bias = True
     print(activation_state_dict.keys())
     print(config)
 
-    state_dict["transformer.ln_f.bias"] = torch.zeros_like(state_dict["transformer.ln_f.weight"])
+    state_dict["transformer.ln_f.bias"] = torch.zeros_like(
+        state_dict["transformer.ln_f.weight"]
+    )
 
     for i in range(config.n_layer):
         layer_key = f"transformer.h.{i}"
 
-        state_dict[f"{layer_key}.ln_1.bias"] = torch.zeros_like(state_dict[f"{layer_key}.ln_1.weight"])
-        state_dict[f"{layer_key}.ln_2.bias"] = torch.zeros_like(state_dict[f"{layer_key}.ln_2.weight"])
+        state_dict[f"{layer_key}.ln_1.bias"] = torch.zeros_like(
+            state_dict[f"{layer_key}.ln_1.weight"]
+        )
+        state_dict[f"{layer_key}.ln_2.bias"] = torch.zeros_like(
+            state_dict[f"{layer_key}.ln_2.weight"]
+        )
 
         mlp_bias_shape = state_dict[f"{layer_key}.mlp.c_fc.weight"].shape[0]
 
         assert mlp_bias_shape == config.n_embd * 4
 
-        state_dict[f"{layer_key}.mlp.c_fc.bias"]  = torch.zeros(mlp_bias_shape, device=device)
-        state_dict[f"{layer_key}.mlp.c_proj.bias"]  = torch.zeros(config.n_embd, device=device)
-        
+        state_dict[f"{layer_key}.mlp.c_fc.bias"] = torch.zeros(
+            mlp_bias_shape, device=device
+        )
+        state_dict[f"{layer_key}.mlp.c_proj.bias"] = torch.zeros(
+            config.n_embd, device=device
+        )
+
         if i == layer:
             # Add the difference vector to the attention bias
             state_dict[f"{layer_key}.mlp.c_proj.bias"] = difference_vector
 
-        state_dict[f"{layer_key}.attn.c_attn.bias"] = torch.zeros(config.n_embd * 3, device=device)
-        state_dict[f"{layer_key}.attn.c_proj.bias"] = torch.zeros(config.n_embd, device=device)
-
-
-
+        state_dict[f"{layer_key}.attn.c_attn.bias"] = torch.zeros(
+            config.n_embd * 3, device=device
+        )
+        state_dict[f"{layer_key}.attn.c_proj.bias"] = torch.zeros(
+            config.n_embd, device=device
+        )
 
     return state_dict, config
-    
+
 
 class NanoGptPlayer:
-    def __init__(self, model_name: str, activation_name: Optional[str] = None):
+    def __init__(
+        self,
+        model_name: str,
+        activation_name: Optional[str] = None,
+        activation_coefficient: Optional[float] = None,
+    ):
         self.model_name = model_name
         # -----------------------------------------------------------------------------
 
@@ -98,7 +124,7 @@ class NanoGptPlayer:
             ckpt_path = f"nanogpt/out/{self.model_name}"
             checkpoint = torch.load(ckpt_path, map_location=device)
             gptconf = GPTConfig(**checkpoint["model_args"])
-            
+
             state_dict = checkpoint["model"]
             unwanted_prefix = "_orig_mod."
             for k, v in list(state_dict.items()):
@@ -106,9 +132,12 @@ class NanoGptPlayer:
                     state_dict[k[len(unwanted_prefix) :]] = state_dict.pop(k)
 
             if activation_name is not None:
-                state_dict, gptconf = add_activation_bias_to_state_dict(state_dict, device, activation_name, gptconf)
+                state_dict, gptconf = add_activation_bias_to_state_dict(
+                    state_dict, device, activation_name, gptconf, activation_coefficient
+                )
             model = GPT(gptconf)
             model.load_state_dict(state_dict)
+            # model = torch.compile(model)
         elif init_from.startswith("gpt2"):
             # init from a given GPT-2 model
             model = GPT.from_pretrained(init_from, dict(dropout=0.0))
@@ -160,7 +189,7 @@ class NanoGptPlayer:
         # Nanogpt was trained on pgn transcripts of this format: 1.e4 e5 2.Nf3 (not 1. e4 e5 2. Nf3)
         # I did this to save on tokens
         # We remove the space after the move number to match the training data
-        game_state = re.sub(r'(\d+\.) ', r'\1', game_state)
+        game_state = re.sub(r"(\d+\.) ", r"\1", game_state)
 
         game_state = ";" + game_state
 
@@ -188,6 +217,8 @@ class NanoGptPlayer:
     def get_move_from_response(self, response: str) -> str:
         # Parse the response to get only the first move
         moves = response.split()
+        if not moves:
+            return ""
         first_move = moves[0]
 
         return first_move
