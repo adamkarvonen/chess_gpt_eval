@@ -17,18 +17,11 @@ def add_activation_bias_to_state_dict(
     state_dict,
     device,
     activation_dir: str,
-    activation_name: str,
+    activation_names: list[str],
     config: GPTConfig,
     activation_coefficient: float,
 ):
-    activation_state_dict = torch.load(
-        f"nanogpt/activations/{activation_dir}/{activation_name}", map_location=device
-    )
-    difference_vector = activation_state_dict["difference_vector"]
-    difference_vector *= activation_coefficient
-    layer = activation_state_dict["layer"]
     config.bias = True
-    print(activation_state_dict.keys())
     print(config)
 
     state_dict["transformer.ln_f.bias"] = torch.zeros_like(
@@ -56,16 +49,25 @@ def add_activation_bias_to_state_dict(
             config.n_embd, device=device
         )
 
-        if i == layer:
-            # Add the difference vector to the attention bias
-            state_dict[f"{layer_key}.mlp.c_proj.bias"] = difference_vector
-
         state_dict[f"{layer_key}.attn.c_attn.bias"] = torch.zeros(
             config.n_embd * 3, device=device
         )
         state_dict[f"{layer_key}.attn.c_proj.bias"] = torch.zeros(
             config.n_embd, device=device
         )
+
+    for activation_name in activation_names:
+        activation_state_dict = torch.load(
+            f"nanogpt/activations/{activation_dir}/{activation_name}",
+            map_location=device,
+        )
+        difference_vector = activation_state_dict["difference_vector"]
+        difference_vector *= activation_coefficient
+        layer = activation_state_dict["layer"]
+        # print(activation_state_dict.keys())
+
+        # Add the difference vector to the attention bias
+        state_dict[f"transformer.h.{layer}.mlp.c_proj.bias"] = difference_vector
 
     return state_dict, config
 
