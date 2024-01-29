@@ -4,7 +4,9 @@ __pycache__/
 /gpt_inputs/openrouter_api_key.txt
 /gpt_outputs/transcript.txt
 /openai.rtf
-/nanogpt/out/ckpt.pt
+/nanogpt/out/*
 .env
 game.txt
 gpt_test_output.txt
+/nanogpt/activations/*
+logs/*
