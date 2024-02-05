@@ -16,11 +16,11 @@ BASE_DIR = "nanogpt/"
 def add_activation_bias_to_state_dict(
     state_dict,
     device,
-    activation_dir: str,
     activation_names: list[str],
     config: GPTConfig,
     activation_coefficient: float,
 ):
+    activation_dir = "probe_derived"
     config.bias = True
     print(config)
 
@@ -62,6 +62,7 @@ def add_activation_bias_to_state_dict(
             map_location=device,
         )
         difference_vector = activation_state_dict["difference_vector"]
+        difference_vector = difference_vector.detach()
         difference_vector *= activation_coefficient
         layer = activation_state_dict["layer"]
         # print(activation_state_dict.keys())
