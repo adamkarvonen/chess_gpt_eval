@@ -94,7 +94,7 @@ class StockfishPlayer(Player):
 
         else:
             self._engine.configure({"Skill Level": self._skill_level})
-            result = self._engine.play(board, chess.engine.Limit(time=self._play_time))
+            result = self._engine.play(board, chess.engine.Limit(nodes=1e4))
         if result.move is None:
             return None
         return board.san(result.move)
