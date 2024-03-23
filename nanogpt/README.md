@@ -15,4 +15,4 @@ To use the activations created in: https://github.com/adamkarvonen/chess_llm_int
 
 Create a `nanogpt/activations/` folder and copy your activations into there. Then, use this file to test your activations out: https://github.com/adamkarvonen/chess_gpt_eval/blob/grid_search/main_grid_search.py#L555-L620
 
- Refer to the paper for the best coefficents and layer ranges to use. You will have to modify the string on line 558 to match your activations names.
+Refer to the paper for the best coefficents and layer ranges to use. You will have to modify the string on line 558 to match your activations names.
