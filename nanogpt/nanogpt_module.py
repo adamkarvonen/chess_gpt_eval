@@ -17,11 +17,11 @@ BASE_DIR = "nanogpt/"
 def add_activation_bias_to_state_dict(
     state_dict,
     device,
-    activation_dir: str,
     activation_names: list[str],
     config: GPTConfig,
     activation_coefficient: float,
 ):
+    activation_dir = ""
     config.bias = True
     print(config)
 
@@ -49,7 +49,7 @@ def add_activation_bias_to_state_dict(
 
     for activation_name in activation_names:
         activation_state_dict = torch.load(
-            f"nanogpt/activations/{activation_dir}/{activation_name}",
+            f"nanogpt/activations/{activation_dir}{activation_name}",
             map_location=device,
         )
         difference_vector = activation_state_dict["difference_vector"]
