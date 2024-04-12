@@ -1,6 +1,7 @@
 """
 Sample from a trained model
 """
+
 import os
 import re
 import pickle
@@ -24,9 +25,7 @@ def add_activation_bias_to_state_dict(
     config.bias = True
     print(config)
 
-    state_dict["transformer.ln_f.bias"] = torch.zeros_like(
-        state_dict["transformer.ln_f.weight"]
-    )
+    state_dict["transformer.ln_f.bias"] = torch.zeros_like(state_dict["transformer.ln_f.weight"])
 
     for i in range(config.n_layer):
         layer_key = f"transformer.h.{i}"
@@ -42,19 +41,11 @@ def add_activation_bias_to_state_dict(
 
         assert mlp_bias_shape == config.n_embd * 4
 
-        state_dict[f"{layer_key}.mlp.c_fc.bias"] = torch.zeros(
-            mlp_bias_shape, device=device
-        )
-        state_dict[f"{layer_key}.mlp.c_proj.bias"] = torch.zeros(
-            config.n_embd, device=device
-        )
+        state_dict[f"{layer_key}.mlp.c_fc.bias"] = torch.zeros(mlp_bias_shape, device=device)
+        state_dict[f"{layer_key}.mlp.c_proj.bias"] = torch.zeros(config.n_embd, device=device)
 
-        state_dict[f"{layer_key}.attn.c_attn.bias"] = torch.zeros(
-            config.n_embd * 3, device=device
-        )
-        state_dict[f"{layer_key}.attn.c_proj.bias"] = torch.zeros(
-            config.n_embd, device=device
-        )
+        state_dict[f"{layer_key}.attn.c_attn.bias"] = torch.zeros(config.n_embd * 3, device=device)
+        state_dict[f"{layer_key}.attn.c_proj.bias"] = torch.zeros(config.n_embd, device=device)
 
     for activation_name in activation_names:
         activation_state_dict = torch.load(
@@ -89,7 +80,9 @@ class NanoGptPlayer:
         start = "12+44="  # or "<|endoftext|>" or etc. Can also specify a file, use as: "FILE:prompt.txt"
         num_samples = 1  # number of samples to draw
         max_new_tokens = 6  # number of tokens generated in each sample
-        temperature = 0.01  # 1.0 = no change, < 1.0 = less random, > 1.0 = more random, in predictions
+        temperature = (
+            0.01  # 1.0 = no change, < 1.0 = less random, > 1.0 = more random, in predictions
+        )
         top_k = 200  # retain only the top_k most likely tokens, clamp others to have 0 probability
         seed = 1337
         device = "cuda"  # examples: 'cpu', 'cuda', 'cuda:0', 'cuda:1', etc.
@@ -105,9 +98,7 @@ class NanoGptPlayer:
         torch.cuda.manual_seed(seed)
         torch.backends.cuda.matmul.allow_tf32 = True  # allow tf32 on matmul
         torch.backends.cudnn.allow_tf32 = True  # allow tf32 on cudnn
-        device_type = (
-            "cuda" if "cuda" in device else "cpu"
-        )  # for later use in torch.autocast
+        device_type = "cuda" if "cuda" in device else "cpu"  # for later use in torch.autocast
         ptdtype = {
             "float32": torch.float32,
             "bfloat16": torch.bfloat16,
@@ -152,9 +143,7 @@ class NanoGptPlayer:
         # look for the meta pickle in case it is available in the dataset folder
         load_meta = False
         if (
-            init_from == "resume"
-            and "config" in checkpoint
-            and "dataset" in checkpoint["config"]
+            init_from == "resume" and "config" in checkpoint and "dataset" in checkpoint["config"]
         ):  # older checkpoints might not have these...
             meta_path = os.path.join(BASE_DIR, "out", "meta.pkl")
             load_meta = os.path.exists(meta_path)
@@ -203,9 +192,7 @@ class NanoGptPlayer:
         with torch.no_grad():
             with self.ctx:
                 for k in range(num_samples):
-                    y = self.model.generate(
-                        x, max_new_tokens, temperature=temperature, top_k=top_k
-                    )
+                    y = self.model.generate(x, max_new_tokens, temperature=temperature, top_k=top_k)
 
                     model_response = self.decode(y[0].tolist())
 
